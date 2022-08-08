@@ -101,14 +101,21 @@ const Home: NextPage = () => {
                   </CSSTransition>
                 </Grid>
                 <Grid item xs={4} style={{ paddingLeft: '1rem' }}>
-                  <Image
-                    priority
-                    src="/images/katebishop.png"
-                    className={styles.photo}
-                    width={3024}
-                    height={4032}
-                    alt={title}
-                  />
+                  <CSSTransition
+                    in={showContent}
+                    timeout={transitionTimeout}
+                    classNames="content-grow"
+                    unmountOnExit
+                    onEnter={() => setShowContent(true)}>
+                    <Image
+                      priority
+                      src="/images/katebishop.png"
+                      className={styles.photo}
+                      width={3024}
+                      height={4032}
+                      alt={title}
+                    />
+                  </CSSTransition>
                 </Grid>
               </Grid>
             </div>
