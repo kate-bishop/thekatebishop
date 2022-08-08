@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
-$primary-color: #abd699; // lime
-$secondary-color: #ffe26a; // lemon
-$tertiary-color: #75c9b7; // teal
-$quaternary-color: #c7ddcc; // mint
-$quinary-color: #16123f; // navy
-$senary-color: #fdf9db; // light lemon
+$primary-color: #ABD699; // granny smith apple
+$secondary-color: #FFE26A; // naples yellow
+$tertiary-color: #75C9B7; // middle blue green
+$quaternary-color: #F06449; // orange soda
+$quinary-color: #16123F; // russian violet
 $font-stack: 'Open Sans', sans-serif;
 $min-height: 100vh;
 $min-width: 100%;
@@ -19,7 +18,6 @@ $large-breakpoint: 1024px;
   tertiaryColor: $tertiary-color;
   quaternaryColor: $quaternary-color;
   quinaryColor: $quinary-color;
-  senary-color: $senary-color;
   font-stack: $font-stack;
 }
 

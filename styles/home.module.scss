@@ -3,12 +3,12 @@
 .main {
   text-align: start;
   overflow: scroll;
-  height: utils.$min-height;
+  min-height: utils.$min-height;
   width: utils.$min-width;
   scroll-snap-type: y proximity;
 
   section {
-    height: utils.$min-height;
+    min-height: utils.$min-height;
     scroll-snap-align: start;
     position: relative;
   }

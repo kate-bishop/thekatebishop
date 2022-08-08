@@ -6,7 +6,7 @@ html {
 
 html,
 body {
-  height: utils.$min-height;
+  min-height: utils.$min-height;
   width: utils.$min-width;
   overflow: hidden;
   margin: 0;
