@@ -1,12 +1,12 @@
-import type { NextPage } from 'next'
-import { useState, useEffect, createContext } from 'react';
+import type { NextPage } from 'next';
+import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/home.module.scss'
 import { CSSTransition } from 'react-transition-group';
 import Grid from '@mui/material/Grid';
 import { headerTheme } from '../styles/MuiThemes'
-import { transitionTimeout, WindowSize } from '../utils/constants';
+import { transitionTimeout } from '../utils/constants';
 import {
   title,
   tagline1,
