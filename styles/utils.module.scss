@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+$primary-color: #abd699; // lime
+$secondary-color: #ffe26a; // lemon
+$tertiary-color: #75c9b7; // teal
+$quaternary-color: #c7ddcc; // mint
+$quinary-color: #16123f; // navy
+$senary-color: #fdf9db; // light lemon
+$font-stack: 'Open Sans', sans-serif;
+$min-height: 100vh;
+$min-width: 100%;
+$small-breakpoint: 480px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  tertiaryColor: $tertiary-color;
+  quaternaryColor: $quaternary-color;
+  quinaryColor: $quinary-color;
+  senary-color: $senary-color;
+  font-stack: $font-stack;
+}
+
+.app {
+  font-family: $font-stack;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+$transition-timeout: 1000ms;
+
+.content-left-enter {
+    opacity: 0;
+    transform: translateX(-10vw)
+}
+
+.content-right-enter {
+    opacity: 0;
+    transform: translateX(10vw)
+}
+
+.content-bottom-enter {
+    opacity: 0;
+    transform: translateY(10vh)
+}
+
+.content-grow-enter {
+    opacity: 0;
+    transform: scale(.8);
+}
+
+.content-left-enter-active,
+.content-right-enter-active,
+.content-bottom-enter-active,
+.content-grow-enter-active {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition: opacity $transition-timeout, transform $transition-timeout;
+}
