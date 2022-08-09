@@ -11,18 +11,18 @@ const Home: NextPage = () => {
       <>
         <section>
           <Header />
-          <Image
+          {/* <Image
             src="/images/wave.svg"
             className={styles.wave}
             layout="responsive"
             height={10}
             width={100}
             alt="wave border"
-          />
+          /> */}
         </section>
-        <section className={styles.portfolio}>
+        {/* <section className={styles.portfolio}>
           <ComingSoon />
-        </section>
+        </section> */}
       </>
     </Wrapper>
   )

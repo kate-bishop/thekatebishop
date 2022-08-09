@@ -18,7 +18,8 @@
         background: linear-gradient(-45deg, utils.$primary-color, utils.$tertiary-color, utils.$primary-color, utils.$tertiary-color);
         background-size: 400% 400%;
         animation: gradient 7s ease infinite;
-        height: 150vh;
+        height: utils.$min-height;
+        // height: 150vh;
         min-width: utils.$min-width;
         position: relative;
         z-index: -1;
