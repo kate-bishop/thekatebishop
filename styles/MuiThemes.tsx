@@ -8,7 +8,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
     ].join(','),
     h1: {
       color: 'white',
-      fontSize: '9rem',
+      fontSize: '8rem',
       fontWeight: 800,
       '@media (max-width:480px)': {
         fontSize: '3rem'
@@ -16,7 +16,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
     },
     h5: {
       color: palette.quinary,
-      fontSize: '1.25rem',
+      fontSize: '1rem',
       fontWeight: 400,
       '@media (max-width:480px)': {
         fontSize: '1rem'
@@ -24,7 +24,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
     },
     h6: {
       color: palette.quinary,
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
       fontWeight: 300,
       margin: 0,
       '@media (max-width:480px)': {
@@ -33,7 +33,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
     },
     body1: {
       color: palette.quinary,
-      fontSize: '1rem',
+      fontSize: '.85rem',
       fontWeight: 400,
       '@media (max-width:480px)': {
         fontSize: '.75rem'
@@ -41,6 +41,17 @@ export const headerTheme = responsiveFontSizes(createTheme({
     }
   },
 }));
+
+export const comingSoonTheme = responsiveFontSizes(createTheme({
+  typography: {
+    fontFamily: [
+      'Open Sans',
+    ].join(','),
+    h1: {
+      color: palette.quaternary,
+    },
+  },
+}))
 
 export const resumeTheme = responsiveFontSizes(createTheme({
   typography: {
