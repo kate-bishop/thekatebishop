@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
-$primary-color: #ABD699; // granny smith apple
-$secondary-color: #FFE26A; // naples yellow
-$tertiary-color: #75C9B7; // middle blue green
-$quaternary-color: #F06449; // orange soda
-$quinary-color: #16123F; // russian violet
+$primary-color: #020122; // xiketic
+$secondary-color: #026F7F; // ming
+$tertiary-color: #CC3C26; // vermillion
+$quaternary-color: #F1CA3A; // jonquil
+$quinary-color: #FEFAE0; // cornsilk
+$senary-color: #BDDBD0; //opal
 $font-stack: 'Open Sans', sans-serif;
 $min-height: 100vh;
 $min-width: 100%;
 $small-breakpoint: 480px;
 $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
+$secondary-gradient: #023B44;
+$tertiary-gradient: #C23924;
 
 :export {
   primaryColor: $primary-color;
@@ -23,13 +26,6 @@ $large-breakpoint: 1024px;
 
 .app {
   font-family: $font-stack;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
