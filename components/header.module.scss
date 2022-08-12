@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     min-height: utils.$min-height;
-    max-width: 70%;
+    max-width: 60%;
     padding-left: 5rem;
     padding-right: 5rem;
 }
@@ -34,7 +34,8 @@
     & .bluespan {
         background-color: utils.$secondary-color;
         width: utils.$min-width;
-        height: 1rem;
+        height: .5rem;
+        margin-top: .5rem;
     }
 
     & .logo {

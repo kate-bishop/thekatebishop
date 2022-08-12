@@ -1,11 +1,11 @@
 export const transitionTimeout = 1000
 export const paletteArray = ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'senary']
 export const palette = {
-    primary: '#020122',
-    secondary: '#026F7F',
-    tertiary: '#9E3120',
-    quaternary: '#CF8923',
-    quinary: '#FEFAE0',
+    primary: '#070538',
+    secondary: '#04A6BF',
+    tertiary: '#E9513A',
+    quaternary: '#FFDD61',
+    quinary: '#FFFDF0',
     senary: '#BDDBD0'
 }
 export const breakpoint = {

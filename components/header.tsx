@@ -42,7 +42,7 @@ export default function Header() {
                                         <Typography variant="h1">{title.toUpperCase()}</Typography>
                                     </Grid>
                                     <Grid item>
-                                        <Typography variant="h6">{tagline1}</Typography>
+                                        <Typography variant="h6" style={{ marginTop: '1rem' }}>{tagline1}</Typography>
                                     </Grid>
                                 </Grid>
                             </CSSTransition>
@@ -53,7 +53,7 @@ export default function Header() {
                                 unmountOnExit
                                 onEnter={() => setShowContent(true)}>
                                 <Grid container direction="column">
-                                    <Grid item style={{ marginBottom: '2rem', marginTop: '1.5rem' }}>
+                                    <Grid item style={{ marginBottom: '1.5rem', marginTop: '1.5rem' }}>
                                         <Typography variant="h5">
                                             <span>{tagline2}</span>
                                         </Typography>

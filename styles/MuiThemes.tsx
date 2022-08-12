@@ -10,6 +10,8 @@ export const headerTheme = responsiveFontSizes(createTheme({
       color: palette.primary,
       fontSize: '8rem',
       fontWeight: 800,
+      margin: 0,
+      lineHeight: .75,
       '@media (max-width:480px)': {
         fontSize: '3rem'
       },
