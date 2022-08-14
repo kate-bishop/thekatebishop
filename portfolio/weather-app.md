@@ -1,0 +1,57 @@
+---
+title: "Code Challenge: Dallas Weather App"
+date: "2022-07"
+---
+
+## React Engineer
+
+### Problem
+
+Given a Sketch file with desktop design requirements, I was tasked with building a single-page web app to match. In addition, the app needed to connect to an API to retrieve real forecast data.
+
+***Let’s break down the requirements and think toward responsive design.***
+
+#### Quick Artifacts
+
+Dallas Weather App – *delightful-cascaron-24b3b4.netlify.app*
+GitHub – *github.com/kate-perry/weather-forecast-app*
+
+### Approach
+
+I identified **key UI features in the design based on visual grouping and data requirements**. My goal was to reuse components as much as possible so I could develop quicker. I then compiled those with the provided functional requirements in a task management system.
+
+I decided to use *Open Weather Map API* for data because it could provide a Today and 5-Day forecast, plus support for Fahrenheit and Celsius units.
+
+For UI components, I used *MUI component library* because it offered a great template for all the features displayed in the mockup (Format, Typography, Icons, and Toggles).
+
+I used a *create-react-app boilerplate* to get started with development.
+
+![Design with Feature Groupings](./images/wa-feature-group.png)
+*Screenshot of Sketch design overlaid with my visual grouping analysis*
+
+### Challenges
+
+A *time constraint* resulted in the need for decision making. I prioritized tasks based on most impactful features, and I developed in large strokes before digging into the details.
+
+#### Current functionality includes…**
+
+- Data fetched from Open Weather Map API
+- Support for Imperial & Metric
+- Responsiveness to screen size
+
+#### Future functionality includes…
+
+- Better API key storage
+- Ability to look up forecast for other cities
+  - Search button next to current city that would open an input field
+  - Type-to-search for city name and ZIP code
+  - Backend process to look up latitude and longitude for the forecast API call
+
+### Delivery
+
+![Final Forecast App](./images/wa-final.png)
+*Screenshot of final Forecast App*
+
+View app on **Netlify** [here](delightful-cascaron-24b3b4.netlify.app/).
+
+The code can be found on **GitHub** [here](github.com/kate-perry/weather-forecast-app).
