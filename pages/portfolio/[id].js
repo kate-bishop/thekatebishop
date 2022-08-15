@@ -1,28 +1,23 @@
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPortfolioIds, getPortfolioData } from '../../utils/functions'
 import Head from 'next/head'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
+import Typography from '@mui/material/Typography'
 
-export default function Portfolio({ postData }) {
+export default function Portfolio({ portfolioData }) {
   return (
-    <Layout>
+    <>
       <Head>
-        <title>{postData.title}</title>
+        <title>{portfolioData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <Typography variant="h1">{portfolioData.title}</Typography>
+        <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} />
       </article>
-    </Layout>
+    </>
   )
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = getAllPortfolioIds()
   return {
     paths,
     fallback: false
@@ -30,10 +25,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const portfolioData = await getPortfolioData(params.id)
   return {
     props: {
-      postData
+      portfolioData
     }
   }
 }

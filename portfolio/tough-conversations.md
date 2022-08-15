@@ -1,6 +1,8 @@
 ---
 title: "Tough Conversations via Computer-Mediated Interaction"
-date: "2018-05"
+date: "2018-01-01"
+problem: "High school students view standardized test scores as a barrier to collegiate and career success. When test results do not meet expectations, students feel they cannot pursue their dream schools or jobs."
+prompt: "How can ACT, Inc. guide students toward meaningful conversations that will keep them motivated to retest or explore other paths to reach their goals?"
 ---
 
 ## UX Analyst
@@ -38,7 +40,7 @@ I conceptualized three visual tools to be used in tandem to help answer those th
 
 a scatter plot of majors mapped on scales of academic and interest fit.
 
-![Major Map](./images/tc-major-map.png)
+![Major Map](public/images/tc-major-map.png)
 *A simplified recreation of the Major Map*
 
 #### COLLEGE RECOMMENDER
