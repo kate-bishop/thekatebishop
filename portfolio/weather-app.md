@@ -1,5 +1,6 @@
 ---
 title: "Code Challenge: Dallas Weather App"
+role: "React Engineer"
 date: "2022-01-01"
 problem: "Given a Sketch file with a desktop design for a 5-day weather forecast app in Dallas, Texas, I was tasked with building a single-page web app to match. In addition, the app needed to connect to an API to retrieve real forecast data."
 prompt: "Let’s break down the requirements and think toward responsive design."

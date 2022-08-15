@@ -56,26 +56,31 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
       'Open Sans',
     ].join(','),
     h1: {
-      fontSize: '3rem',
-      fontWeight: 300,
-    },
-    h5: {
-      fontSize: '1.5rem',
+      color: palette.quinary,
+      fontSize: '6rem',
       fontWeight: 800,
     },
-    h6: {
-      fontSize: '1.5rem',
-      fontWeight: 300,
-      margin: 0,
+    h2: {
+      color: palette.primary,
+      fontSize: '1.75rem',
+      fontWeight: 800,
+    },
+    h3: {
+      color: palette.primary,
+      fontSize: '1.25rem',
+      fontWeight: 700,
     },
     subtitle1: {
-      fontSize: '1.1rem',
-      fontWeight: 600,
-      margin: 0,
-    },
-    body1: {
+      color: palette.quinary,
       fontSize: '1rem',
       fontWeight: 300,
-    }
+      margin: 0,
+    },
+    subtitle2: {
+      color: palette.quinary,
+      fontSize: '1rem',
+      fontWeight: 400,
+      margin: 0,
+    },
   },
 }));

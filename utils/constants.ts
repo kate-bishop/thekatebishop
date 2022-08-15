@@ -1,6 +1,7 @@
 export type Portfolio = {
     id: string,
     title: string,
+    role: string,
     date: any,
     problem: string,
     prompt: string,

@@ -1,5 +1,6 @@
 ---
 title: "Tough Conversations via Computer-Mediated Interaction"
+role: "UX Analyst"
 date: "2018-01-01"
 problem: "High school students view standardized test scores as a barrier to collegiate and career success. When test results do not meet expectations, students feel they cannot pursue their dream schools or jobs."
 prompt: "How can ACT, Inc. guide students toward meaningful conversations that will keep them motivated to retest or explore other paths to reach their goals?"

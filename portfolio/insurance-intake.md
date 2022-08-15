@@ -1,9 +1,8 @@
 ---
 title: "International Insurance Claim Intake"
+role: "UX Analyst & Designer, React Engineer"
 date: "2019-01-01"
-problem: "The core business of an insurance company is its ability to track incoming claims, but this insurance company is struggling to collect much valuable information from their current web form.
-
-The existing claim system is outdated, slow, data intensive, and error prone. The process is so painful, users make phone calls to request an admin to enter information on their behalf."
+problem: "The core business of an insurance company is its ability to track incoming claims, but this insurance company is struggling to collect much valuable information from their current web form. The existing claim system is outdated, slow, data intensive, and error prone. The process is so painful, users make phone calls to request an admin to enter information on their behalf."
 prompt: "How can we give the process a face lift and put the intended users back into the playing field?"
 ---
 

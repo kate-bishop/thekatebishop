@@ -6,42 +6,33 @@
     justify-content: center;
     align-items: center;
     min-height: utils.$min-height;
-    max-width: 60%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    max-width: utils.$min-width;
+    padding: 5rem;
 }
 
-.portfolio {
-    min-height: utils.$min-height;
+.list {
+    max-height: 50%;
+    width: 50%;
+    overflow: scroll;
+    padding: 3rem;
+}
+
+.listItem {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 5rem;
+}
+
+.prompt {
+    background-color: utils.$tertiary-color;
+}
+
+.yellowspan {
+    background-color: utils.$quaternary-color;
     width: utils.$min-width;
-
-    & h5 span {
-        margin: 1rem;
-        background-color: utils.$quaternary-color;
-        box-shadow: 0rem 0rem 0rem 1rem utils.$quaternary-color;
-    }
-
-    & .highlight {
-        color: utils.$tertiary-color;
-    }
-
-    & .paragraph {
-        text-align: justify;
-        text-justify: inter-word;
-        margin-bottom: .5rem;
-    }
-
-    & .bluespan {
-        background-color: utils.$secondary-color;
-        width: utils.$min-width;
-        height: .5rem;
-        margin-top: .5rem;
-    }
-
-    & .logo {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
+    height: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
