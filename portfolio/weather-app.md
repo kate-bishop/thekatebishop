@@ -54,6 +54,6 @@ A *time constraint* resulted in the need for decision making. I prioritized task
 
 ![Screenshot of the final Forecast App](public/images/wa-final.png)
 
-View app on **Netlify** [here](delightful-cascaron-24b3b4.netlify.app/).
+View app on [Netlify](delightful-cascaron-24b3b4.netlify.app/).
 
-The code can be found on **GitHub** [here](github.com/kate-perry/weather-forecast-app).
+View code repository on [GitHub](github.com/kate-perry/weather-forecast-app).

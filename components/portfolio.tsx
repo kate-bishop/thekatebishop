@@ -10,7 +10,7 @@ export default function Portfolio(props: { allPortfolioData: PortfolioType[] }) 
     return (
         <ThemeProvider theme={portfolioTheme}>
             <div className={styles.content}>
-                <Grid container direction="column" spacing={0}>
+                <Grid container direction="column">
                     <Grid item>
                         <Typography variant="h1">PORTFOLIO</Typography>
                     </Grid>
