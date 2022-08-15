@@ -1,0 +1,46 @@
+@use '../styles/utils.module.scss' as utils;
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: utils.$min-height;
+    max-width: 40%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.highlight {
+    color: utils.$tertiary-color;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: utils.$medium-breakpoint) {
+    .content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: utils.$small-breakpoint) {
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

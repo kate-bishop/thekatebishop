@@ -1,9 +1,10 @@
 import Wrapper from '../components/wrapper';
-import Portfolio from '../components/portfolio';
 import Header from '../components/header';
+import About from '../components/about';
+import Portfolio from '../components/portfolio';
 import { getSortedPortfolioData } from '../utils/functions';
 import { Portfolio as PortfolioType } from '../utils/constants';
-import styles from '../styles/home.module.scss';
+import styles from '../styles/pages.module.scss';
 
 export async function getStaticProps() {
   const allPortfolioData = getSortedPortfolioData()
@@ -20,6 +21,9 @@ export default function Home(props: {allPortfolioData: PortfolioType[]}) {
       <>
         <section className={styles.header}>
           <Header />
+        </section>
+        <section className={styles.about}>
+          <About />
         </section>
         <section className={styles.portfolio}>
           <Portfolio allPortfolioData={props.allPortfolioData} />

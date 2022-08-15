@@ -15,15 +15,6 @@ $large-breakpoint: 1024px;
 $secondary-gradient: #023B44;
 $tertiary-gradient: #C23924;
 
-:export {
-  primaryColor: $primary-color;
-  secondaryColor: $secondary-color;
-  tertiaryColor: $tertiary-color;
-  quaternaryColor: $quaternary-color;
-  quinaryColor: $quinary-color;
-  font-stack: $font-stack;
-}
-
 .app {
   font-family: $font-stack;
 }

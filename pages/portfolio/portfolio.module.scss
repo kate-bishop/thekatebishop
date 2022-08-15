@@ -1,0 +1,47 @@
+@use '../../styles/utils.module.scss' as utils;
+
+.portfolioPage {
+    background: utils.$quinary-color;
+    background: linear-gradient(90deg, utils.$quinary-color 0%, utils.$quinary-color 85%, utils.$secondary-color 85%);
+
+    & .content {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: utils.$min-height;;
+        width: 80%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    & h1,
+    h2,
+    h3,
+    h4,
+    p {
+        font-family: utils.$font-stack;
+    }
+
+    & h2 {}
+
+    & a {
+        background-color: utils.$quaternary-color;
+    }
+
+    & em>strong {
+        font-style: normal;
+        color: utils.$quinary-color;
+        background-color: utils.$tertiary-color;
+    }
+
+    & strong {
+        font-style: normal;
+        color: utils.$tertiary-color;
+    }
+
+    & em {
+        font-style: normal;
+        background-color: utils.$quaternary-color;
+    }
+}

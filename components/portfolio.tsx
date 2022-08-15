@@ -3,7 +3,7 @@ import styles from './portfolio.module.scss';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { Portfolio as PortfolioType } from '../utils/constants';
-import { portfolioTheme } from '../styles/MuiThemes'
+import { portfolioTheme } from '../styles/mui.themes'
 import { ThemeProvider } from '@mui/material/styles';
 
 export default function Portfolio(props: { allPortfolioData: PortfolioType[] }) {

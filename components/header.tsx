@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
 import styles from './header.module.scss';
 import Image from 'next/image'
-import { headerTheme } from '../styles/MuiThemes'
+import { headerTheme } from '../styles/mui.themes'
 import { transitionTimeout } from '../utils/constants';
 import {
     title,
     tagline1,
     tagline2,
-    aboutMe1,
-    aboutMe2,
-    aboutMe3,
     github,
     linkedin
 } from '../utils/strings';
@@ -58,19 +55,6 @@ export default function Header() {
                                             <span>{tagline2}</span>
                                         </Typography>
                                     </Grid>
-                                    {/* <Grid item>
-                                        <div className={styles.paragraph}>
-                                            <Typography variant="body1" display="inline" paragraph>
-                                                {aboutMe1}
-                                            </Typography>
-                                            <Typography variant="body1" display="inline" paragraph className={styles.highlight}>
-                                                {aboutMe2}
-                                            </Typography>
-                                            <Typography variant="body1" display="inline" paragraph>
-                                                {aboutMe3}
-                                            </Typography>
-                                        </div>
-                                    </Grid> */}
                                     <Grid item className={styles.redspan} />
                                     <Grid item>
                                         <Grid container direction="row" spacing={1}>
