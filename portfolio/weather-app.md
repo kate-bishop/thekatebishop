@@ -1,5 +1,5 @@
 ---
-title: "Code Challenge: Dallas Weather App"
+title: "Code Challenge: Weather Forecast App"
 role: "React Engineer"
 date: "2022-01-01"
 problem: "Given a Sketch file with a desktop design for a 5-day weather forecast app in Dallas, Texas, I was tasked with building a single-page web app to match. In addition, the app needed to connect to an API to retrieve real forecast data."
@@ -14,10 +14,11 @@ Given a Sketch file with a desktop design for a 5-day weather forecast app in Da
 
 ***Let’s break down the requirements and think toward responsive design.***
 
-#### Quick Artifacts
+#### Quick Links
 
-[Dallas Weather App](delightful-cascaron-24b3b4.netlify.app)
-[GitHub](github.com/kate-perry/weather-forecast-app)
+[Weather Forecast App (Hosted with Netlify)](delightful-cascaron-24b3b4.netlify.app)
+
+[GitHub Repository](github.com/kate-perry/weather-forecast-app)
 
 ### Approach
 
@@ -29,14 +30,13 @@ For UI components, I used *MUI component library* because it offered a great tem
 
 I used a *create-react-app boilerplate* to get started with development.
 
-![Design with Feature Groupings](public/images/wa-feature-group.png)
-*Screenshot of Sketch design overlaid with my visual grouping analysis*
+![Screenshot of design overlaid with Feature Groupings analysis](public/images/wa-feature-group.png)
 
 ### Challenges
 
 A *time constraint* resulted in the need for decision making. I prioritized tasks based on most impactful features, and I developed in large strokes before digging into the details.
 
-#### Current functionality includes…**
+#### Current functionality includes…
 
 - Data fetched from Open Weather Map API
 - Support for Imperial & Metric
@@ -52,8 +52,7 @@ A *time constraint* resulted in the need for decision making. I prioritized task
 
 ### Delivery
 
-![Final Forecast App](public/images/wa-final.png)
-*Screenshot of final Forecast App*
+![Screenshot of the final Forecast App](public/images/wa-final.png)
 
 View app on **Netlify** [here](delightful-cascaron-24b3b4.netlify.app/).
 

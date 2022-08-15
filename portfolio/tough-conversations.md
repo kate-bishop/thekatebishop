@@ -37,18 +37,17 @@ Before applying to college, there are three major questions Hunters and Gatherer
 
 I conceptualized three visual tools to be used in tandem to help answer those three questions in an interactive exploratory manner. In order to encourage students to explore their options, each data visualization accepts input from the student to play out “what if” scenarios and give instant feedback.
 
-#### MAJOR MAP
+#### Major Map
 
 a scatter plot of majors mapped on scales of academic and interest fit.
 
-![Major Map](public/images/tc-major-map.png)
-*A simplified recreation of the Major Map*
+![A simplified recreation of the Major Map](public/images/tc-major-map.png)
 
-#### COLLEGE RECOMMENDER
+#### College Recommender
 
 a generator to rank colleges whose student body’s ACT assessment scores are comparable to those of the user.
 
-#### SUCCESS GAUGES
+#### Success Gauges
 
 measures three probabilities of success in any major, including the student’s likelihood of…
 

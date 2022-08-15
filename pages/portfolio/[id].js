@@ -15,16 +15,14 @@ export default function Portfolio({ portfolioData }) {
       <article>
         <ThemeProvider theme={portfolioPageTheme}>
           <div className={styles.portfolioPage}>
-            <div className={styles.content}>
-              <Grid container direction="column" spacing={0}>
-                <Grid item>
-                  <Typography variant="h1">{portfolioData.title}</Typography>
-                </Grid>
-                <Grid item>
-                  <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} />
-                </Grid>
+            <Grid container direction="column" spacing={0}>
+              <Grid item className={styles.title}>
+                <Typography variant="h1">{portfolioData.title.toUpperCase()}</Typography>
               </Grid>
-            </div>
+              <Grid item className={styles.content}>
+                <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} />
+              </Grid>
+            </Grid>
           </div>
         </ThemeProvider>
       </article>

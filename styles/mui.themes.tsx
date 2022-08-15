@@ -101,39 +101,11 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
     ].join(','),
     h1: {
       color: palette.primary,
-      fontSize: '6rem',
+      fontSize: '4rem',
       fontWeight: 800,
       '@media (max-width:480px)': {
         fontSize: '2.5rem'
       },
-    },
-    h2: {
-      color: palette.primary,
-      fontSize: '1.75rem',
-      fontWeight: 800,
-      '@media (max-width:480px)': {
-        fontSize: '1.5rem'
-      },
-    },
-    h3: {
-      color: palette.primary,
-      fontSize: '1.25rem',
-      fontWeight: 700,
-      '@media (max-width:480px)': {
-        fontSize: '1rem'
-      },
-    },
-    subtitle1: {
-      color: palette.quinary,
-      fontSize: '1rem',
-      fontWeight: 300,
-      margin: 0,
-    },
-    subtitle2: {
-      color: palette.quinary,
-      fontSize: '1.1rem',
-      fontWeight: 400,
-      margin: 0,
     },
   },
 }));
