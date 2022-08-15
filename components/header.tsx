@@ -42,7 +42,7 @@ export default function Header() {
                                         <Typography variant="h1">{title.toUpperCase()}</Typography>
                                     </Grid>
                                     <Grid item>
-                                        <Typography variant="h6" style={{ marginTop: '1rem' }}>{tagline1}</Typography>
+                                        <Typography variant="h2" style={{ marginTop: '1.5rem' }}>{tagline1}</Typography>
                                     </Grid>
                                 </Grid>
                             </CSSTransition>
@@ -53,12 +53,12 @@ export default function Header() {
                                 unmountOnExit
                                 onEnter={() => setShowContent(true)}>
                                 <Grid container direction="column">
-                                    <Grid item style={{ marginBottom: '1.5rem', marginTop: '1.5rem' }}>
-                                        <Typography variant="h5">
+                                    <Grid item style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+                                        <Typography variant="h3">
                                             <span>{tagline2}</span>
                                         </Typography>
                                     </Grid>
-                                    <Grid item>
+                                    {/* <Grid item>
                                         <div className={styles.paragraph}>
                                             <Typography variant="body1" display="inline" paragraph>
                                                 {aboutMe1}
@@ -70,7 +70,8 @@ export default function Header() {
                                                 {aboutMe3}
                                             </Typography>
                                         </div>
-                                    </Grid>
+                                    </Grid> */}
+                                    <Grid item className={styles.redspan} />
                                     <Grid item>
                                         <Grid container direction="row" spacing={1}>
                                             <Grid item>
@@ -99,7 +100,6 @@ export default function Header() {
                                             </Grid>
                                         </Grid>
                                     </Grid>
-                                    <Grid item className={styles.bluespan} />
                                 </Grid>
                             </CSSTransition>
                         </Grid>

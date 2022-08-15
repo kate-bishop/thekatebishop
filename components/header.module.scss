@@ -15,10 +15,10 @@
     min-height: utils.$min-height;
     width: utils.$min-width;
 
-    & h5 span {
+    & h3 span {
         margin: 1rem;
-        background-color: utils.$quaternary-color;
-        box-shadow: 0rem 0rem 0rem 1rem utils.$quaternary-color;
+        background-color: utils.$secondary-color;
+        box-shadow: 0rem 0rem 0rem 1rem utils.$secondary-color;
     }
 
     & .highlight {
@@ -31,11 +31,12 @@
         margin-bottom: .5rem;
     }
 
-    & .bluespan {
-        background-color: utils.$secondary-color;
+    & .redspan {
+        background-color: utils.$tertiary-color;
         width: utils.$min-width;
         height: .5rem;
         margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 
     & .logo {

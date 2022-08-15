@@ -16,19 +16,19 @@ export const headerTheme = responsiveFontSizes(createTheme({
         fontSize: '3rem'
       },
     },
-    h5: {
+    h2: {
       color: palette.primary,
-      fontSize: '1rem',
-      fontWeight: 400,
+      fontSize: '1.5rem',
+      fontWeight: 300,
       textAlign: 'justify',
       textJustify: 'inter-word',
       '@media (max-width:480px)': {
         fontSize: '1rem'
       },
     },
-    h6: {
-      color: palette.primary,
-      fontSize: '1.25rem',
+    h3: {
+      color: palette.quinary,
+      fontSize: '1.2rem',
       fontWeight: 300,
       textAlign: 'justify',
       textJustify: 'inter-word',
@@ -37,9 +37,9 @@ export const headerTheme = responsiveFontSizes(createTheme({
         fontSize: '1rem'
       },
     },
-    body1: {
+    subtitle1: {
       color: palette.primary,
-      fontSize: '.85rem',
+      fontSize: '1rem',
       fontWeight: 400,
       textAlign: 'justify',
       textJustify: 'inter-word',
@@ -59,16 +59,25 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
       color: palette.quinary,
       fontSize: '6rem',
       fontWeight: 800,
+      '@media (max-width:480px)': {
+        fontSize: '2.5rem'
+      },
     },
     h2: {
       color: palette.primary,
       fontSize: '1.75rem',
       fontWeight: 800,
+      '@media (max-width:480px)': {
+        fontSize: '1.5rem'
+      },
     },
     h3: {
       color: palette.primary,
       fontSize: '1.25rem',
       fontWeight: 700,
+      '@media (max-width:480px)': {
+        fontSize: '1rem'
+      },
     },
     subtitle1: {
       color: palette.quinary,
