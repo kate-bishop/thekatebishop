@@ -1,3 +1,12 @@
+export type Portfolio = {
+    id: string,
+    title: string,
+    date: any,
+    problem: string,
+    prompt: string,
+    data: any
+}
+
 export const transitionTimeout = 1000
 export const paletteArray = ['primary', 'secondary', 'tertiary', 'quaternary', 'quinary', 'senary']
 export const palette = {

@@ -50,25 +50,6 @@ export const headerTheme = responsiveFontSizes(createTheme({
   },
 }));
 
-export const comingSoonTheme = responsiveFontSizes(createTheme({
-  typography: {
-    fontFamily: [
-      'Open Sans',
-    ].join(','),
-    h1: {
-      color: palette.quaternary,
-    },
-  },
-}))
-
-export const resumeTheme = responsiveFontSizes(createTheme({
-  typography: {
-    fontFamily: [
-      'Open Sans',
-    ].join(','),
-  },
-}))
-
 export const portfolioTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
