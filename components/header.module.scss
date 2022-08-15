@@ -59,46 +59,6 @@
     }
 }
 
-.header-2 {
-    min-height: utils.$min-height;
-    width: utils.$min-width;
-
-    background-image: url('../public/images/wave.svg'), linear-gradient(0deg, rgba(2, 111, 127, 1) 0%, rgba(2, 59, 68, 1) 100%);
-    background-color: utils.$secondary-color;
-    background-repeat: no-repeat, no-repeat; //, no-repeat;
-    background-position: bottom, bottom; //, top;
-    background-size: cover, cover; //, auto;
-
-    & h1,
-    h5,
-    h6,
-    p {
-        margin: 0;
-    }
-
-    & h5 span {
-        margin: 1rem;
-        background-color: utils.$quaternary-color;
-        box-shadow: 0rem 0rem 0rem 1rem utils.$quaternary-color;
-    }
-
-    & .photo {
-        width: 90%;
-        margin-left: 2rem;
-        box-shadow: inset -.5rem -.5rem 0 .75rem utils.$quaternary-color;
-        -webkit-filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
-        /* Safari 6.0 - 9.0 */
-        filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
-    }
-
-    & .logo {
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-top: .5rem;
-        filter: brightness(0) invert(1);
-    }
-}
-
 @keyframes gradient {
     0% {
         background-position: 0% 50%;

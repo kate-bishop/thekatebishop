@@ -78,7 +78,7 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
     },
     subtitle2: {
       color: palette.quinary,
-      fontSize: '1rem',
+      fontSize: '1.1rem',
       fontWeight: 400,
       margin: 0,
     },

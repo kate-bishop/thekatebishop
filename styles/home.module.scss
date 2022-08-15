@@ -13,6 +13,14 @@
   }
 }
 
+.header {
+  background-image: url("../public/images/background.svg");
+  background-color: utils.$secondary-color;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .portfolio {
   background-color: utils.$secondary-color;
 }

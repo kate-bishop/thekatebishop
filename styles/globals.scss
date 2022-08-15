@@ -1,7 +1,7 @@
 @use './utils.module.scss' as utils;
 
 html {
-  background-color: utils.$quinary-color;
+  background-color: utils.$secondary-color;
 }
 
 html,
@@ -17,8 +17,8 @@ a {
 }
 
 a:hover {
-  text-decoration-color: inherit;
   text-decoration: underline;
+  text-decoration-color: inherit;
 }
 
 * {

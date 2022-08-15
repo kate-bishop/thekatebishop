@@ -11,8 +11,8 @@
 }
 
 .list {
-    max-height: 50%;
-    width: 50%;
+    max-height: 70vh;
+    width: 40%;
     overflow: scroll;
     padding: 3rem;
 }
@@ -20,7 +20,7 @@
 .listItem {
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 5rem;
+    align-content: center;
 }
 
 .prompt {
@@ -32,7 +32,15 @@
     width: utils.$min-width;
     height: .5rem;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.whitespan {
+    background-color: utils.$quinary-color;
+    width: 80%;
+    height: .25rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
@@ -41,11 +49,19 @@
         padding-right: 3rem;
         max-width: 100%;
     }
+    .list {
+        width: 90%;
+        padding: 3rem;
+    }
 }
 
 @media only screen and (max-width: utils.$small-breakpoint) {
     .content {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .list {
+        width: 90%;
+        padding: 1rem;
     }
 }

@@ -18,7 +18,7 @@ export default function Home(props: {allPortfolioData: PortfolioType[]}) {
   return (
     <Wrapper>
       <>
-        <section>
+        <section className={styles.header}>
           <Header />
         </section>
         <section className={styles.portfolio}>
