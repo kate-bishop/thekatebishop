@@ -27,7 +27,7 @@ function MeetKate() {
             </Grid>
             <Grid item>
                 <Typography variant="h2" style={{ marginTop: '2rem' }}>
-                    KATE'S SKILLS INCLUDE...
+                    KATE&apos;S SKILLS INCLUDE...
                 </Typography>
             </Grid>
             <Grid item className={styles.paragraph}>
