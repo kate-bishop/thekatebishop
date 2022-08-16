@@ -51,6 +51,14 @@ export const headerTheme = responsiveFontSizes(createTheme({
 }));
 
 export const portfolioTheme = responsiveFontSizes(createTheme({
+  palette: {
+    primary: {
+      main: palette.quaternary
+    }, 
+    secondary: {
+      main: palette.quinary
+    }
+  },
   typography: {
     fontFamily: [
       'Open Sans',

@@ -8,6 +8,10 @@
     min-height: utils.$min-height;
     max-width: utils.$min-width;
     padding: 5rem;
+
+    & a {
+        text-decoration-color: utils.$quinary-color;
+    }
 }
 
 .list {

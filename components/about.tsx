@@ -83,14 +83,16 @@ export default function About() {
                             <MeetKate />
                         </Grid>
                         <Grid item xs={6}>
-                            <Image
-                                priority
-                                src="/images/katebishop.png"
-                                className={styles.photo}
-                                height={567}
-                                width={425.25}
-                                alt={title}
-                            />
+                            <Grid container justifyContent="flex-end">
+                                <Image
+                                    priority
+                                    src="/images/katebishop.png"
+                                    className={styles.photo}
+                                    height={567}
+                                    width={425.25}
+                                    alt={title}
+                                />
+                            </Grid>
                         </Grid>
                     </Grid>
                 }
