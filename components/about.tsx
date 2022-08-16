@@ -57,7 +57,7 @@ export default function About() {
             setUseSmallScreen(true)
         }
         return () => media.removeEventListener('change', e => updateScreenSizeLayout(e))
-    }, []);
+    }, [updateScreenSizeLayout]);
 
     return (
         <ThemeProvider theme={aboutTheme}>

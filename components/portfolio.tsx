@@ -19,7 +19,7 @@ export default function Portfolio(props: { allPortfolioData: PortfolioType[] }) 
                         <Grid container justifyContent="center">
                             {props.allPortfolioData &&
                                 <ul className={styles.list}>
-                                    {props.allPortfolioData.map((portfolio: { id: string, title: string, date: any, data: any }) => (
+                                    {props.allPortfolioData.map((portfolio: PortfolioType) => (
                                         <>
                                             {portfolio.title &&
                                                 <>
