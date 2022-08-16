@@ -1,19 +1,32 @@
 @use '../styles/utils.module.scss' as utils;
 
 .content {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: utils.$min-height;
-    max-width: 40%;
-    padding-left: 5rem;
+    padding: 5rem;
     padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .highlight {
     color: utils.$tertiary-color;
     font-weight: 400;
+}
+
+.photo {
+    border: utils.$secondary-color;
+    -webkit-filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
