@@ -1,34 +1,31 @@
+import type { NextPage } from 'next';
+import Image from 'next/image';
 import Wrapper from '../components/wrapper';
 import Header from '../components/header';
-import About from '../components/about';
-import Portfolio from '../components/portfolio';
-import { getSortedPortfolioData } from '../utils/functions';
-import { Portfolio as PortfolioType } from '../utils/constants';
-import styles from '../styles/pages.module.scss';
+import styles from '../styles/home.module.scss';
+import ComingSoon from '../components/comingsoon';
 
-export async function getStaticProps() {
-  const allPortfolioData = getSortedPortfolioData()
-  return {
-    props: {
-      allPortfolioData
-    }
-  }
-}
-
-export default function Home(props: {allPortfolioData: PortfolioType[]}) {
+const Home: NextPage = () => {
   return (
     <Wrapper>
       <>
-        <section className={styles.header}>
+        <section>
           <Header />
+          {/* <Image
+            src="/images/wave.svg"
+            className={styles.wave}
+            layout="responsive"
+            height={10}
+            width={100}
+            alt="wave border"
+          /> */}
         </section>
-        <section className={styles.about}>
-          <About />
-        </section>
-        <section className={styles.portfolio}>
-          <Portfolio allPortfolioData={props.allPortfolioData} />
-        </section>
+        {/* <section className={styles.portfolio}>
+          <ComingSoon />
+        </section> */}
       </>
     </Wrapper>
   )
 }
+
+export default Home

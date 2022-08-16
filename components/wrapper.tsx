@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
-import styles from '../styles/pages.module.scss'
+import styles from '../styles/home.module.scss'
 
 type WrapperProps = {
   children: JSX.Element,
