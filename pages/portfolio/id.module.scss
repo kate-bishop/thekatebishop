@@ -31,6 +31,10 @@
         color: utils.$quinary-color;
     }
 
+    & img {
+        max-width: 100%;
+    }
+
     & h2,
     h3,
     h4,
