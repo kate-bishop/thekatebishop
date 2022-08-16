@@ -28,7 +28,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
     },
     h3: {
       color: palette.quinary,
-      fontSize: '1.2rem',
+      fontSize: '1.1rem',
       fontWeight: 400,
       textAlign: 'justify',
       textJustify: 'inter-word',
@@ -95,6 +95,11 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
 }));
 
 export const portfolioPageTheme = responsiveFontSizes(createTheme({
+  palette: {
+    primary: {
+      main: palette.secondary
+    }
+  },
   typography: {
     fontFamily: [
       'Open Sans',
@@ -104,7 +109,7 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
       fontSize: '4rem',
       fontWeight: 800,
       '@media (max-width:480px)': {
-        fontSize: '2.5rem'
+        fontSize: '1.5rem'
       },
     },
   },

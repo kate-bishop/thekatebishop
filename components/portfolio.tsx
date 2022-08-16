@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './portfolio.module.scss';
+import utils from '../styles/utils.module.scss';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { Portfolio as PortfolioType } from '../utils/constants';
@@ -31,7 +32,7 @@ export default function Portfolio(props: { allPortfolioData: PortfolioType[] }) 
                                                                 <Typography variant="h3" align="right" style={{ marginBottom: '.5rem' }}>
                                                                     {portfolio.role.toUpperCase()}
                                                                 </Typography>
-                                                                <Grid item className={styles.yellowspan} />
+                                                                <Grid item className={utils.yellowspan} />
                                                                 <Typography variant="subtitle1" style={{ marginBottom: '.75rem' }}>
                                                                     {portfolio.problem}
                                                                 </Typography>
@@ -41,7 +42,7 @@ export default function Portfolio(props: { allPortfolioData: PortfolioType[] }) 
                                                             </a>
                                                         </li>
                                                     </Link>
-                                                    <Grid item className={styles.whitespan} />
+                                                    <Grid item className={utils.whitespan} />
                                                 </>
                                             }
                                         </>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './header.module.scss';
+import utils from '../styles/utils.module.scss'
 import Image from 'next/image'
 import { headerTheme } from '../styles/mui.themes'
 import { transitionTimeout } from '../utils/constants';
@@ -50,12 +51,12 @@ export default function Header() {
                                 unmountOnExit
                                 onEnter={() => setShowContent(true)}>
                                 <Grid container direction="column">
-                                    <Grid item style={{ marginBottom: '2rem', marginTop: '2rem' }}>
+                                    <Grid item style={{ marginBottom: '1rem', marginTop: '3rem' }}>
                                         <Typography variant="h3">
                                             <span>{tagline2}</span>
                                         </Typography>
                                     </Grid>
-                                    <Grid item className={styles.redspan} />
+                                    <Grid item className={utils.redspan} />
                                     <Grid item>
                                         <Grid container direction="row" spacing={1}>
                                             <Grid item>

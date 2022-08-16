@@ -3,21 +3,32 @@
 .portfolioPage {
     background: utils.$quinary-color;
     background: linear-gradient(90deg, utils.$quinary-color 0%, utils.$quinary-color 85%, utils.$secondary-color 85%);
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     padding-left: 5rem;
-    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: utils.$min-height;
+    height: utils.$min-height;
 
     & .title {
         width: 60%;
     }
 
-    & .content {
+    & .paragraphContainer {
         width: 40%;
+        overflow: scroll;
+        max-height: 55vh;
+        // margin-top: 27vh;
+        margin-bottom: 3rem;
+    }
+
+    & .paragraph {
+        width: 95%;
+    }
+
+    & .button {
+        border-radius: 0;
+        color: utils.$quinary-color;
     }
 
     & h2,
@@ -32,16 +43,17 @@
 
     & h2 {
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: 800;
+        text-transform: uppercase;
         margin-top: 1rem;
-        margin-bottom: 3rem;
+        text-align: left;
     }
 
     & h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-bottom: .25rem;
     }
 
@@ -97,7 +109,7 @@
         padding-left: 1rem;
         padding-right: 1rem;
 
-        & .content,
+        & .paragraphContainer,
         .title {
             width: 80%;
         }

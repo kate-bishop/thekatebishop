@@ -27,22 +27,6 @@
     background-color: utils.$tertiary-color;
 }
 
-.yellowspan {
-    background-color: utils.$quaternary-color;
-    width: utils.$min-width;
-    height: .5rem;
-    margin-top: .5rem;
-    margin-bottom: 1rem;
-}
-
-.whitespan {
-    background-color: utils.$quinary-color;
-    width: 80%;
-    height: .25rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
 @media only screen and (max-width: utils.$medium-breakpoint) {
     .content {
         padding-left: 3rem;
