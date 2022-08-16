@@ -1,0 +1,51 @@
+@use '../styles/utils.module.scss' as utils;
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: utils.$min-height;
+    max-width: utils.$min-width;
+    padding: 5rem;
+}
+
+.list {
+    max-height: 70vh;
+    width: 40%;
+    overflow: scroll;
+    padding: 3rem;
+}
+
+.listItem {
+    text-align: justify;
+    text-justify: inter-word;
+    align-content: center;
+}
+
+.prompt {
+    background-color: utils.$tertiary-color;
+}
+
+@media only screen and (max-width: utils.$medium-breakpoint) {
+    .content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+    }
+    .list {
+        width: 90%;
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: utils.$small-breakpoint) {
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .list {
+        width: 90%;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,120 @@
+@use '../../styles/utils.module.scss' as utils;
+
+.portfolioPage {
+    background: utils.$quinary-color;
+    background: linear-gradient(90deg, utils.$quinary-color 0%, utils.$quinary-color 85%, utils.$secondary-color 85%);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    height: utils.$min-height;
+
+    & .title {
+        width: 60%;
+    }
+
+    & .paragraphContainer {
+        width: 40%;
+        overflow: scroll;
+        max-height: 55vh;
+        margin-bottom: 3rem;
+    }
+
+    & .paragraph {
+        width: 95%;
+    }
+
+    & .button {
+        border-radius: 0;
+        color: utils.$quinary-color;
+    }
+
+    & img {
+        max-width: 100%;
+    }
+
+    & h2,
+    h3,
+    h4,
+    p,
+    ul {
+        font-family: utils.$font-stack;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    & h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    & h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-bottom: .25rem;
+    }
+
+    & h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .25rem;
+    }
+
+    & p,
+    ul {
+        font-weight: 300;
+        margin-top: .25rem;
+    }
+
+    & ul {
+        list-style-image: url('../../public/images/blue-bullet.svg');
+        list-style-position: outside;
+    }
+
+    & ul ul {
+        list-style-image: url('../../public/images/red-bullet.svg');
+        list-style-position: outside;
+    }
+
+    & a {
+        background-color: utils.$quaternary-color;
+        margin-top: .25rem;
+    }
+
+    & em>strong {
+        font-style: normal;
+        font-weight: 500;
+        color: utils.$quinary-color;
+        background-color: utils.$tertiary-color;
+    }
+
+    & strong {
+        font-weight: 400;
+        color: utils.$tertiary-color;
+    }
+
+    & em {
+        font-style: normal;
+        font-weight: 500;
+        // font-style: normal;
+        // background-color: utils.$quaternary-color;
+    }
+}
+
+@media only screen and (max-width: utils.$medium-breakpoint) {
+    .portfolioPage {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        & .paragraphContainer,
+        .title {
+            width: 80%;
+        }
+    }
+}

@@ -1,49 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
-$primary-color: #ABD699; // granny smith apple
-$secondary-color: #FFE26A; // naples yellow
-$tertiary-color: #75C9B7; // middle blue green
-$quaternary-color: #F06449; // orange soda
-$quinary-color: #16123F; // russian violet
+$primary-color: #070538; // xiketic
+$secondary-color: #04A6BF; // ming
+$tertiary-color: #E9513A; // vermillion
+$quaternary-color: #FFDD61; // jonquil
+$quinary-color: #FFFDF0; // cornsilk
+$senary-color: #BDDBD0; //opal
 $font-stack: 'Open Sans', sans-serif;
 $min-height: 100vh;
 $min-width: 100%;
 $small-breakpoint: 480px;
 $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
-
-:export {
-  primaryColor: $primary-color;
-  secondaryColor: $secondary-color;
-  tertiaryColor: $tertiary-color;
-  quaternaryColor: $quaternary-color;
-  quinaryColor: $quinary-color;
-  font-stack: $font-stack;
-}
+$secondary-gradient: #023B44;
+$tertiary-gradient: #C23924;
 
 .app {
   font-family: $font-stack;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.list {
+  list-style: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.redspan {
+    background-color: $tertiary-color;
+    width: $min-width;
+    height: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
+
+.yellowspan {
+    background-color: $quaternary-color;
+    width: $min-width;
+    height: .5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.whitespan {
+    background-color: $quinary-color;
+    width: 80%;
+    height: .25rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   .card,
+//   .footer {
+//     border-color: #222;
+//   }
+//   .code {
+//     background: #111;
+//   }
+//   .logo img {
+//     filter: invert(1);
+//   }
+// }
 
 $transition-timeout: 1000ms;
 
