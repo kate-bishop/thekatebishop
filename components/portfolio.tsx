@@ -64,6 +64,7 @@ export default function Portfolio(props: {
                                                                     variant="contained"
                                                                     color="primary"
                                                                     className={styles.button}
+                                                                    style={{ borderRadius: 0 }}
                                                                 >
                                                                     View Project
                                                                     <ArrowForwardIcon style={{ marginLeft: '1rem' }} />
