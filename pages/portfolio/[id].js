@@ -48,7 +48,7 @@ export default function Portfolio({ portfolioData }) {
                   </Grid>
                   <Grid item>
                     <Link href={`/`}>
-                      <Button variant="contained" color="primary" className={styles.button} elevation={0} size="large">
+                      <Button disableElevation variant="contained" color="primary" className={styles.button} size="large">
                         Back to Home
                       </Button>
                     </Link>

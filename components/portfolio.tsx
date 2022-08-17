@@ -59,15 +59,15 @@ export default function Portfolio(props: {
                                                         </Typography>
                                                         <Grid container justifyContent="flex-end">
                                                             <Link href={`/portfolio/${portfolio.id}`}>
-                                                                <a>
-                                                                    <Button
-                                                                        variant="text"
-                                                                        endIcon={<ArrowForwardIcon />}
-                                                                        color="secondary"
-                                                                    >
-                                                                        View Project
-                                                                    </Button>
-                                                                </a>
+                                                                <Button
+                                                                    variant="contained"
+                                                                    endIcon={<ArrowForwardIcon />}
+                                                                    color="primary"
+                                                                    disableElevation
+                                                                    className={styles.button}
+                                                                >
+                                                                    View Project
+                                                                </Button>
                                                             </Link>
                                                         </Grid>
                                                     </li>
