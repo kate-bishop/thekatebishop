@@ -1,3 +1,5 @@
+@use '../styles/utils.module.scss' as utils;
+
 .main {
     text-align: start;
     overflow: scroll;
@@ -9,8 +11,10 @@
         min-height: utils.$min-height;
         scroll-snap-align: start;
     }
+}
 
-    a:hover {
+.appbar {
+    & a:hover {
         cursor: pointer;
     }
 }

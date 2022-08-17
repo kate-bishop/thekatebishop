@@ -15,7 +15,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import MenuIcon from '@mui/icons-material/Menu';
-import styles from '../styles/pages.module.scss'
+import styles from './wrapper.module.scss'
 import { ThemeProvider } from '@mui/material/styles';
 import { wrapperTheme } from '../styles/mui.themes'
 import { title } from '../utils/strings';
@@ -100,7 +100,7 @@ export default function Wrapper({ children }: WrapperProps) {
         <HideOnScroll>
           <AppBar color="transparent" elevation={0}>
             <Toolbar>
-              <Grid container direction="row" justifyContent="space-between">
+              <Grid container direction="row" justifyContent="space-between" className={styles.appbar}>
                 <Grid item>
                   <Link href={`/`}>
                     <Typography variant="h5">
