@@ -121,8 +121,9 @@
         padding-right: 1rem;
 
         & .paragraphContainer,
-        .title {
-            width: 80%;
+        .title,
+        .paragraph {
+            width: 100%;
         }
     }
 }
