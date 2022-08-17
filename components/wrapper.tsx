@@ -131,7 +131,7 @@ export default function Wrapper({ children }: WrapperProps) {
                   </> :
                     <Grid container direction="row">
                       {pages.map((page) => {
-                        return (<Link href={page.url}>
+                        return (<Link href={page.url} key={page.title}>
                           <Typography variant="h6" style={{ marginRight: '3rem' }}>
                             <a>{page.title}</a>
                           </Typography>
