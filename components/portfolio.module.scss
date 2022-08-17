@@ -31,6 +31,12 @@
     background-color: utils.$tertiary-color;
 }
 
+@media only screen and (max-width: utils.$large-breakpoint) {
+    .list {
+        width: 70%;
+    }
+}
+
 @media only screen and (max-width: utils.$medium-breakpoint) {
     .content {
         padding-left: 3rem;
