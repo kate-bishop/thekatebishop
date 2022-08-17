@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useContext } from 'react';
 import Image from 'next/image';
 import styles from './about.module.scss';
 import Typography from '@mui/material/Typography';
@@ -6,8 +6,7 @@ import Grid from '@mui/material/Grid';
 import { aboutTheme } from '../styles/mui.themes'
 import { ThemeProvider } from '@mui/material/styles';
 import { title } from '../utils/strings';
-import { breakpoint } from '../utils/constants';
-
+import { SmallScreenContext } from './wrapper';
 function MeetKate() {
     return (
         <Grid container direction="column">
@@ -40,25 +39,7 @@ function MeetKate() {
 }
 
 export default function About() {
-    const [useSmallScreen, setUseSmallScreen] = useState(false);
-
-    const updateScreenSizeLayout = useCallback((e: any) => {
-        if (e.matches) {
-            setUseSmallScreen(true);
-        } else {
-            setUseSmallScreen(false);
-        }
-    }, []);
-
-    useEffect(() => {
-        const media = window.matchMedia(`(max-width: ${breakpoint.small}px)`)
-        media.addEventListener('change', e => updateScreenSizeLayout(e))
-        if (media.matches) {
-            setUseSmallScreen(true)
-        }
-        return () => media.removeEventListener('change', e => updateScreenSizeLayout(e))
-    }, [updateScreenSizeLayout]);
-
+    const useSmallScreen = useContext(SmallScreenContext);
     return (
         <ThemeProvider theme={aboutTheme}>
             <div className={styles.about}>

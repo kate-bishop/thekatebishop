@@ -1,9 +1,10 @@
+import { useState, useCallback, useEffect } from 'react';
 import Wrapper from '../components/wrapper';
 import Header from '../components/header';
 import About from '../components/about';
 import Portfolio from '../components/portfolio';
 import { getSortedPortfolioData } from '../utils/functions';
-import { Portfolio as PortfolioType } from '../utils/constants';
+import { Portfolio as PortfolioType, breakpoint } from '../utils/constants';
 import styles from '../styles/pages.module.scss';
 
 export async function getStaticProps() {
