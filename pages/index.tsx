@@ -22,10 +22,10 @@ export default function Home(props: {allPortfolioData: PortfolioType[]}) {
         <section className={styles.header}>
           <Header />
         </section>
-        <section className={styles.about}>
+        <section id="about" className={styles.about}>
           <About />
         </section>
-        <section className={styles.portfolio}>
+        <section id="portfolio" className={styles.portfolio}>
           <Portfolio allPortfolioData={props.allPortfolioData} />
         </section>
       </>

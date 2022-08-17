@@ -1,18 +1,5 @@
 @use './utils.module.scss' as utils;
 
-.main {
-  text-align: start;
-  overflow: scroll;
-  min-height: utils.$min-height;
-  width: utils.$min-width;
-  scroll-snap-type: y proximity;
-
-  section {
-    min-height: utils.$min-height;
-    scroll-snap-align: start;
-  }
-}
-
 .header {
   background-image: url("../public/images/blue-bottom.svg"), url("../public/images/background.svg");
   background-color: utils.$secondary-color;

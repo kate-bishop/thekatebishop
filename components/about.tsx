@@ -63,7 +63,7 @@ export default function About() {
         <ThemeProvider theme={aboutTheme}>
             <div className={styles.about}>
                 {useSmallScreen ?
-                    <Grid container direction="column" spacing={1} className={styles.content}>
+                    <Grid container direction="column" className={styles.content}>
                         <Grid item>
                             <Image
                                 priority

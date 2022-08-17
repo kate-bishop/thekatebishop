@@ -42,24 +42,15 @@ export default function Header() {
                                     <Grid item>
                                         <Typography variant="h2" style={{ marginTop: '1.5rem' }}>{tagline1}</Typography>
                                     </Grid>
-                                </Grid>
-                            </CSSTransition>
-                            <CSSTransition
-                                in={showContent}
-                                timeout={transitionTimeout}
-                                classNames="content-bottom"
-                                unmountOnExit
-                                onEnter={() => setShowContent(true)}>
-                                <Grid container direction="column">
-                                    <Grid item style={{ marginBottom: '1rem', marginTop: '3rem' }}>
+                                    <Grid item style={{ marginBottom: '1.5rem', marginTop: '3rem' }}>
                                         <Typography variant="h3">
                                             <span>{tagline2}</span>
                                         </Typography>
                                     </Grid>
                                     <Grid item className={utils.redspan} />
                                     <Grid item>
-                                        <Grid container direction="row" spacing={1}>
-                                            <Grid item>
+                                        <Grid container direction="row" style={{ marginTop: '.5rem' }}>
+                                            <Grid item style={{ marginRight: '.75rem' }}>
                                                 <a href={linkedin}>
                                                     <Image
                                                         priority

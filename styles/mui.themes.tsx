@@ -1,6 +1,22 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import { palette } from '../utils/constants';
 
+export const wrapperTheme = responsiveFontSizes(createTheme({
+  typography: {
+    fontFamily: [
+      'Open Sans',
+    ].join(','),
+    h5: {
+      fontWeight: 800,
+      color: palette.primary
+    },
+    h6: {
+      fontWeight: 300,
+      color: palette.primary
+    }
+  },
+}));
+
 export const headerTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
