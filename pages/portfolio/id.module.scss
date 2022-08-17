@@ -85,12 +85,20 @@
         background-color: utils.$quaternary-color;
         margin-top: .25rem;
     }
+    
+    & a:hover {
+        background-color: utils.$quaternary-color-hover;
+    }
+
+    & a:active {
+        background-color: utils.$quaternary-color-active;
+    }
 
     & em>strong {
         font-style: normal;
         font-weight: 500;
-        color: utils.$quinary-color;
-        background-color: utils.$tertiary-color;
+        color: utils.$secondary-color;
+        // background-color: utils.$tertiary-color;
     }
 
     & strong {
@@ -101,6 +109,7 @@
     & em {
         font-style: normal;
         font-weight: 500;
+        color: utils.$secondary-color;
         // font-style: normal;
         // background-color: utils.$quaternary-color;
     }
