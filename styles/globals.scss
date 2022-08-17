@@ -21,6 +21,26 @@ a:hover {
   text-decoration-color: inherit;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: utils.$quinary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: utils.$quaternary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: utils.$quaternary-color-hover;
+}
+
 * {
   box-sizing: border-box;
 }

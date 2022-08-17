@@ -5,6 +5,8 @@
     overflow: scroll;
     min-height: utils.$min-height;
     width: utils.$min-width;
+    overflow-x: hidden;
+    overflow-y: hidden;
     scroll-snap-type: y proximity;
 
     section {
