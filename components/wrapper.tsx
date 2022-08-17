@@ -64,10 +64,6 @@ export default function Wrapper({ children }: WrapperProps) {
 
   const pages = [
     {
-      title: "Home",
-      url: "/",
-    },
-    {
       title: "About",
       url: "/#about",
     },
@@ -131,6 +127,13 @@ export default function Wrapper({ children }: WrapperProps) {
                         onClose={toggleDrawer(false)}
                       >
                         <List>
+                          <ListItem key='home' disablePadding>
+                            <ListItemButton
+                              onClick={() => onDrawerNavigate('/')}
+                            >
+                              <ListItemText primary='Home' />
+                            </ListItemButton>
+                          </ListItem>
                           {pages.map((page) => (
                             <ListItem key={page.title} disablePadding>
                               <ListItemButton
