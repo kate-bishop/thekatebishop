@@ -42,7 +42,7 @@ export default function Portfolio(props: {
                                                         >
                                                             {portfolio.role.toUpperCase()}
                                                         </Typography>
-                                                        <Grid item className={utils.yellowspan} />
+                                                        <Grid item className={utils.yellowspan} style={{ marginTop: '.5rem', marginBottom: '1rem' }} />
                                                         <Typography
                                                             variant="subtitle1"
                                                             style={{ marginBottom: ".75rem" }}
@@ -71,7 +71,7 @@ export default function Portfolio(props: {
                                                             </Link>
                                                         </Grid>
                                                     </li>
-                                                    <Grid container justifyContent="flex-end">
+                                                    <Grid container justifyContent="flex-end" style={{ marginTop: '5rem', marginBottom: '5rem' }}>
                                                         <Grid item className={utils.whitespan} />
                                                     </Grid>
                                                 </>
