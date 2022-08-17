@@ -70,7 +70,7 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
   palette: {
     primary: {
       main: palette.quaternary
-    }, 
+    },
     secondary: {
       main: palette.quinary
     }
@@ -135,6 +135,9 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
       '@media (max-width:480px)': {
         fontSize: '1.5rem'
       },
+    },
+    h2: {
+      color: palette.primary,
     },
   },
 }));

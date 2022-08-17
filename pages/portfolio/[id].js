@@ -39,13 +39,16 @@ export default function Portfolio({ portfolioData }) {
                   <Grid item className={styles.title}>
                     <Typography variant="h1">{portfolioData.title.toUpperCase()}</Typography>
                     <div className={utils.redspan} />
+                    <Grid container justifyContent="flex-end">
+                      <Typography variant="h2">{portfolioData.role.toUpperCase()}</Typography>
+                    </Grid>
                   </Grid>
                   <Grid item className={styles.paragraphContainer}>
                     <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} className={styles.paragraph} />
                   </Grid>
                   <Grid item>
                     <Link href={`/`}>
-                      <Button variant="contained" color="primary" className={styles.button}>
+                      <Button variant="contained" color="primary" className={styles.button} elevation={0} size="large">
                         Back to Home
                       </Button>
                     </Link>

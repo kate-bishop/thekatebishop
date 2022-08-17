@@ -2,13 +2,13 @@
 
 .portfolioPage {
     background: utils.$quinary-color;
-    background: linear-gradient(90deg, utils.$quinary-color 0%, utils.$quinary-color 85%, utils.$secondary-color 85%);
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
     padding-left: 5rem;
     display: flex;
     align-items: center;
-    height: utils.$min-height;
+    justify-content: center;
+    min-height: utils.$min-height;
 
     & .title {
         width: 60%;
@@ -16,8 +16,6 @@
 
     & .paragraphContainer {
         width: 40%;
-        overflow: scroll;
-        max-height: 55vh;
         margin-bottom: 3rem;
     }
 
@@ -28,6 +26,7 @@
     & .button {
         border-radius: 0;
         color: utils.$quinary-color;
+        margin-top: 2rem;
     }
 
     & img {
@@ -53,10 +52,10 @@
     }
 
     & h3 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 1rem;
+        margin-top: 4rem;
         margin-bottom: .25rem;
     }
 
