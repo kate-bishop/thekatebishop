@@ -60,10 +60,10 @@ export default function Portfolio(props: {
                                                         <Grid container justifyContent="flex-end">
                                                             <Link href={`/portfolio/${portfolio.id}`}>
                                                                 <Button
+                                                                    disableElevation
                                                                     variant="contained"
                                                                     endIcon={<ArrowForwardIcon />}
                                                                     color="primary"
-                                                                    disableElevation
                                                                     className={styles.button}
                                                                 >
                                                                     View Project
