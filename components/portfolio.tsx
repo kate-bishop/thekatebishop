@@ -62,11 +62,11 @@ export default function Portfolio(props: {
                                                                 <Button
                                                                     disableElevation
                                                                     variant="contained"
-                                                                    endIcon={<ArrowForwardIcon />}
                                                                     color="primary"
                                                                     className={styles.button}
                                                                 >
                                                                     View Project
+                                                                    <ArrowForwardIcon style={{ marginLeft: '1rem' }} />
                                                                 </Button>
                                                             </Link>
                                                         </Grid>
