@@ -1,9 +1,9 @@
 @use './utils.module.scss' as utils;
 
 .header {
-  background-image: url("../public/images/blue-bottom.svg"), url("../public/images/background.svg");
-  background-color: utils.$secondary-color;
-  background-position: bottom, top;
+  background-image: url("../public/images/blue-bottom.svg");//, url("../public/images/background.svg");
+  background-color: utils.$quinary-color;
+  background-position: bottom;//, top;
   background-size: cover;
   background-repeat: no-repeat;
 }
