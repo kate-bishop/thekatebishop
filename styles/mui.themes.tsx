@@ -43,7 +43,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
       },
     },
     h3: {
-      color: palette.primary,
+      color: palette.quinary,
       fontSize: '1.1rem',
       fontWeight: 400,
       textAlign: 'justify',
