@@ -17,7 +17,7 @@ function MeetKate() {
                 <Typography variant="subtitle1" display="inline">
                     Kate is a UX-obsessed Front-End Engineer with over 5 years of experience
                 </Typography>
-                <Typography variant="subtitle1" display="inline" className={styles.highlight}>
+                <Typography variant="subtitle1" display="inline">
                     &nbsp;creating delightful user experiences and translating design into resilient interfaces
                 </Typography>
                 <Typography variant="subtitle1" display="inline">
