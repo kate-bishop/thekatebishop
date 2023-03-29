@@ -28,4 +28,4 @@ export enum WindowSize {
     MEDIUM,
     LARGE,
     XLARGE,
-} 
+}
