@@ -27,7 +27,7 @@ export default function Header() {
         <div className={styles.header}>
             <ThemeProvider theme={headerTheme}>
                 <div className={styles.content}>
-                    <Grid container direction='row' style={{ alignItems: 'center' }}>
+                    <Grid container direction='row' style={{ alignItems: 'center', minHeight: '100vh' }}>
                         <Grid item xs={12} style={{ paddingRight: '1rem' }}>
                             <CSSTransition
                                 in={showContent}
@@ -35,19 +35,14 @@ export default function Header() {
                                 classNames="content-left"
                                 unmountOnExit
                                 onEnter={() => setShowContent(true)}>
-                                <Grid container direction="column">
-                                    <Grid item>
-                                        <Typography variant="h1">{title.toUpperCase()}</Typography>
-                                    </Grid>
+                                <Grid container direction="column" style={{ marginTop: '8rem' }}>
                                     <Grid item>
                                         <Typography variant="h2" style={{ marginTop: '1.5rem' }}>{tagline1}</Typography>
                                     </Grid>
-                                    <Grid item style={{ marginBottom: '1.5rem', marginTop: '3rem' }}>
-                                        <Typography variant="h3">
-                                            <span>{tagline2}</span>
-                                        </Typography>
+                                    <Grid item style={{ zIndex: 1 }}>
+                                        <Typography variant="h1">{title}</Typography>
                                     </Grid>
-                                    <Grid item className={utils.redspan} />
+                                    <Grid item className={utils.greenspan} />
                                     <Grid item>
                                         <Grid container direction="row" style={{ marginTop: '.5rem' }}>
                                             <Grid item style={{ marginRight: '.75rem' }}>

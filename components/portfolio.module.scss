@@ -29,12 +29,15 @@
 }
 
 .prompt {
-    background-color: utils.$tertiary-color;
+    background-color: utils.$green-color-04;
+    padding-right: .25rem;
+    padding-left: .25rem;
 }
 
 .button {
     border-radius: 0;
     color: utils.$primary-color;
+    font-weight: 700;
     margin-top: 2rem;
 }
 

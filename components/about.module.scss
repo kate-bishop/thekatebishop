@@ -24,9 +24,9 @@
 
 .photo {
     border: utils.$secondary-color;
-    -webkit-filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
+    -webkit-filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$green-color-06) drop-shadow(1rem 1rem 0 utils.$green-color-04);
     /* Safari 6.0 - 9.0 */
-    filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
+    filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$green-color-06) drop-shadow(1rem 1rem 0 utils.$green-color-04);
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {

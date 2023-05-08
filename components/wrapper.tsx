@@ -109,11 +109,14 @@ export default function Wrapper({ children }: WrapperProps) {
                 className={styles.appbar}
               >
                 <Grid item>
-                  <Link href={`/`}>
-                    <Typography variant="h5">
-                      <a>{title.toUpperCase()}</a>
-                    </Typography>
-                  </Link>
+                  {
+                    router.route !== '/' &&
+                    <Link href={`/`}>
+                      <Typography variant="h5">
+                        <a>Home</a>
+                      </Typography>
+                    </Link>
+                  }
                 </Grid>
                 <Grid item>
                   {useSmallScreen ? (

@@ -17,7 +17,7 @@ export default function Portfolio(props: {
             <div className={styles.content}>
                 <Grid container direction="column">
                     <Grid item>
-                        <Typography variant="h1">PORTFOLIO</Typography>
+                        <Typography variant="h1">Portfolio</Typography>
                     </Grid>
                     <Grid item>
                         <Grid container justifyContent="center">
@@ -33,16 +33,16 @@ export default function Portfolio(props: {
                                                             align="right"
                                                             style={{ marginBottom: ".5rem" }}
                                                         >
-                                                            {portfolio.title.toUpperCase()}
+                                                            {portfolio.title}
                                                         </Typography>
                                                         <Typography
                                                             variant="h3"
                                                             align="right"
                                                             style={{ marginBottom: ".5rem" }}
                                                         >
-                                                            {portfolio.role.toUpperCase()}
+                                                            {portfolio.role}
                                                         </Typography>
-                                                        <Grid item className={utils.yellowspan} style={{ marginTop: '.5rem', marginBottom: '1rem' }} />
+                                                        <Grid item className={utils.greenspan} style={{ marginTop: '.5rem', marginBottom: '1rem' }} />
                                                         <Typography
                                                             variant="subtitle1"
                                                             style={{ marginBottom: ".75rem" }}

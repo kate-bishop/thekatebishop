@@ -1,9 +1,5 @@
 @use './utils.module.scss' as utils;
 
-html {
-  background-color: utils.$secondary-color;
-}
-
 html,
 body {
   min-height: utils.$min-height;
@@ -33,12 +29,12 @@ a:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: utils.$quaternary-color;
+  background: utils.$green-color-06;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: utils.$quaternary-color-hover;
+  background: utils.$green-color;
 }
 
 * {

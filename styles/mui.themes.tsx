@@ -4,14 +4,14 @@ import { palette } from '../utils/constants';
 export const wrapperTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
-      'Open Sans',
+      'DM Sans',
     ].join(','),
     h5: {
-      fontWeight: 800,
+      fontSize: '1.25rem',
       color: palette.primary
     },
     h6: {
-      fontWeight: 300,
+      fontSize: '1rem',
       color: palette.primary
     }
   },
@@ -20,22 +20,23 @@ export const wrapperTheme = responsiveFontSizes(createTheme({
 export const headerTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
-      'Open Sans',
+      'DM Sans',
     ].join(','),
     h1: {
       color: palette.primary,
-      fontSize: '8rem',
-      fontWeight: 800,
+      fontSize: '10rem',
       margin: 0,
-      lineHeight: .75,
+      lineHeight: .85,
       '@media (max-width:480px)': {
         fontSize: '3rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(',')
     },
     h2: {
       color: palette.primary,
-      fontSize: '1.5rem',
-      fontWeight: 300,
+      fontSize: '1.25rem',
       textAlign: 'justify',
       textJustify: 'inter-word',
       '@media (max-width:480px)': {
@@ -43,9 +44,9 @@ export const headerTheme = responsiveFontSizes(createTheme({
       },
     },
     h3: {
-      color: palette.quinary,
-      fontSize: '1.1rem',
-      fontWeight: 400,
+      color: palette.primary,
+      fontSize: '1.25rem',
+      fontWeight: 700,
       textAlign: 'justify',
       textJustify: 'inter-word',
       margin: 0,
@@ -56,7 +57,6 @@ export const headerTheme = responsiveFontSizes(createTheme({
     subtitle1: {
       color: palette.primary,
       fontSize: '1rem',
-      fontWeight: 400,
       textAlign: 'justify',
       textJustify: 'inter-word',
       '@media (max-width:480px)': {
@@ -69,7 +69,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
 export const portfolioTheme = responsiveFontSizes(createTheme({
   palette: {
     primary: {
-      main: palette.quaternary
+      main: palette.green
     },
     secondary: {
       main: palette.quinary
@@ -77,42 +77,47 @@ export const portfolioTheme = responsiveFontSizes(createTheme({
   },
   typography: {
     fontFamily: [
-      'Open Sans',
+      'DM Sans',
     ].join(','),
     h1: {
-      color: palette.quinary,
-      fontSize: '6rem',
-      fontWeight: 800,
+      color: palette.primary,
+      fontSize: '4rem',
       '@media (max-width:480px)': {
         fontSize: '2.5rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(','),
     },
     h2: {
       color: palette.primary,
       fontSize: '1.75rem',
-      fontWeight: 800,
       '@media (max-width:480px)': {
         fontSize: '1.5rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(','),
     },
     h3: {
       color: palette.primary,
       fontSize: '1.25rem',
-      fontWeight: 700,
       '@media (max-width:480px)': {
         fontSize: '1rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(','),
     },
     subtitle1: {
-      color: palette.quinary,
+      color: palette.primary,
       fontSize: '1rem',
-      fontWeight: 300,
       margin: 0,
     },
     subtitle2: {
-      color: palette.quinary,
-      fontSize: '1.1rem',
-      fontWeight: 400,
+      color: palette.primary,
+      fontSize: '1rem',
+      fontWeight: 700,
       margin: 0,
     },
   },
@@ -126,12 +131,11 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
   },
   typography: {
     fontFamily: [
-      'Open Sans',
+      'DM Sans',
     ].join(','),
     h1: {
       color: palette.primary,
       fontSize: '4rem',
-      fontWeight: 800,
       '@media (max-width:480px)': {
         fontSize: '1.5rem'
       },
@@ -145,26 +149,35 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
 export const aboutTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
-      'Open Sans',
+      'DM Sans',
     ].join(','),
     h1: {
       color: palette.primary,
-      fontSize: '6rem',
-      fontWeight: 800,
+      fontSize: '4rem',
+      lineHeight: .85,
       '@media (max-width:480px)': {
         fontSize: '2.5rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(','),
     },
     h2: {
-      color: palette.secondary,
-      fontSize: '1.25rem',
+      color: palette.primary,
+      fontSize: '1rem',
       fontWeight: 700,
       margin: 0,
     },
     subtitle1: {
       color: palette.primary,
       fontSize: '1rem',
-      fontWeight: 300,
+      lineHeight: '1.4rem',
+      margin: 0,
+    },
+    subtitle2: {
+      color: palette.primary,
+      fontSize: '.9rem',
+      lineHeight: '1.3rem',
       margin: 0,
     },
   },

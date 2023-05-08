@@ -11,13 +11,13 @@ function MeetKate() {
     return (
         <Grid container direction="column">
             <Grid item>
-                <Typography variant="h1">MEET KATE</Typography>
+                <Typography variant="h1">It's nice to meet you!</Typography>
             </Grid>
-            <Grid item className={styles.paragraph}>
+            <Grid item className={styles.paragraph} style={{ marginTop: '1rem' }}>
                 <Typography variant="subtitle1" display="inline">
                     Kate is a UX-obsessed Front-End Engineer with over 5 years of experience
                 </Typography>
-                <Typography variant="subtitle1" display="inline">
+                <Typography variant="subtitle1" display="inline" style={{ fontWeight: 700 }}>
                     &nbsp;creating delightful user experiences and translating design into resilient interfaces
                 </Typography>
                 <Typography variant="subtitle1" display="inline">
@@ -26,12 +26,12 @@ function MeetKate() {
             </Grid>
             <Grid item>
                 <Typography variant="h2" style={{ marginTop: '2rem' }}>
-                    KATE&apos;S SKILLS INCLUDE...
+                    Kate&apos;s skills include...
                 </Typography>
             </Grid>
-            <Grid item className={styles.paragraph}>
-                <Typography variant="subtitle1">
-                    React (JavaScript & TypeScript), Next.js, User Experience Design, Design Thinking Frameworks, Sketch, Figma
+            <Grid item className={styles.paragraph} style={{ marginTop: '.5rem' }}>
+                <Typography variant="subtitle2">
+                    JavaScript, TypeScript, React, PHP, Laravel, Next.js, Node.js, GraphQL, Apollo, Python, C#, Java, SQL, HTML, CSS, Visual Studio, Xamarin, Tableau, MS SQL, MongoDB, Postgres, Azure, AWS, Lucidchart, Figma, Agile, Scrum, Design Think
                 </Typography>
             </Grid>
         </Grid>

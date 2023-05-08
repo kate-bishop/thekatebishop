@@ -15,14 +15,18 @@
     min-height: utils.$min-height;
     width: utils.$min-width;
 
-    & h3 span {
-        margin: 1rem;
-        background-color: utils.$secondary-color;
-        box-shadow: 0rem 0rem 0rem 1rem utils.$secondary-color;
-    }
-
     & .highlight {
         color: utils.$tertiary-color;
+    }
+
+    & h3 {
+        margin-left: .5rem;
+        height: 4rem;
+        background-image: url('../public/images/green-circle.svg');
+        background-size: 4rem 4rem;
+        background-repeat: no-repeat;
+        padding-left: 2.5rem;
+        padding-top: 1rem;
     }
 
     & .paragraph {

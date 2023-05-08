@@ -1,15 +1,10 @@
 @use './utils.module.scss' as utils;
 
 .header {
-  background-image: url("../public/images/blue-bottom.svg"), url("../public/images/background.svg");
-  background-color: utils.$secondary-color;
-  background-position: bottom, top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: utils.$quinary-color;
 }
 
 .about {
-  background-image: url("../public/images/blue-bottom.svg"), url("../public/images/blue-top.svg");
   background-color: utils.$quinary-color;
   background-position: bottom, top;
   background-size: cover;
@@ -17,7 +12,7 @@
 }
 
 .portfolio {
-  background-color: utils.$secondary-color;
+  background-color: utils.$quinary-color;
 }
 
 .content {
