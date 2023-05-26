@@ -1,4 +1,4 @@
-@use '../styles/utils.module.scss' as utils;
+@use 'styles/utils.module.scss' as utils;
 
 .content {
     position: relative;
@@ -42,19 +42,5 @@
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
     }
 }

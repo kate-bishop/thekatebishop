@@ -139,9 +139,15 @@ export const portfolioPageTheme = responsiveFontSizes(createTheme({
       '@media (max-width:480px)': {
         fontSize: '1.5rem'
       },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(',')
     },
     h2: {
       color: palette.primary,
+      fontFamily: [
+        'DM Serif Display',
+      ].join(',')
     },
   },
 }));

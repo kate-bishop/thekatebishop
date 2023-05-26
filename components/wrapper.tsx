@@ -113,7 +113,7 @@ export default function Wrapper({ children }: WrapperProps) {
                     router.route !== '/' &&
                     <Link href={`/`}>
                       <Typography variant="h5">
-                        <a>Home</a>
+                        <a>Kate Bishop</a>
                       </Typography>
                     </Link>
                   }

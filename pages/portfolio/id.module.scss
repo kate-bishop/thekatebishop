@@ -1,4 +1,4 @@
-@use '../../styles/utils.module.scss' as utils;
+@use 'styles/utils.module.scss' as utils;
 
 .portfolioPage {
     background: utils.$quinary-color;
@@ -38,28 +38,27 @@
     h4,
     p,
     ul {
-        font-family: utils.$font-stack;
         text-align: justify;
         text-justify: inter-word;
     }
 
     & h2 {
+        font-family: utils.$display-font-stack;
         font-size: 1.5rem;
-        font-weight: 800;
-        text-transform: uppercase;
         margin-top: 1rem;
         text-align: left;
     }
 
     & h3 {
+        font-family: utils.$display-font-stack;
         font-size: 1.7rem;
         font-weight: 700;
-        text-transform: uppercase;
         margin-top: 4rem;
         margin-bottom: .25rem;
     }
 
     & h4 {
+        font-family: utils.$font-stack;
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: .25rem;
@@ -67,51 +66,49 @@
 
     & p,
     ul {
+        font-family: utils.$font-stack;
         font-weight: 300;
         margin-top: .25rem;
     }
 
     & ul {
-        list-style-image: url('../../public/images/blue-bullet.svg');
+        list-style-image: url('../../public/images/green-bullet.svg');
         list-style-position: outside;
     }
 
     & ul ul {
-        list-style-image: url('../../public/images/red-bullet.svg');
+        list-style-image: url('../../public/images/light-green-bullet.svg');
         list-style-position: outside;
     }
 
     & a {
-        background-color: utils.$quaternary-color;
+        background-color: utils.$green-color-button;
         margin-top: .25rem;
     }
     
     & a:hover {
-        background-color: utils.$quaternary-color-hover;
+        background-color: utils.$green-color-hover;
     }
 
     & a:active {
-        background-color: utils.$quaternary-color-active;
+        background-color: utils.$green-color-active;
     }
 
     & em>strong {
         font-style: normal;
         font-weight: 500;
-        color: utils.$secondary-color;
-        // background-color: utils.$tertiary-color;
+        color: utils.$green-color;
     }
 
     & strong {
         font-weight: 400;
-        color: utils.$tertiary-color;
+        color: utils.$green-color;
     }
 
     & em {
         font-style: normal;
         font-weight: 500;
-        color: utils.$secondary-color;
-        // font-style: normal;
-        // background-color: utils.$quaternary-color;
+        color: utils.$green-color;
     }
 }
 

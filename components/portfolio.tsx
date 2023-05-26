@@ -72,8 +72,8 @@ export default function Portfolio(props: {
                                                             </Link>
                                                         </Grid>
                                                     </li>
-                                                    <Grid container justifyContent="flex-end" style={{ marginTop: '5rem', marginBottom: '5rem' }}>
-                                                        <Grid item className={utils.whitespan} />
+                                                    <Grid container justifyContent="flex-end" style={{ opacity: '0.5', marginTop: '3rem', marginBottom: '3rem' }}>
+                                                        <Grid item className={utils.greenspan} />
                                                     </Grid>
                                                 </>
                                             )}

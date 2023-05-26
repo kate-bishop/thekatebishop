@@ -9,6 +9,9 @@ $senary-color: #BDDBD0; //opal
 $green-color: #4CAF50;
 $green-color-06: rgb(76,175,80,.6);
 $green-color-04: rgb(76,175,80,.4);
+$green-color-button: $green-color-06;
+$green-color-hover: $green-color-04;
+$green-color-active: $green-color;
 $display-font-stack: 'DM Serif Display', sans-serif;
 $font-stack: 'DM Sans', serif;
 $min-height: 100vh;

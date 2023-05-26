@@ -37,10 +37,10 @@ export default function Portfolio({ portfolioData }) {
                 onEnter={() => setShowContent(true)}>
                 <Grid container direction="column" className={styles.content}>
                   <Grid item className={styles.title}>
-                    <Typography variant="h1">{portfolioData.title.toUpperCase()}</Typography>
-                    <div className={utils.redspan} />
+                    <Typography variant="h1">{portfolioData.title}</Typography>
+                    <div className={utils.greenspan} />
                     <Grid container justifyContent="flex-end">
-                      <Typography variant="h2">{portfolioData.role.toUpperCase()}</Typography>
+                      <Typography variant="h2">{portfolioData.role}</Typography>
                     </Grid>
                   </Grid>
                   <Grid item className={styles.paragraphContainer}>
