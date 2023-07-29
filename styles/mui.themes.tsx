@@ -78,6 +78,16 @@ export const aboutTheme = responsiveFontSizes(createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
+          borderRadius: 0,
+          marginTop: '1rem',
+          color: palette.primary,
+          backgroundColor: palette.tertiary,
+          '&:hover': {
+            backgroundColor: palette.tertiaryHover,
+          },
+          '&:active': {
+            backgroundColor: palette.tertiaryActive,
+          }
         },
       },
     },
