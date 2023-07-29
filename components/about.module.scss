@@ -15,30 +15,14 @@
     text-align: justify;
     text-justify: inter-word;
     margin-top: 1rem;
-}
 
-.highlight {
-    font-weight: 700;
-}
+    & .highlight {
+        font-weight: 700;
+    }
 
-.paragraph {
-    margin-top: 1rem;
-}
-
-.actionbutton {
-    border-radius: 0;
-    text-transform: 'none';
-    margin-top: 1rem;
-    color: utils.$primary-color;
-    background-color: utils.$green-color-button;
-}
-
-.actionbutton:hover {
-    background-color: utils.$green-color-hover;
-}
-
-.actionbutton:active {
-    background-color: utils.$green-color-active;
+    & .paragraph {
+        margin-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
@@ -57,5 +41,6 @@
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        text-align: left;
     }
 }

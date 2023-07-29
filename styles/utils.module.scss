@@ -32,20 +32,6 @@ $quaternary-color-active: #fde488;
   list-style: none;
 }
 
-.redspan {
-    background-color: $tertiary-color;
-    width: $min-width;
-    height: .5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-}
-
-.yellowspan {
-    background-color: $quaternary-color;
-    width: $min-width;
-    height: .5rem;
-}
-
 .greenspan {
     background-color: #4CAF50;
     opacity: .6;
@@ -56,24 +42,21 @@ $quaternary-color-active: #fde488;
     z-index: 0;
 }
 
-.whitespan {
-    background-color: $quinary-color;
-    width: 80%;
-    height: .25rem;
+.actionbutton {
+    border-radius: 0;
+    text-transform: 'none';
+    margin-top: 1rem;
+    color: $primary-color;
+    background-color: $green-color-button;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   .card,
-//   .footer {
-//     border-color: #222;
-//   }
-//   .code {
-//     background: #111;
-//   }
-//   .logo img {
-//     filter: invert(1);
-//   }
-// }
+.actionbutton:hover {
+    background-color: $green-color-hover;
+}
+
+.actionbutton:active {
+    background-color: $green-color-active;
+}
 
 $transition-timeout: 1000ms;
 

@@ -21,13 +21,22 @@ export const headerTheme = responsiveFontSizes(createTheme({
       lineHeight: .75,
       fontFamily: [
         'DM Serif Display',
-      ].join(',')
+      ].join(','),
+      '@media (max-width:480px)': {
+        fontSize: '6rem'
+      },
+      '@media (max-width:300px)': {
+        fontSize: '4rem'
+      },
     },
     subtitle1: {
       color: palette.primary,
       fontSize: '1rem',
       textAlign: 'justify',
       textJustify: 'inter-word',
+      '@media (max-width:300px)': {
+        fontSize: '.85rem'
+      },
     }
   },
 }));
@@ -53,6 +62,9 @@ export const aboutTheme = responsiveFontSizes(createTheme({
       fontSize: '1rem',
       lineHeight: '1.4rem',
       margin: 0,
+      '@media (max-width:300px)': {
+        fontSize: '.85rem'
+      },
     },
     button: {
       fontSize: '1rem',

@@ -29,6 +29,7 @@
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
     .content {
+        justify-content: center;
         padding: 1rem;
         & .text {
             width: 100%;
