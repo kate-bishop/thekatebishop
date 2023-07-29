@@ -11,7 +11,6 @@ import {
     linkedin
 } from '../utils/strings';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import { CSSTransition } from 'react-transition-group';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -37,9 +36,9 @@ export default function Header() {
                                 <Typography variant="subtitle1">{tagline1}</Typography>
                                 <Typography variant="h1">{title}</Typography>
                             </div>
-                            <Grid item className={utils.greenspan} />
+                            <div className={utils.greenspan} />
                             <div className={styles.logolinks}>
-                                <a href={linkedin} className={styles.logo}>
+                                <a href={linkedin} target="_blank" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/linkedinLogo.svg"
@@ -48,7 +47,7 @@ export default function Header() {
                                         alt="LinkedIn"
                                     />
                                 </a>
-                                <a href={github} className={styles.logo}>
+                                <a href={github} target="_blank" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/githubLogo.svg"

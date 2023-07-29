@@ -1,40 +1,7 @@
 @use './utils.module.scss' as utils;
 
-.header {
-  background-color: utils.$quinary-color;
-}
-
 .about {
-  background-color: utils.$quinary-color;
-  background-position: bottom, top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.portfolio {
-  background-color: utils.$quinary-color;
-}
-
-.content {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: utils.$min-height;
-  max-width: utils.$min-width;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-@media only screen and (max-width: utils.$medium-breakpoint) {
-  .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media only screen and (max-width: utils.$small-breakpoint) {
-  .content {
-    overflow: scroll;
-  }
+  justify-content: center;
+  display: flex;
 }

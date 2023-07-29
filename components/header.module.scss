@@ -19,6 +19,7 @@
 
     & .logolinks {
         margin-top: 1rem;
+        z-index: 2;
     }
 
     & .logo {
@@ -29,9 +30,14 @@
 @media only screen and (max-width: utils.$medium-breakpoint) {
     .content {
         padding: 1rem;
-
         & .text {
             width: 100%;
         }
+    }
+}
+
+@media only screen and (max-height: utils.$medium-height-breakpoint) {
+    .content {
+        justify-content: start;
     }
 }

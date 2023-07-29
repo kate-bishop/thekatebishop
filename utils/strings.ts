@@ -9,6 +9,8 @@ export const position = 'Front-End Software Engineer';
 export const tagline1 =
   'Atlanta-based tech fanatic making leading-edge solutions reality.';
 export const tagline2 = "It's nice to meet you!";
+export const aboutKate = "Kate is a UX-obsessed Front-End Engineer with over 6 years of experience creating delightful user experiences and translating design into resilient interfaces. She has experience in several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.";
+export const aboutKateCallToAction = "Explore Kate’s Skills & Experience on LinkedIn.";
 export const aboutMe =
   'I am a Front-End Engineer with 5 years of experience in software development. After a brief sabbatical to evaluate, experiment, and re-energize, I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.';
 export const aboutMe1 =
