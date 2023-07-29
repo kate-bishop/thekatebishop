@@ -2,17 +2,24 @@ import Wrapper from '../components/wrapper';
 import Header from '../components/header';
 import About from '../components/about';
 import styles from '../styles/pages.module.scss';
+import Head from 'next/head';
 
 const Home: React.FC = () => {
   return (
-    <Wrapper>
-      <section>
-        <Header />
-      </section>
-      <section id="about" className={styles.about}>
-        <About />
-      </section>
-    </Wrapper>
+    <>
+      <Head>
+        <title>Kate Bishop</title>
+        <meta property="og:title" content="Kate Bishop" key="title" />
+      </Head>
+      <Wrapper>
+        <section>
+          <Header />
+        </section>
+        <section id="about" className={styles.about}>
+          <About />
+        </section>
+      </Wrapper>
+    </>
   )
 }
 
