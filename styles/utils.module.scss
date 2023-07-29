@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap');
 
-$primary-color: #070538; // xiketic
+$primary-color: #000000; // xiketic 070538
 $secondary-color: #04A6BF; // ming
 $tertiary-color: #E9513A; // vermillion
 $quaternary-color: #FFDD61; // jonquil
-$quinary-color: #FFFDF0; // cornsilk
+$quinary-color: #FFFFFF; // cornsilk FFFDF0
 $senary-color: #BDDBD0; //opal
-$font-stack: 'Open Sans', sans-serif;
+$green-color: #4CAF50;
+$green-color-06: rgb(76,175,80,.6);
+$green-color-04: rgb(76,175,80,.4);
+$green-color-button: $green-color-06;
+$green-color-hover: $green-color-04;
+$green-color-active: $green-color;
+$display-font-stack: 'DM Serif Display', sans-serif;
+$font-stack: 'DM Sans', serif;
 $min-height: 100vh;
 $min-width: 100%;
 $small-breakpoint: 480px;
 $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
+$small-height-breakpoint: 450px;
+$medium-height-breakpoint: 550px;
 $quaternary-color-hover: #f0c631;
 $quaternary-color-active: #fde488;
 
@@ -23,38 +32,31 @@ $quaternary-color-active: #fde488;
   list-style: none;
 }
 
-.redspan {
-    background-color: $tertiary-color;
-    width: $min-width;
+.greenspan {
+    background-color: #4CAF50;
+    opacity: .6;
+    width: 100%;
     height: .5rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    z-index: 0;
 }
 
-.yellowspan {
-    background-color: $quaternary-color;
-    width: $min-width;
-    height: .5rem;
+.actionbutton {
+    border-radius: 0;
+    text-transform: 'none';
+    margin-top: 1rem;
+    color: $primary-color;
+    background-color: $green-color-button;
 }
 
-.whitespan {
-    background-color: $quinary-color;
-    width: 80%;
-    height: .25rem;
+.actionbutton:hover {
+    background-color: $green-color-hover;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   .card,
-//   .footer {
-//     border-color: #222;
-//   }
-//   .code {
-//     background: #111;
-//   }
-//   .logo img {
-//     filter: invert(1);
-//   }
-// }
+.actionbutton:active {
+    background-color: $green-color-active;
+}
 
 $transition-timeout: 1000ms;
 

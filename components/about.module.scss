@@ -1,35 +1,34 @@
-@use '../styles/utils.module.scss' as utils;
+@use 'styles/utils.module.scss' as utils;
+
+.about {
+    height: utils.$min-height;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
 
 .content {
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: utils.$min-height;
-    padding: 5rem;
-    padding-right: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.paragraph {
+    flex-direction: column;
     text-align: justify;
     text-justify: inter-word;
-}
+    margin-top: 1rem;
 
-.highlight {
-    color: utils.$tertiary-color;
-    font-weight: 400;
-}
+    & .highlight {
+        font-weight: 700;
+    }
 
-.photo {
-    border: utils.$secondary-color;
-    -webkit-filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(90%) brightness(150%) drop-shadow(1rem 1rem 0 utils.$tertiary-color) drop-shadow(1rem 1rem 0 utils.$quaternary-color);
+    & .paragraph {
+        margin-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: utils.$medium-breakpoint) {
+    .about {
+        width: 100%;
+    }
     .content {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -42,19 +41,6 @@
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
+        text-align: left;
     }
 }

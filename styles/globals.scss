@@ -1,9 +1,5 @@
 @use './utils.module.scss' as utils;
 
-html {
-  background-color: utils.$secondary-color;
-}
-
 html,
 body {
   min-height: utils.$min-height;
@@ -21,36 +17,22 @@ a:hover {
   text-decoration-color: inherit;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: utils.$quinary-color;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: utils.$quaternary-color;
+  background: utils.$green-color-06;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: utils.$quaternary-color-hover;
+  background: utils.$green-color;
 }
 
 * {
   box-sizing: border-box;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-//   body {
-//     color: white;
-//     background: black;
-//   }
-// }
