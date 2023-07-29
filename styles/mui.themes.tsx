@@ -24,44 +24,18 @@ export const headerTheme = responsiveFontSizes(createTheme({
     ].join(','),
     h1: {
       color: palette.primary,
-      fontSize: '10rem',
+      fontSize: '15rem',
       margin: 0,
-      lineHeight: .85,
-      '@media (max-width:480px)': {
-        fontSize: '3rem'
-      },
+      lineHeight: .75,
       fontFamily: [
         'DM Serif Display',
       ].join(',')
-    },
-    h2: {
-      color: palette.primary,
-      fontSize: '1.25rem',
-      textAlign: 'justify',
-      textJustify: 'inter-word',
-      '@media (max-width:480px)': {
-        fontSize: '1rem'
-      },
-    },
-    h3: {
-      color: palette.primary,
-      fontSize: '1.25rem',
-      fontWeight: 700,
-      textAlign: 'justify',
-      textJustify: 'inter-word',
-      margin: 0,
-      '@media (max-width:480px)': {
-        fontSize: '1rem'
-      },
     },
     subtitle1: {
       color: palette.primary,
       fontSize: '1rem',
       textAlign: 'justify',
       textJustify: 'inter-word',
-      '@media (max-width:480px)': {
-        fontSize: '.75rem'
-      },
     }
   },
 }));

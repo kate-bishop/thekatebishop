@@ -7,7 +7,6 @@ import { transitionTimeout } from '../utils/constants';
 import {
     title,
     tagline1,
-    tagline2,
     github,
     linkedin
 } from '../utils/strings';
@@ -27,54 +26,40 @@ export default function Header() {
         <div className={styles.header}>
             <ThemeProvider theme={headerTheme}>
                 <div className={styles.content}>
-                    <Grid container direction='row' style={{ alignItems: 'center', minHeight: '100vh' }}>
-                        <Grid item xs={12} style={{ paddingRight: '1rem' }}>
-                            <CSSTransition
-                                in={showContent}
-                                timeout={transitionTimeout}
-                                classNames="content-left"
-                                unmountOnExit
-                                onEnter={() => setShowContent(true)}>
-                                <Grid container direction="column" style={{ marginTop: '8rem' }}>
-                                    <Grid item>
-                                        <Typography variant="h2" style={{ marginTop: '1.5rem' }}>{tagline1}</Typography>
-                                    </Grid>
-                                    <Grid item style={{ zIndex: 1 }}>
-                                        <Typography variant="h1">{title}</Typography>
-                                    </Grid>
-                                    <Grid item className={utils.greenspan} />
-                                    <Grid item>
-                                        <Grid container direction="row" style={{ marginTop: '.5rem' }}>
-                                            <Grid item style={{ marginRight: '.75rem' }}>
-                                                <a href={linkedin}>
-                                                    <Image
-                                                        priority
-                                                        src="/images/linkedinLogo.svg"
-                                                        className={styles.logo}
-                                                        height={25}
-                                                        width={25}
-                                                        alt={title}
-                                                    />
-                                                </a>
-                                            </Grid>
-                                            <Grid item>
-                                                <a href={github}>
-                                                    <Image
-                                                        priority
-                                                        src="/images/githubLogo.svg"
-                                                        className={styles.logo}
-                                                        height={25}
-                                                        width={25}
-                                                        alt={title}
-                                                    />
-                                                </a>
-                                            </Grid>
-                                        </Grid>
-                                    </Grid>
-                                </Grid>
-                            </CSSTransition>
-                        </Grid>
-                    </Grid>
+                    <CSSTransition
+                        in={showContent}
+                        timeout={transitionTimeout}
+                        classNames="content-left"
+                        unmountOnExit
+                        onEnter={() => setShowContent(true)}>
+                        <div className={styles.content}>
+                            <div className={styles.text}>
+                                <Typography variant="subtitle1">{tagline1}</Typography>
+                                <Typography variant="h1">{title}</Typography>
+                            </div>
+                            <Grid item className={utils.greenspan} />
+                            <div className={styles.logolinks}>
+                                <a href={linkedin} className={styles.logo}>
+                                    <Image
+                                        priority
+                                        src="/images/linkedinLogo.svg"
+                                        height={25}
+                                        width={25}
+                                        alt="LinkedIn"
+                                    />
+                                </a>
+                                <a href={github} className={styles.logo}>
+                                    <Image
+                                        priority
+                                        src="/images/githubLogo.svg"
+                                        height={25}
+                                        width={25}
+                                        alt="GitHub"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </CSSTransition>
                 </div>
             </ThemeProvider >
         </div >
