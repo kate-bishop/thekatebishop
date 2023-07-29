@@ -62,7 +62,7 @@ export const aboutTheme = responsiveFontSizes(createTheme({
       fontSize: '1rem',
       lineHeight: '1.4rem',
       margin: 0,
-      '@media (max-width:300px)': {
+      '@media (max-width:480px)': {
         fontSize: '.85rem'
       },
     },
