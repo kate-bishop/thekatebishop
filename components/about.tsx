@@ -19,8 +19,8 @@ const MeetKate: React.FC = () => {
 const CallToAction: React.FC = () => {
     return (
         <div className={styles.paragraph}>
-            <Typography variant="subtitle1">Explore Kate’s Skills & Experience on LinkedIn.</Typography>
-            <Button href={linkedin} target="_blank" variant="contained" className={styles.actionbutton}>Let's Connect!</Button>
+            <Typography variant="subtitle1">Explore Kate&apos;s Skills & Experience on LinkedIn.</Typography>
+            <Button href={linkedin} target="_blank" rel="noreferrer" variant="contained" className={styles.actionbutton}>Let&apos;s Connect!</Button>
         </div>
     )
 }
@@ -30,7 +30,7 @@ const About: React.FC = () => {
         <div className={styles.about}>
             <ThemeProvider theme={aboutTheme}>
                 <div className={styles.content}>
-                    <Typography variant="h1">It's nice to meet you!</Typography>
+                    <Typography variant="h1">It&apos;s nice to meet you!</Typography>
                     <MeetKate />
                     <CallToAction />
                 </div>

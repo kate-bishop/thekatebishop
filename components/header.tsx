@@ -41,7 +41,7 @@ export default function Header() {
                             <div className={utils.greenspan} />
                             {useSmallScreen && <Typography variant="subtitle1">{tagline1}</Typography>}
                             <div className={styles.logolinks}>
-                                <a href={linkedin} target="_blank" className={styles.logo}>
+                                <a href={linkedin} target="_blank" rel="noreferrer" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/linkedinLogo.svg"
@@ -50,7 +50,7 @@ export default function Header() {
                                         alt="LinkedIn"
                                     />
                                 </a>
-                                <a href={github} target="_blank" className={styles.logo}>
+                                <a href={github} target="_blank" rel="noreferrer" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/githubLogo.svg"
