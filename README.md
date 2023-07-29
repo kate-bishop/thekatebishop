@@ -1,4 +1,4 @@
-# Kate Bishop
+# thekatebishop
 
 This is a website to host Kate Bishop's Portfolio and other content.
 
