@@ -6,7 +6,7 @@ import styles from '../styles/pages.module.scss';
 const Home: React.FC = () => {
   return (
     <Wrapper>
-      <section className={styles.header}>
+      <section>
         <Header />
       </section>
       <section id="about" className={styles.about}>

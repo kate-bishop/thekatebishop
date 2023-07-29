@@ -17,22 +17,18 @@ a:hover {
   text-decoration-color: inherit;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: utils.$quinary-color;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: utils.$green-color-06;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: utils.$green-color;
 }
@@ -40,13 +36,3 @@ a:hover {
 * {
   box-sizing: border-box;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-//   body {
-//     color: white;
-//     background: black;
-//   }
-// }
