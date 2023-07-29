@@ -7,8 +7,8 @@ $quaternary-color: #FFDD61; // jonquil
 $quinary-color: #FFFFFF; // cornsilk FFFDF0
 $senary-color: #BDDBD0; //opal
 $green-color: #4CAF50;
-$green-color-06: rgb(76,175,80,.6);
-$green-color-04: rgb(76,175,80,.4);
+$green-color-06: rgba(76, 175, 80, .6);
+$green-color-04: rgba(76, 175, 80, .4);
 $green-color-button: $green-color-06;
 $green-color-hover: $green-color-04;
 $green-color-active: $green-color;
@@ -25,11 +25,11 @@ $quaternary-color-hover: #f0c631;
 $quaternary-color-active: #fde488;
 
 .app {
-  font-family: $font-stack;
+    font-family: $font-stack;
 }
 
 .list {
-  list-style: none;
+    list-style: none;
 }
 
 .greenspan {
@@ -40,22 +40,6 @@ $quaternary-color-active: #fde488;
     margin-top: .5rem;
     margin-bottom: .5rem;
     z-index: 0;
-}
-
-.actionbutton {
-    border-radius: 0;
-    text-transform: 'none';
-    margin-top: 1rem;
-    color: $primary-color;
-    background-color: $green-color-button;
-}
-
-.actionbutton:hover {
-    background-color: $green-color-hover;
-}
-
-.actionbutton:active {
-    background-color: $green-color-active;
 }
 
 $transition-timeout: 1000ms;
