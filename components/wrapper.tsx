@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, createContext } from "react";
+import { useState, useEffect, useCallback, createContext, PropsWithChildren } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
@@ -18,13 +18,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./wrapper.module.scss";
 import { ThemeProvider } from "@mui/material/styles";
 import { wrapperTheme } from "../styles/mui.themes";
-import { title } from "../utils/strings";
 import { breakpoint } from "../utils/constants";
-import { NavigateBefore } from "@mui/icons-material";
-
-type WrapperProps = {
-  children: JSX.Element;
-};
 
 function HideOnScroll(props: { children: any }) {
   const { children } = props;
@@ -38,7 +32,7 @@ function HideOnScroll(props: { children: any }) {
 
 export const SmallScreenContext = createContext(true);
 
-export default function Wrapper({ children }: WrapperProps) {
+const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
   const [useSmallScreen, setUseSmallScreen] = useState(false);
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
@@ -175,3 +169,5 @@ export default function Wrapper({ children }: WrapperProps) {
     </SmallScreenContext.Provider>
   );
 }
+
+export default Wrapper;

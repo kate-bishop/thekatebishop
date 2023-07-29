@@ -7,7 +7,8 @@ import { aboutTheme } from '../styles/mui.themes'
 import { ThemeProvider } from '@mui/material/styles';
 import { title } from '../utils/strings';
 import { SmallScreenContext } from './wrapper';
-function MeetKate() {
+
+const MeetKate: React.FC = () => {
     return (
         <Grid container direction="column">
             <Grid item>
@@ -38,7 +39,7 @@ function MeetKate() {
     )
 }
 
-export default function About() {
+const About: React.FC = () => {
     const useSmallScreen = useContext(SmallScreenContext);
     return (
         <ThemeProvider theme={aboutTheme}>
@@ -81,3 +82,5 @@ export default function About() {
         </ThemeProvider>
     )
 }
+
+export default About;

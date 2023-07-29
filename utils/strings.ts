@@ -3,22 +3,6 @@ export const pages = [
     name: 'Home',
     value: '/',
   },
-  {
-    name: 'Experience',
-    value: '/experience',
-  },
-  {
-    name: 'Education & Skills',
-    value: '/education',
-  },
-  {
-    name: 'UX Portfolio',
-    value: '/portfolio',
-  },
-  {
-    name: 'Contact',
-    value: '/contact',
-  },
 ];
 export const title = 'Kate Bishop';
 export const position = 'Front-End Software Engineer';
