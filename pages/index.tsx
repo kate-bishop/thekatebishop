@@ -9,6 +9,7 @@ const Home: React.FC = () => {
     <>
       <Head>
         <title>Kate Bishop</title>
+        <meta property="og:title" content="Kate Bishop" key="title" />
       </Head>
       <Wrapper>
         <section>
