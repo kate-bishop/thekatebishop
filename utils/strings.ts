@@ -3,6 +3,10 @@ export const pages = [
     name: 'Home',
     value: '/',
   },
+  {
+    name: 'Experience',
+    value: '/experience',
+  },
 ];
 
 export const aboutMe = {
@@ -12,10 +16,13 @@ export const aboutMe = {
   tagline2: "It's nice to meet you!",
   aboutKate:
     'Kate is a UX-obsessed Front-End Engineer with over 6 years of experience creating delightful user experiences and translating design into resilient interfaces. She has experience in several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
-  aboutKateA: 'Kate is a UX-obsessed Front-End Engineer with over 5 years of experience',
-  aboutKateB: 'creating delightful user experiences and translating design into resilient interfaces',
-  aboutKateC: '. She has experience in several industries, including ecommerce, insurance, education, finance, and healthcare.',
-    aboutMe:
+  aboutKateA:
+    'Kate is a UX-obsessed Front-End Engineer with over 5 years of experience',
+  aboutKateB:
+    'creating delightful user experiences and translating design into resilient interfaces',
+  aboutKateC:
+    '. She has experience in several industries, including ecommerce, insurance, education, finance, and healthcare.',
+  aboutMe:
     'I am a Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
     'I am a Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
@@ -27,7 +34,7 @@ export const contact = {
   location: 'Atlanta, GA',
   linkedIn: 'https://www.linkedin.com/in/thekatebishop/',
   linkedInShort: 'linkedin.com/in/thekatebishop',
-  linkedInButton: 'Let\'s connect!',
+  linkedInButton: "Let's connect!",
   github: 'https://github.com/kate-bishop',
   githubShort: 'github.com/kate-bishop',
 };
@@ -124,7 +131,7 @@ export const experience = [
       'I built new front-end features on the Document Analytics Platform (React) and improved existing back-end Customer Integrations software (Python, MongoDB, and Postgres) in preparation for major customer scaling.',
     keyProjects: [
       {
-        projectName: 'Platform Team',
+        projectName: null,
         projectRole: null,
         bulletPoints: [
           'Developed dynamic UI with React and Node.js to visualize human-in-the-loop processes and enrich sales demos',
@@ -165,31 +172,33 @@ export const experience = [
           'Visualized metrics representing patient behavior at doctor appointments to inform administrative actions, such as determining preferred schedules, providing reminders to patients, and planning for expected costs and revenue',
         ],
       },
-      ////// BREAK
-      {
-        projectName: 'Construction Vending Machine Cross-Platform Mobile App',
-        projectRole: 'Xamarin Developer',
-        bulletPoints: [
-          'Transitioned an existing native-iOS app to the Xamarin platform in C# with a focus on replicating and adjusting features for Android users',
-          'Designed, user-tested, and developed a new Cart Checkout experience for both iOS and Android',
-        ],
-      },
-      {
-        projectName: 'e-Commerce Data Platform Analytics',
-        projectRole: 'Data Analyst, Architect',
-        bulletPoints: [
-          'Assessed current set of data sources and utilization process to make business decisions',
-          'Strategized a phased data analytics plan to match domain expertise to the right data, maximize effectiveness of marketing spend, and enable data-driven decision making',
-        ],
-      },
-      {
-        projectName: 'Customer Persona Build',
-        projectRole: 'UX Analyst',
-        bulletPoints: [
-          'Designed and facilitated a workshop with executive team to harvest current understanding of the company’s customers',
-          'Synthesized outputs into personas, delivered recommendations and coaching to executive team regarding use of insights',
-        ],
-      },
+    ],
+  },
+];
+
+export const nonDevParivedaKeyProjects = [
+  {
+    projectName: 'Construction Vending Machine Cross-Platform Mobile App',
+    projectRole: 'Xamarin Developer',
+    bulletPoints: [
+      'Transitioned an existing native-iOS app to the Xamarin platform in C# with a focus on replicating and adjusting features for Android users',
+      'Designed, user-tested, and developed a new Cart Checkout experience for both iOS and Android',
+    ],
+  },
+  {
+    projectName: 'e-Commerce Data Platform Analytics',
+    projectRole: 'Data Analyst, Architect',
+    bulletPoints: [
+      'Assessed current set of data sources and utilization process to make business decisions',
+      'Strategized a phased data analytics plan to match domain expertise to the right data, maximize effectiveness of marketing spend, and enable data-driven decision making',
+    ],
+  },
+  {
+    projectName: 'Customer Persona Build',
+    projectRole: 'UX Analyst',
+    bulletPoints: [
+      'Designed and facilitated a workshop with executive team to harvest current understanding of the company’s customers',
+      'Synthesized outputs into personas, delivered recommendations and coaching to executive team regarding use of insights',
     ],
   },
 ];
