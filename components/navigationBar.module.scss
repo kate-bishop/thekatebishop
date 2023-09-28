@@ -1,0 +1,7 @@
+@use '../styles/utils.module.scss' as utils;
+
+.navbar {
+    & a:hover {
+        cursor: pointer;
+    }
+}
