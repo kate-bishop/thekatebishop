@@ -4,31 +4,41 @@ export const pages = [
     value: '/',
   },
 ];
-export const title = 'Kate Bishop';
-export const position = 'Front-End Software Engineer';
-export const tagline1 =
-  'Atlanta-based tech fanatic making leading-edge solutions reality.';
-export const tagline2 = "It's nice to meet you!";
-export const aboutKate = "Kate is a UX-obsessed Front-End Engineer with over 6 years of experience creating delightful user experiences and translating design into resilient interfaces. She has experience in several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.";
-export const aboutKateCallToAction = "Explore Kate’s Skills & Experience on LinkedIn.";
-export const aboutMe =
-  'I am a Front-End Engineer with 5 years of experience in software development. After a brief sabbatical to evaluate, experiment, and re-energize, I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.';
-export const aboutMe1 =
-  'I am a Front-End Engineer with 5 years of experience in software development. ';
-export const aboutMe2 =
-  'I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. ';
-export const aboutMe3 =
-  'I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.';
-export const email = 'kate@thekatebishop.com';
-export const location = 'Atlanta, GA';
-export const linkedin = 'https://www.linkedin.com/in/thekatebishop/';
-export const linkedinShort = 'linkedin.com/in/thekatebishop';
-export const github = 'https://github.com/kate-bishop';
-export const githubShort = 'github.com/kate-bishop';
-export const languages =
-  'JavaScript (React, Next.js, Node.js), GraphQL, Python, C#, Java, PHP, SQL, HTML/CSS';
-export const technologies =
-  'Visual Studio, Xamarin, Tableau, MS SQL, MongoDB, Postgres, AWS, Azure, Lucidchart, Sketch, Balsamiq, Figma, Agile, Scrum, Design Think';
+
+export const aboutMe = {
+  title: 'Kate Bishop',
+  position: 'Senior Front-End Software Engineer',
+  tagline1: 'Atlanta-based tech fanatic making leading-edge solutions reality.',
+  tagline2: "It's nice to meet you!",
+  aboutKate:
+    'Kate is a UX-obsessed Front-End Engineer with over 6 years of experience creating delightful user experiences and translating design into resilient interfaces. She has experience in several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+  aboutKateA: 'Kate is a UX-obsessed Front-End Engineer with over 5 years of experience',
+  aboutKateB: 'creating delightful user experiences and translating design into resilient interfaces',
+  aboutKateC: '. She has experience in several industries, including ecommerce, insurance, education, finance, and healthcare.',
+    aboutMe:
+    'I am a Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+  aboutMeSeeking:
+    'I am a Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+  callToAction: 'Explore Kate’s Skills & Experience on LinkedIn.',
+};
+
+export const contact = {
+  email: 'kate@thekatebishop.com',
+  location: 'Atlanta, GA',
+  linkedIn: 'https://www.linkedin.com/in/thekatebishop/',
+  linkedInShort: 'linkedin.com/in/thekatebishop',
+  linkedInButton: 'Let\'s connect!',
+  github: 'https://github.com/kate-bishop',
+  githubShort: 'github.com/kate-bishop',
+};
+
+export const skills = {
+  languages:
+    'JavaScript, TypeScript, React, PHP, Laravel, Redux, Next.js, Node.js, GraphQL, Apollo, Python, C#, Java, SQL, HTML, CSS',
+  technologies:
+    'Visual Studio, MS SQL, MongoDB, Postgres, Azure, AWS, Tableau, Lucidchart, Figma, Agile, Scrum, Design Think',
+};
+
 export const education = {
   institutionName: 'The University of Alabama',
   degree: 'Bachelor of Science in Commerce and Business Administration',
@@ -37,6 +47,7 @@ export const education = {
   minor: 'French',
   specializations: 'Management Communications, Business Information Technology',
 };
+
 export const experience = [
   {
     companyName: 'Calloquy, PBC',
@@ -46,7 +57,40 @@ export const experience = [
     companyDescription:
       'Calloquy is a litigation tech startup making remote legal proceedings accessible, secure, and efficient.',
     description:
-      'I am building and delivering new features on the Calloquy Platform while scaling existing technology to handle rapid growth following the product launch. With React TypeScript and Laravel PHP, I am using my background in User Experience to translate complex business requirements and design into streamlined and resilient interfaces.',
+      'I am a leader on the product development team building a comprehensive video conference litigation platform with React (TypeScript) and Laravel PHP.',
+    keyProjects: [
+      {
+        projectName: null,
+        projectRole: null,
+        bulletPoints: [
+          'Architect and develop new features with emphasis on security and reliability, including administrative dashboards and functions, an algorithm to visually organize users by role and party within a meeting, document management, and maintainable role-based permissions handling',
+          'Strategize frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code and documentation efforts',
+          'Act as the technical expert in product discussions to refine business requirements and user experience',
+          'Mentor junior engineers in development best practices, team workflows, and professionalism',
+        ],
+      },
+    ],
+  },
+  {
+    companyName: 'OTR Solutions',
+    jobTitle: 'Front-End Software Engineer, UX Architect',
+    location: 'Roswell, GA',
+    dateSpan: 'August - September 2022 (Short-Term Contract)',
+    companyDescription:
+      'OTR Solutions offers over-the-road carriers factoring and technical tools to deliver reliable cash flow, back office, web domain, and fuel services.',
+    description:
+      'I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. As a result, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
+    keyProjects: [
+      {
+        projectName: null,
+        projectRole: null,
+        bulletPoints: [
+          'Collaborated with stakeholders to refine task flows, improve use of space in the UI, and optimize website architecture',
+          'Improved existing DevExpress implementation by reworking file architecture, introducing reusable components and classes, and building in screen-size breakpoints for mobile support',
+          'Delivered organized code complete with change log documentation and a road map for feature updates and improvements to the codebase',
+        ],
+      },
+    ],
   },
   {
     companyName: 'Manufactured',
@@ -56,44 +100,35 @@ export const experience = [
     companyDescription:
       'Manufactured is a venture-backed product sourcing company that provides entrepreneurs with access to manufacturing companies.',
     description:
-      'I led front-end product development with React and GraphQL for a team of 4 to bring a green-field platform to launch. Along with development and delivery, my responsibilities extended to plan and scope up to 3 work streams at a time.',
+      'I led front-end product development with React and GraphQL to bring a green-field platform to launch.',
     keyProjects: [
       {
         projectName: null,
         projectRole: null,
         bulletPoints: [
-          'Revitalized development and delivered a previously delayed MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, clearly documenting dev-friendly requirements, and setting attainable timelines',
-          'Designed information and process flows to scope new product and integration requirements',
-          'Negotiated frequent priority shifts between business and engineering and road-mapped long-term product goals for the next 1-3 years',
-          'Introduced new team practices to foster collaboration across an international team and promote timely delivery of features',
+          'Revitalized development and delivered the MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, clearly documenting development requirements, and setting attainable timelines',
+          'Designed information and process flows to scope new product and partner integration requirements, and developed a road-map of short- and long-term product goals for the next 3 years',
+          'Introduced new team practices to foster collaboration across an international team and promote timely delivery of features, including visualized metrics to describe the team’s progress, check-ins with leaders, and team calendars',
         ],
       },
     ],
   },
   {
     companyName: 'Groundspeed Analytics',
-    jobTitle: 'Software Engineer II',
+    jobTitle: 'Full-Stack Software Engineer II',
     location: 'Ann Arbor, MI (Remote)',
     dateSpan: 'February 2021 - September 2021',
     companyDescription:
       'Groundspeed Analytics is an artificial intelligence InsurTech startup revolutionizing the $350 billion commercial insurance industry.',
     description:
-      'I implemented new features while improving existing software to prepare for major customer scaling.',
+      'I built new front-end features on the Document Analytics Platform (React) and improved existing back-end Customer Integrations software (Python, MongoDB, and Postgres) in preparation for major customer scaling.',
     keyProjects: [
       {
         projectName: 'Platform Team',
-        projectRole: 'Full Stack (Front End) Engineer',
+        projectRole: null,
         bulletPoints: [
-          'Developed dynamic UI with React and Node.js to visualize human-in-the-loop processes and enrich sales demos with potential customers',
-          'Documented existing User Experience flows on the internal platform by shadowing and interviewing users and developed plans to implement optimizations ',
-        ],
-      },
-      {
-        projectName: 'Customer Integrations Team',
-        projectRole: 'Full Stack (Back End) Engineer',
-        bulletPoints: [
-          'Collaborated with product leaders to prioritize and refine new feature requirements, including a roadmap to transition the monolith platform to microservices with AWS Lambda',
-          'Refactored existing services to be compatible with AWS features and performed extensive regression testing to ensure services were not interrupted',
+          'Developed dynamic UI with React and Node.js to visualize human-in-the-loop processes and enrich sales demos',
+          'Improved performance for data-intense software by optimizing redundant UI and state management (Redux) processes and strategically migrating pieces of the legacy monolith platform to microservices with AWS Lambda (Python)',
         ],
       },
     ],
@@ -108,20 +143,29 @@ export const experience = [
     keyProjects: [
       {
         projectName: 'Pharmaceutical Services Design System',
-        projectRole: 'Lead React Developer, Design Liaison',
+        projectRole: 'Lead React Developer',
         bulletPoints: [
-          'Led a React team to advance an MVP-level component library to a verbose design system, enabling rapid prototyping and web application development across the organization',
+          'Led a React team to advance a MVP-level component library to a verbose, WCAG-compliant accessible design system, enabling rapid prototyping and web application development across the organization',
           'Collaborated between development and design teams and planned roadmap to integrate organization rebranding efforts into the design system',
         ],
       },
       {
         projectName: 'Insurance Webform Redesign',
-        projectRole: 'UX Analyst, Lead Developer',
+        projectRole: 'Lead React Developer, UX Analyst',
         bulletPoints: [
           'Redesigned an outdated input-heavy webform using a Design Think framework to ensure a thoughtful approach to user experience and content strategy',
           'Led front-end development of the web application that resulted in increased speed to completion, improved data quality, and enabled user scalability',
         ],
       },
+      {
+        projectName: 'Healthcare Financial Data Analytics',
+        projectRole: 'Data Analyst, Tableau Developer',
+        bulletPoints: [
+          'Developed a proof of concept to incorporate predictive analytics and machine learning into current hospital and business operation based on existing data',
+          'Visualized metrics representing patient behavior at doctor appointments to inform administrative actions, such as determining preferred schedules, providing reminders to patients, and planning for expected costs and revenue',
+        ],
+      },
+      ////// BREAK
       {
         projectName: 'Construction Vending Machine Cross-Platform Mobile App',
         projectRole: 'Xamarin Developer',
@@ -139,14 +183,6 @@ export const experience = [
         ],
       },
       {
-        projectName: 'Healthcare Financial Data Analytics',
-        projectRole: 'Data Analyst, Tableau Developer',
-        bulletPoints: [
-          'Visualized insights from doctor appointment metrics through dashboard development to inform administrative actions to take based on patient behavior',
-          'Identified and developed proofs of concept to incorporate predictive analytics and machine learning into current hospital and business operations',
-        ],
-      },
-      {
         projectName: 'Customer Persona Build',
         projectRole: 'UX Analyst',
         bulletPoints: [
@@ -156,6 +192,9 @@ export const experience = [
       },
     ],
   },
+];
+
+export const internships = [
   {
     companyName: 'ACT, Inc.',
     jobTitle: 'User Experience Analyst',
@@ -214,6 +253,7 @@ export const experience = [
     ],
   },
 ];
+
 export const portfolio = [
   {
     projectTitle: 'International Insurance Claim Intake',
