@@ -5,12 +5,7 @@ import Image from 'next/image'
 import { headerTheme } from '../styles/mui.themes'
 import { transitionTimeout } from '../utils/constants';
 import { SmallScreenContext } from './wrapper';
-import {
-    title,
-    tagline1,
-    github,
-    linkedin
-} from '../utils/strings';
+import { aboutMe, contact } from '../utils/strings';
 import Typography from '@mui/material/Typography';
 import { CSSTransition } from 'react-transition-group';
 import { ThemeProvider } from '@mui/material/styles';
@@ -35,13 +30,13 @@ export default function Header() {
                         onEnter={() => setShowContent(true)}>
                         <div className={styles.content}>
                             <div className={styles.text}>
-                                {!useSmallScreen && <Typography variant="subtitle1">{tagline1}</Typography>}
-                                <Typography variant="h1">{title}</Typography>
+                                {!useSmallScreen && <Typography variant="subtitle1">{aboutMe.tagline1}</Typography>}
+                                <Typography variant="h1">{aboutMe.title}</Typography>
                             </div>
                             <div className={utils.greenspan} />
-                            {useSmallScreen && <Typography variant="subtitle1">{tagline1}</Typography>}
+                            {useSmallScreen && <Typography variant="subtitle1">{aboutMe.tagline1}</Typography>}
                             <div className={styles.logolinks}>
-                                <a href={linkedin} target="_blank" rel="noreferrer" className={styles.logo}>
+                                <a href={contact.linkedIn} target="_blank" rel="noreferrer" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/linkedinLogo.svg"
@@ -50,7 +45,7 @@ export default function Header() {
                                         alt="LinkedIn"
                                     />
                                 </a>
-                                <a href={github} target="_blank" rel="noreferrer" className={styles.logo}>
+                                <a href={contact.github} target="_blank" rel="noreferrer" className={styles.logo}>
                                     <Image
                                         priority
                                         src="/images/githubLogo.svg"
