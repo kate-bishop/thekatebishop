@@ -1,8 +1,6 @@
+import { Experience, KeyProject } from './types';
+
 export const pages = [
-  {
-    name: 'Home',
-    value: '/',
-  },
   {
     name: 'Experience',
     value: '/experience',
@@ -55,20 +53,18 @@ export const education = {
   specializations: 'Management Communications, Business Information Technology',
 };
 
-export const experience = [
+export const experience: Experience[] = [
   {
     companyName: 'Calloquy, PBC',
     jobTitle: 'Senior Front-End Engineer',
     location: 'Atlanta, GA',
     dateSpan: 'October 2022 - present',
     companyDescription:
-      'Calloquy is a litigation tech startup making remote legal proceedings accessible, secure, and efficient.',
+      'Calloquy, PBC is a litigation tech startup making remote legal proceedings accessible, secure, and efficient.',
     description:
       'I am a leader on the product development team building a comprehensive video conference litigation platform with React (TypeScript) and Laravel PHP.',
     keyProjects: [
       {
-        projectName: null,
-        projectRole: null,
         bulletPoints: [
           'Architect and develop new features with emphasis on security and reliability, including administrative dashboards and functions, an algorithm to visually organize users by role and party within a meeting, document management, and maintainable role-based permissions handling',
           'Strategize frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code and documentation efforts',
@@ -89,8 +85,6 @@ export const experience = [
       'I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. As a result, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
     keyProjects: [
       {
-        projectName: null,
-        projectRole: null,
         bulletPoints: [
           'Collaborated with stakeholders to refine task flows, improve use of space in the UI, and optimize website architecture',
           'Improved existing DevExpress implementation by reworking file architecture, introducing reusable components and classes, and building in screen-size breakpoints for mobile support',
@@ -110,8 +104,6 @@ export const experience = [
       'I led front-end product development with React and GraphQL to bring a green-field platform to launch.',
     keyProjects: [
       {
-        projectName: null,
-        projectRole: null,
         bulletPoints: [
           'Revitalized development and delivered the MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, clearly documenting development requirements, and setting attainable timelines',
           'Designed information and process flows to scope new product and partner integration requirements, and developed a road-map of short- and long-term product goals for the next 3 years',
@@ -131,8 +123,6 @@ export const experience = [
       'I built new front-end features on the Document Analytics Platform (React) and improved existing back-end Customer Integrations software (Python, MongoDB, and Postgres) in preparation for major customer scaling.',
     keyProjects: [
       {
-        projectName: null,
-        projectRole: null,
         bulletPoints: [
           'Developed dynamic UI with React and Node.js to visualize human-in-the-loop processes and enrich sales demos',
           'Improved performance for data-intense software by optimizing redundant UI and state management (Redux) processes and strategically migrating pieces of the legacy monolith platform to microservices with AWS Lambda (Python)',
@@ -142,11 +132,12 @@ export const experience = [
   },
   {
     companyName: 'Pariveda Solutions',
-    jobTitle: 'IT Consultant',
+    jobTitle: 'Software Development Consultant',
     location: 'Atlanta, GA',
     dateSpan: 'July 2017 - January 2021',
+    companyDescription: 'Pariveda Solutions is a consulting firm dedicated to solving complex technology and business problems by aligning their focus on people-development with the mission of their clients.',
     description:
-      'Designed, developed, and delivered technical solutions to clients across industries.',
+      'I designed, developed, and delivered technical solutions to clients across industries.',
     keyProjects: [
       {
         projectName: 'Pharmaceutical Services Design System',
@@ -176,7 +167,7 @@ export const experience = [
   },
 ];
 
-export const nonDevParivedaKeyProjects = [
+export const nonDevParivedaKeyProjects: KeyProject[] = [
   {
     projectName: 'Construction Vending Machine Cross-Platform Mobile App',
     projectRole: 'Xamarin Developer',

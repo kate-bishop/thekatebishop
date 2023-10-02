@@ -88,7 +88,7 @@ const NavigationBar: React.FC = () => {
                         {router.pathname !== '/' &&
                             <Link href={`/`}>
                                 <Typography>
-                                    {aboutMe.title.toUpperCase()}
+                                    <a>{aboutMe.title.toUpperCase()}</a>
                                 </Typography>
                             </Link>
                         }
