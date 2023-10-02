@@ -85,11 +85,13 @@ const NavigationBar: React.FC = () => {
                     className={styles.navbar}
                 >
                     <Grid item>
-                        <Link href={`/`}>
-                            <Typography variant="h5">
-                                <a>{aboutMe.title.toUpperCase()}</a>
-                            </Typography>
-                        </Link>
+                        {router.pathname !== '/' &&
+                            <Link href={`/`}>
+                                <Typography>
+                                    {aboutMe.title.toUpperCase()}
+                                </Typography>
+                            </Link>
+                        }
                     </Grid>
                     <Grid item>
                         {useSmallScreen ? smallScreenView : (
@@ -98,8 +100,8 @@ const NavigationBar: React.FC = () => {
                                     return (
                                         <Link href={page.value} key={page.name}>
                                             <Typography
-                                                variant="h6"
-                                                style={{ marginRight: "3rem" }}
+                                                variant="subtitle2"
+                                                style={{ marginRight: "2rem" }}
                                             >
                                                 <a>{page.name}</a>
                                             </Typography>

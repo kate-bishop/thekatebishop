@@ -8,6 +8,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     scroll-snap-type: y proximity;
+    padding-top: 3rem;
 
     section {
         min-height: utils.$min-height;
