@@ -94,7 +94,7 @@ const ExperienceTabs: React.FC = () => {
             </div>
             <div style={{ marginLeft: '15%', height: '100%', overflow: 'auto' }}>
                 {experience.map((exp, index) => {
-                    return <ExperienceTabPanel activeTab={activeTab} experience={exp} index={index} />
+                    return <ExperienceTabPanel activeTab={activeTab} experience={exp} index={index} key={index} />
                 })}
             </div>
         </div>
