@@ -13,6 +13,7 @@
     height: 100%;
     width: 15rem;
     margin-top: 1.5rem;
+    background-color: #fff;
 }
 
 .tabPanel {
@@ -32,7 +33,6 @@
     }
     
     .tabBar {
-        position: relative;
         height: auto;
         width: 100%;
         margin-top: 0;
@@ -43,6 +43,7 @@
         margin-left: 0;
         height: 100%;
         overflow: auto;
+        margin-top: 3rem;
     
         & .contentSection {
             margin-top: 1rem;

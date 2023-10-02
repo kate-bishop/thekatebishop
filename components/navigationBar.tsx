@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, PropsWithChildren } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import AppBar from "@mui/material/AppBar";
@@ -18,10 +18,13 @@ import styles from './navigationBar.module.scss';
 import { SmallScreenContext } from './wrapper';
 import { pages, aboutMe } from '../utils/strings';
 
-function HideOnScroll(props: { children: any }) {
-    const { children } = props;
+interface HideOnScrollProps {
+    children: any,
+    shouldHideOnScroll: boolean
+}
+const HideOnScroll: React.FC<HideOnScrollProps> = ({ children, shouldHideOnScroll }) => {
     const trigger = useScrollTrigger({ threshold: 20 });
-    return (
+    return (shouldHideOnScroll ? <>{children}</> :
         <Slide appear={false} direction="down" in={!trigger}>
             {children}
         </Slide>
@@ -75,8 +78,11 @@ const NavigationBar: React.FC = () => {
         </Drawer>
     </>
 
-    return <HideOnScroll>
-        <AppBar color="transparent" elevation={0}>
+    const isOnHomePage = router.pathname === '/'
+    const shouldHideOnScroll = useSmallScreen && !isOnHomePage;
+
+    return <HideOnScroll shouldHideOnScroll={shouldHideOnScroll}>
+        <AppBar color={shouldHideOnScroll ? "inherit" : "transparent"} elevation={0}>
             <Toolbar>
                 <Grid
                     container
@@ -85,7 +91,7 @@ const NavigationBar: React.FC = () => {
                     className={styles.navbar}
                 >
                     <Grid item>
-                        {router.pathname !== '/' &&
+                        {!isOnHomePage &&
                             <Link href={`/`}>
                                 <Typography>
                                     <a>{aboutMe.title.toUpperCase()}</a>
