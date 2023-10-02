@@ -1,7 +1,7 @@
 @use '../styles/utils.module.scss' as utils;
 
 .header {
-    height: utils.$min-height;
+    height: 100%;
     width: utils.$min-width;
 }
 

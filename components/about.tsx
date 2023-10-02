@@ -7,7 +7,7 @@ import { aboutMe, contact } from '../utils/strings';
 
 const MeetKate: React.FC = () => {
     return (
-        <Typography variant="subtitle1" display="inline" className={styles.paragraph}>
+        <Typography variant="subtitle2" display="inline" className={styles.paragraph}>
             {aboutMe.aboutKateA}
             <span className={styles.highlight}>
                 &nbsp;{aboutMe.aboutKateB}
@@ -20,7 +20,7 @@ const MeetKate: React.FC = () => {
 const CallToAction: React.FC = () => {
     return (
         <div className={styles.paragraph}>
-            <Typography variant="subtitle1">{aboutMe.callToAction}</Typography>
+            <Typography variant="subtitle2">{aboutMe.callToAction}</Typography>
             <Button href={contact.linkedIn} target="_blank" rel="noreferrer">{contact.linkedInButton}</Button>
         </div>
     )
