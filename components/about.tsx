@@ -1,13 +1,13 @@
 import styles from './about.module.scss';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { aboutTheme } from '../styles/mui.themes'
+import { homeTheme } from '../styles/mui.themes'
 import { ThemeProvider } from '@mui/material/styles';
 import { aboutMe, contact } from '../utils/strings';
 
 const MeetKate: React.FC = () => {
     return (
-        <Typography variant="subtitle1" display="inline" className={styles.paragraph}>
+        <Typography variant="subtitle2" display="inline" className={styles.paragraph}>
             {aboutMe.aboutKateA}
             <span className={styles.highlight}>
                 &nbsp;{aboutMe.aboutKateB}
@@ -20,7 +20,7 @@ const MeetKate: React.FC = () => {
 const CallToAction: React.FC = () => {
     return (
         <div className={styles.paragraph}>
-            <Typography variant="subtitle1">{aboutMe.callToAction}</Typography>
+            <Typography variant="subtitle2">{aboutMe.callToAction}</Typography>
             <Button href={contact.linkedIn} target="_blank" rel="noreferrer">{contact.linkedInButton}</Button>
         </div>
     )
@@ -29,9 +29,9 @@ const CallToAction: React.FC = () => {
 const About: React.FC = () => {
     return (
         <div className={styles.about}>
-            <ThemeProvider theme={aboutTheme}>
+            <ThemeProvider theme={homeTheme}>
                 <div className={styles.content}>
-                    <Typography variant="h1">{aboutMe.tagline2}</Typography>
+                    <Typography variant="h2">{aboutMe.tagline2}</Typography>
                     <MeetKate />
                     <CallToAction />
                 </div>

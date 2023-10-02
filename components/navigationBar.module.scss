@@ -1,0 +1,10 @@
+@use '../styles/utils.module.scss' as utils;
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    & a:hover {
+        cursor: pointer;
+    }
+}

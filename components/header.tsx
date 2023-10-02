@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import styles from './header.module.scss';
 import utils from '../styles/utils.module.scss'
 import Image from 'next/image'
-import { headerTheme } from '../styles/mui.themes'
+import { homeTheme } from '../styles/mui.themes'
 import { transitionTimeout } from '../utils/constants';
 import { SmallScreenContext } from './wrapper';
 import { aboutMe, contact } from '../utils/strings';
@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <div className={styles.header}>
-            <ThemeProvider theme={headerTheme}>
+            <ThemeProvider theme={homeTheme}>
                 <div className={styles.content}>
                     <CSSTransition
                         in={showContent}
