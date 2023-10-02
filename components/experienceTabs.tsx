@@ -9,8 +9,6 @@ import { Experience } from '../utils/types';
 import { SmallScreenContext } from './wrapper';
 import styles from './experienceTabs.module.scss';
 
-// TODO support for narrow screens
-
 interface ExperienceTabBarProps {
     activeTab: number,
     handleChange: (event: React.SyntheticEvent, newValue: number) => void,
