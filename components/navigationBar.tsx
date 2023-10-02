@@ -100,7 +100,7 @@ const NavigationBar: React.FC = () => {
                                     return (
                                         <Link href={page.value} key={page.name}>
                                             <Typography
-                                                variant="subtitle2"
+                                                variant="subtitle1"
                                                 style={{ marginRight: "2rem" }}
                                             >
                                                 <a>{page.name}</a>
