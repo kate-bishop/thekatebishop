@@ -9,7 +9,7 @@ export const wrapperTheme = responsiveFontSizes(createTheme({
   },
 }));
 
-export const headerTheme = responsiveFontSizes(createTheme({
+export const homeTheme = responsiveFontSizes(createTheme({
   typography: {
     fontFamily: [
       'DM Sans',
@@ -29,24 +29,7 @@ export const headerTheme = responsiveFontSizes(createTheme({
         fontSize: '4rem'
       },
     },
-    subtitle1: {
-      color: palette.primary,
-      fontSize: '1rem',
-      textAlign: 'justify',
-      textJustify: 'inter-word',
-      '@media (max-width:300px)': {
-        fontSize: '.85rem'
-      },
-    }
-  },
-}));
-
-export const aboutTheme = responsiveFontSizes(createTheme({
-  typography: {
-    fontFamily: [
-      'DM Sans',
-    ].join(','),
-    h1: {
+    h2: {
       color: palette.primary,
       fontSize: '4rem',
       lineHeight: .85,
@@ -60,14 +43,20 @@ export const aboutTheme = responsiveFontSizes(createTheme({
     subtitle1: {
       color: palette.primary,
       fontSize: '1rem',
+      textAlign: 'justify',
+      textJustify: 'inter-word',
+      '@media (max-width:300px)': {
+        fontSize: '.85rem'
+      },
+    },
+    subtitle2: {
+      color: palette.primary,
+      fontSize: '1rem',
       lineHeight: '1.4rem',
       margin: 0,
       '@media (max-width:480px)': {
         fontSize: '.85rem'
       },
-    },
-    button: {
-      fontSize: '1rem',
     }
   },
   components: {
@@ -90,6 +79,44 @@ export const aboutTheme = responsiveFontSizes(createTheme({
             backgroundColor: palette.tertiaryActive,
           }
         },
+      },
+    },
+  },
+}));
+
+export const mainTheme = responsiveFontSizes(createTheme({
+  typography: {
+    fontFamily: [
+      'DM Sans',
+    ].join(','),
+    h1: {
+      color: palette.primary,
+      fontSize: '1rem',
+      lineHeight: .85,
+      '@media (max-width:480px)': {
+        fontSize: '.75rem'
+      },
+      fontFamily: [
+        'DM Serif Display',
+      ].join(','),
+    },
+    h2: {
+      color: palette.primary,
+      fontSize: '.85rem',
+      lineHeight: .85,
+    },
+    h3: {
+      color: palette.primary,
+      fontSize: '.85rem',
+      lineHeight: .85,
+    },
+    subtitle1: {
+      color: palette.primary,
+      fontSize: '1rem',
+      lineHeight: '1.4rem',
+      margin: 0,
+      '@media (max-width:480px)': {
+        fontSize: '.85rem'
       },
     },
   },
