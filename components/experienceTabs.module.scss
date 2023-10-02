@@ -1,0 +1,45 @@
+@use 'styles/utils.module.scss' as utils;
+
+.tabContainer {
+    height: 100%;
+    overflow: hidden;
+    margin-top: 10vh;
+}
+
+.tabBar {
+    position: fixed;
+    height: 100%;
+    width: 15rem;
+    margin-top: 1.5rem;
+}
+
+.tabPanel {
+    margin-left: 17rem;
+    height: 100%;
+    overflow: auto;
+
+    & .contentSection {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: utils.$medium-breakpoint) {
+    .about {
+        width: 100%;
+    }
+
+    .content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: utils.$small-breakpoint) {
+    .content {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+}
