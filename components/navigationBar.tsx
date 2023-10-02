@@ -20,7 +20,7 @@ import { pages, aboutMe } from '../utils/strings';
 
 function HideOnScroll(props: { children: any }) {
     const { children } = props;
-    const trigger = useScrollTrigger();
+    const trigger = useScrollTrigger({ threshold: 20 });
     return (
         <Slide appear={false} direction="down" in={!trigger}>
             {children}
