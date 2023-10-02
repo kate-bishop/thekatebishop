@@ -1,6 +1,8 @@
 @use 'styles/utils.module.scss' as utils;
 
 .tabContainer {
+    flex-direction: row;
+    display: flex;
     height: 100%;
     overflow: hidden;
     margin-top: 10vh;
@@ -23,23 +25,27 @@
     }
 }
 
-@media only screen and (max-width: utils.$medium-breakpoint) {
-    .about {
-        width: 100%;
-    }
-
-    .content {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: 100%;
-    }
-}
-
 @media only screen and (max-width: utils.$small-breakpoint) {
-    .content {
-        padding-top: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: left;
+    .tabContainer {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .tabBar {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin-top: 0;
+        overflow: auto;
+    }
+    
+    .tabPanel {
+        margin-left: 0;
+        height: 100%;
+        overflow: auto;
+    
+        & .contentSection {
+            margin-top: 1rem;
+        }
     }
 }
