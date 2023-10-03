@@ -11,7 +11,10 @@
     padding-top: 3rem;
 
     section {
+        height: 100%;
         min-height: utils.$min-height;
         scroll-snap-align: start;
+        align-items: center;
+        display: flex;
     }
 }

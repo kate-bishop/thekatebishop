@@ -107,6 +107,7 @@ const NavigationBar: React.FC = () => {
                                         <Link href={page.value} key={page.name}>
                                             <Typography
                                                 variant="subtitle1"
+                                                textTransform="uppercase"
                                                 style={{ marginRight: "2rem" }}
                                             >
                                                 <a>{page.name}</a>
