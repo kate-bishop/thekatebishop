@@ -1,35 +1,43 @@
 import styles from './about.module.scss';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { homeTheme } from '../styles/mui.themes'
 import { ThemeProvider } from '@mui/material/styles';
 import { aboutMe, contact } from '../utils/strings';
+import Image from 'next/image'
+import Link from 'next/link';
 
 const MeetKate: React.FC = () => {
+    const ctaLink = <a href={contact.linkedIn} target="_blank" rel="noreferrer">
+        Let&apos;s connect!
+    </a>
+
     return (
         <Typography variant="subtitle2" display="inline" className={styles.paragraph}>
             {aboutMe.aboutKateA}
             <span className={styles.highlight}>
                 &nbsp;{aboutMe.aboutKateB}
             </span>
-            {aboutMe.aboutKateC}
+            {aboutMe.aboutKateC} {aboutMe.callToAction} &#8212; {ctaLink}
         </Typography>
     )
 }
 
-const CallToAction: React.FC = () => {
-    const ctaLink = <a href={contact.linkedIn} target="_blank" rel="noreferrer">
-        Let&apos;s connect!
-    </a>
-
-    return (
-        <div className={styles.paragraph}>
-            <Typography variant="subtitle2">
-                {aboutMe.callToAction} &#8212; {ctaLink}
-            </Typography>
-            <Button href='/experience'>helo</Button>
-        </div>
-    )
+interface ActionCardProps {
+    label: string;
+    imageName: string;
+    link: string;
+}
+const ActionCard: React.FC<ActionCardProps> = ({ label, imageName, link }) => {
+    return <Link href={link}><div className={styles.actionCard}>
+        <Image
+            priority
+            src={`/images/${imageName}.svg`}
+            height={100}
+            width={100}
+            alt={imageName}
+        />
+        <Typography variant="body1">{label}</Typography>
+    </div></Link>
 }
 
 const About: React.FC = () => {
@@ -39,7 +47,10 @@ const About: React.FC = () => {
                 <div className={styles.content}>
                     <Typography variant="h2">{aboutMe.tagline2}</Typography>
                     <MeetKate />
-                    <CallToAction />
+                    <div className={styles.actionCardContainer}>
+                        <ActionCard link="/experience" imageName="computer" label="Explore Work Experience" />
+                        {/* TODO - Portfolio Page <ActionCard link="/portfolio" imageName="portfolio" label="Explore Portfolio" /> */}
+                    </div>
                 </div>
             </ThemeProvider>
         </div>
