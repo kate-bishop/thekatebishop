@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap');
 
-$primary-color: #000000; // xiketic 070538
-$secondary-color: #04A6BF; // ming
-$tertiary-color: #E9513A; // vermillion
-$quaternary-color: #FFDD61; // jonquil
-$quinary-color: #FFFFFF; // cornsilk FFFDF0
-$senary-color: #BDDBD0; //opal
+$primary-color: #000000;
+$secondary-color: #FFFFFF;
 $green-color: #4CAF50;
 $green-color-06: rgba(76, 175, 80, .6);
 $green-color-04: rgba(76, 175, 80, .4);
@@ -21,8 +17,6 @@ $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
 $small-height-breakpoint: 450px;
 $medium-height-breakpoint: 550px;
-$quaternary-color-hover: #f0c631;
-$quaternary-color-active: #fde488;
 
 .app {
     font-family: $font-stack;

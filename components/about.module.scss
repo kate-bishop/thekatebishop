@@ -1,4 +1,4 @@
-@use 'styles/utils.module.scss' as utils;
+@use '../styles/utils.module.scss' as utils;
 
 .about {
     height: 100%;
@@ -22,6 +22,10 @@
 
     & .paragraph {
         margin-top: 1.5rem;
+    }
+
+    & a {
+        color: utils.$green-color;
     }
 }
 

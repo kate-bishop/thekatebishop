@@ -18,10 +18,16 @@ const MeetKate: React.FC = () => {
 }
 
 const CallToAction: React.FC = () => {
+    const ctaLink = <a href={contact.linkedIn} target="_blank" rel="noreferrer">
+        Let&apos;s connect!
+    </a>
+
     return (
         <div className={styles.paragraph}>
-            <Typography variant="subtitle2">{aboutMe.callToAction}</Typography>
-            <Button href={contact.linkedIn} target="_blank" rel="noreferrer">{contact.linkedInButton}</Button>
+            <Typography variant="subtitle2">
+                {aboutMe.callToAction} &#8212; {ctaLink}
+            </Typography>
+            <Button href='/experience'>helo</Button>
         </div>
     )
 }

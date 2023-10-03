@@ -95,7 +95,7 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'Manufactured',
-    jobTitle: 'Front-End Product Developer, Product Owner',
+    jobTitle: 'Lead Front-End Developer, Product Owner',
     location: 'Culver City, CA (Remote)',
     dateSpan: 'September 2021 - February 2022',
     companyDescription:
