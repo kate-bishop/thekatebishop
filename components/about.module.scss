@@ -1,4 +1,4 @@
-@use 'styles/utils.module.scss' as utils;
+@use '../styles/utils.module.scss' as utils;
 
 .about {
     height: 100%;
@@ -21,7 +21,44 @@
     }
 
     & .paragraph {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+
+        & a {
+            color: utils.$green-color;
+        }
+    }
+}
+
+.actionCardContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.actionCard {
+    width: 20rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &:hover {
+        cursor: pointer;
+        background-color: utils.$green-color-hover;
+    }
+
+    &:active {
+        background-color: utils.$green-color-button;
+    }
+
+    & p {
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+        background-color: utils.$green-color-hover;
+        width: 15rem;
+        text-align: center;
     }
 }
 
@@ -29,6 +66,7 @@
     .about {
         width: 100%;
     }
+
     .content {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -42,5 +80,9 @@
         padding-left: 1rem;
         padding-right: 1rem;
         text-align: left;
+    }
+
+    .actionCardContainer {
+        flex-direction: column;
     }
 }

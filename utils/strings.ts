@@ -24,7 +24,7 @@ export const aboutMe = {
     'I am a Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
     'I am a Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
-  callToAction: 'Explore Kate’s Skills & Experience on LinkedIn.',
+  callToAction: 'Learn more about Kate on LinkedIn.',
 };
 
 export const contact = {
@@ -95,7 +95,7 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'Manufactured',
-    jobTitle: 'Front-End Product Developer, Product Owner',
+    jobTitle: 'Lead Front-End Developer, Product Owner',
     location: 'Culver City, CA (Remote)',
     dateSpan: 'September 2021 - February 2022',
     companyDescription:

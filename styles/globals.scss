@@ -18,14 +18,15 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: utils.$quinary-color;
+  background: utils.$secondary-color;
 }
 
 ::-webkit-scrollbar-thumb {
+  width: 5px;
   background: utils.$green-color-06;
 }
 

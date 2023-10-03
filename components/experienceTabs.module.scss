@@ -1,4 +1,4 @@
-@use 'styles/utils.module.scss' as utils;
+@use '../styles/utils.module.scss' as utils;
 
 .tabContainer {
     flex-direction: row;
@@ -6,6 +6,7 @@
     height: 100%;
     overflow: hidden;
     margin-top: 5vh;
+    margin-right: 5vh;
 }
 
 .tabBar {
@@ -13,7 +14,7 @@
     height: 100%;
     width: 15rem;
     margin-top: 1.5rem;
-    background-color: #fff;
+    background-color: utils.$secondary-color;
 }
 
 .tabPanel {
@@ -30,6 +31,7 @@
     .tabContainer {
         flex-direction: column;
         margin-top: 0;
+        margin-right: 0;
     }
     
     .tabBar {

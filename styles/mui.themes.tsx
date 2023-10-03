@@ -110,6 +110,7 @@ export const homeTheme = responsiveFontSizes(createTheme({
       color: palette.primary,
       fontSize: '4rem',
       lineHeight: .85,
+      marginBottom: '1rem',
       '@media (max-width:480px)': {
         fontSize: '2.5rem'
       },
