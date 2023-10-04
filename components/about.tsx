@@ -49,6 +49,7 @@ const About: React.FC = () => {
                     <MeetKate />
                     <div className={styles.actionCardContainer}>
                         <ActionCard link="/experience" imageName="computer" label="Explore Work Experience" />
+                        {/* TODO - Portfolio Page <ActionCard link="/portfolio" imageName="portfolio" label="Explore Portfolio" /> */}
                     </div>
                 </div>
             </ThemeProvider>
