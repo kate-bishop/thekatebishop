@@ -58,18 +58,18 @@ export const experience: Experience[] = [
     companyName: 'Calloquy, PBC',
     jobTitle: 'Senior Front-End Engineer',
     location: 'Atlanta, GA',
-    dateSpan: 'October 2022 - present',
+    dateSpan: 'October 2022 - October 2023',
     companyDescription:
       'Calloquy, PBC is a litigation tech startup making remote legal proceedings accessible, secure, and efficient.',
     description:
-      'I am a leader on the product development team building a comprehensive video conference litigation platform with React (TypeScript) and Laravel PHP.',
+      'I was a leader on the product development team building and delivering a comprehensive video conference platform designed for litigation processes with React (TypeScript) and Laravel PHP. The company ceased operations in October 2023.',
     keyProjects: [
       {
         bulletPoints: [
-          'Architect and develop new features with emphasis on security and reliability, including administrative dashboards and functions, an algorithm to visually organize users by role and party within a meeting, document management, and maintainable role-based permissions handling',
-          'Strategize frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code and documentation efforts',
-          'Act as the technical expert in product discussions to refine business requirements and user experience',
-          'Mentor junior engineers in development best practices, team workflows, and professionalism',
+          'Architected and developed new features with emphasis on security and reliability, including administrative dashboards and functions, an algorithm to visually organize users by role and party within a meeting, document management, and maintainable role-based permissions handling',
+          'Strategized frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code and documentation efforts',
+          'Demonstrated technical expertise in business-level language with stakeholders to refine product requirements',
+          'Mentored junior engineers in development best practices, team workflows, and professionalism',
         ],
       },
     ],
@@ -82,7 +82,7 @@ export const experience: Experience[] = [
     companyDescription:
       'OTR Solutions offers over-the-road carriers factoring and technical tools to deliver reliable cash flow, back office, web domain, and fuel services.',
     description:
-      'I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. As a result, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
+      'During this short-term contract, I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. As a result, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
     keyProjects: [
       {
         bulletPoints: [
@@ -101,7 +101,7 @@ export const experience: Experience[] = [
     companyDescription:
       'Manufactured is a venture-backed product sourcing company that provides entrepreneurs with access to manufacturing companies.',
     description:
-      'I led front-end product development with React and GraphQL to bring a green-field platform to launch.',
+      'I led front-end product development with React (TypeScript) and GraphQL to bring a green-field platform to launch.',
     keyProjects: [
       {
         bulletPoints: [
@@ -120,12 +120,12 @@ export const experience: Experience[] = [
     companyDescription:
       'Groundspeed Analytics is an artificial intelligence InsurTech startup revolutionizing the $350 billion commercial insurance industry.',
     description:
-      'I built new front-end features on the Document Analytics Platform (React) and improved existing back-end Customer Integrations software (Python, MongoDB, and Postgres) in preparation for major customer scaling.',
+      'I built new front-end features on the analytics platform with React (TypeScript) and GraphQL, and improved existing back-end software with Python, MongoDB, and Postgres in preparation for major customer scaling.',
     keyProjects: [
       {
         bulletPoints: [
-          'Developed dynamic UI with React and Node.js to visualize human-in-the-loop processes and enrich sales demos',
-          'Improved performance for data-intense software by optimizing redundant UI and state management (Redux) processes and strategically migrating pieces of the legacy monolith platform to microservices with AWS Lambda (Python)',
+          'Developed dynamic UI to visualize human-in-the-loop processes and enrich sales demos',
+          'Improved performance for data-intense software by optimizing redundant UI and state management (Redux) processes and strategically migrating the legacy monolith platform to microservices with AWS Lambda (Python)',
         ],
       },
     ],
@@ -137,7 +137,7 @@ export const experience: Experience[] = [
     dateSpan: 'July 2017 - January 2021',
     companyDescription: 'Pariveda Solutions is a consulting firm dedicated to solving complex technology and business problems by aligning their focus on people-development with the mission of their clients.',
     description:
-      'I designed, developed, and delivered technical solutions to clients across industries.',
+      'I adapted to new tech stacks, roles, and company cultures quickly so that project work was productive from day one. Internally, I led initiatives to curate resources and share knowledge within the company, and I mentored junior consultants in technology and professionalism to prepare them for promotion.',
     keyProjects: [
       {
         projectName: 'Pharmaceutical Services Design System',
