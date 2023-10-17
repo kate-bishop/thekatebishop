@@ -1,6 +1,6 @@
 # thekatebishop
 
-This is a website to host Kate Bishop's Portfolio and other content.
+This is a website to host Kate Bishop's Portfolio and other content. This project was built using the [Next.js](https://nextjs.org/) framework.
 
 ## Links
 
