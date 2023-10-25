@@ -21,14 +21,14 @@ export const aboutMe = {
   aboutKateC:
     '. She has experience in several industries, including ecommerce, insurance, education, finance, and healthcare.',
   aboutMe:
-    'I am a Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+    'I am a Senior Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
-    'I am a Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+    'I am a Senior Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   callToAction: 'Learn more about Kate on LinkedIn.',
 };
 
 export const contact = {
-  email: 'kate@thekatebishop.com',
+  email: 'itskatebishop@gmail.com',
   location: 'Atlanta, GA',
   linkedIn: 'https://www.linkedin.com/in/thekatebishop/',
   linkedInShort: 'linkedin.com/in/thekatebishop',
@@ -56,13 +56,13 @@ export const education = {
 export const experience: Experience[] = [
   {
     companyName: 'Calloquy, PBC',
-    jobTitle: 'Senior Front-End Engineer',
-    location: 'Atlanta, GA',
-    dateSpan: 'October 2022 - October 2023',
     companyDescription:
-      'Calloquy, PBC is a litigation tech startup making remote legal proceedings accessible, secure, and efficient.',
+      'Calloquy, PBC is a litigation tech startup making remote legal proceedings accessible, secure, and efficient. The company ceased operations in October 2023.',
+    location: 'Atlanta, GA',
+    jobTitle: 'Senior Front-End Engineer',
+    dateSpan: 'October 2022 - October 2023',
     description:
-      'I was a leader on the product development team building and delivering a comprehensive video conference platform designed for litigation processes with React (TypeScript) and Laravel PHP. The company ceased operations in October 2023.',
+      'I was a leader on the product development team building and delivering a comprehensive video conference platform designed for litigation processes with React (TypeScript) and Laravel PHP.',
     keyProjects: [
       {
         bulletPoints: [
@@ -76,13 +76,13 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'OTR Solutions',
-    jobTitle: 'Front-End Software Engineer, UX Architect',
-    location: 'Roswell, GA',
-    dateSpan: 'August - September 2022 (Short-Term Contract)',
     companyDescription:
       'OTR Solutions offers over-the-road carriers factoring and technical tools to deliver reliable cash flow, back office, web domain, and fuel services.',
+    location: 'Roswell, GA',
+    jobTitle: 'Front-End Software Engineer, UX Architect',
+    dateSpan: 'August - September 2022 (Short-Term Contract)',
     description:
-      'During this short-term contract, I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. As a result, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
+      'During the 6-week timeline, I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. After deployment, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
     keyProjects: [
       {
         bulletPoints: [
@@ -95,11 +95,11 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'Manufactured',
-    jobTitle: 'Lead Front-End Developer, Product Owner',
-    location: 'Culver City, CA (Remote)',
-    dateSpan: 'September 2021 - February 2022',
     companyDescription:
       'Manufactured is a venture-backed product sourcing company that provides entrepreneurs with access to manufacturing companies.',
+    location: 'Culver City, CA (Remote)',
+    jobTitle: 'Lead Front-End Developer, Product Owner',
+    dateSpan: 'September 2021 - February 2022',
     description:
       'I led front-end product development with React (TypeScript) and GraphQL to bring a green-field platform to launch.',
     keyProjects: [
@@ -114,11 +114,11 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'Groundspeed Analytics',
-    jobTitle: 'Full-Stack Software Engineer II',
-    location: 'Ann Arbor, MI (Remote)',
-    dateSpan: 'February 2021 - September 2021',
     companyDescription:
       'Groundspeed Analytics is an artificial intelligence InsurTech startup revolutionizing the $350 billion commercial insurance industry.',
+    location: 'Ann Arbor, MI (Remote)',
+    jobTitle: 'Full-Stack Software Engineer II',
+    dateSpan: 'February 2021 - September 2021',
     description:
       'I built new front-end features on the analytics platform with React (TypeScript) and GraphQL, and improved existing back-end software with Python, MongoDB, and Postgres in preparation for major customer scaling.',
     keyProjects: [
@@ -132,19 +132,27 @@ export const experience: Experience[] = [
   },
   {
     companyName: 'Pariveda Solutions',
-    jobTitle: 'Software Development Consultant',
     location: 'Atlanta, GA',
+    jobTitle: 'Associate Software Development Consultant',
     dateSpan: 'July 2017 - January 2021',
     companyDescription: 'Pariveda Solutions is a consulting firm dedicated to solving complex technology and business problems by aligning their focus on people-development with the mission of their clients.',
     description:
-      'I adapted to new tech stacks, roles, and company cultures quickly so that project work was productive from day one. Internally, I led initiatives to curate resources and share knowledge within the company, and I mentored junior consultants in technology and professionalism to prepare them for promotion.',
+      'I was a team lead and served as a technical expert for projects across several industries. I led internal company-wide initiatives to promote User Experience in solutions architecture, curated resources to share knowledge within the company, and mentored junior consultants in technology and professionalism to prepare for promotion. Key Projects include...',
     keyProjects: [
       {
         projectName: 'Pharmaceutical Services Design System',
-        projectRole: 'Lead React Developer',
+        projectRole: 'Team Lead, React Developer',
         bulletPoints: [
           'Led a React team to advance a MVP-level component library to a verbose, WCAG-compliant accessible design system, enabling rapid prototyping and web application development across the organization',
           'Collaborated between development and design teams and planned roadmap to integrate organization rebranding efforts into the design system',
+        ],
+      },
+      {
+        projectName: 'Healthcare Financial Data Analytics',
+        projectRole: 'Team Lead, Data Analyst',
+        bulletPoints: [
+          'Developed a proof of concept to incorporate predictive analytics and machine learning into current hospital and business operation based on existing data',
+          'Visualized metrics representing patient behavior at doctor appointments to inform administrative actions, such as determining preferred schedules, providing reminders to patients, and planning for expected costs and revenue',
         ],
       },
       {
@@ -156,40 +164,29 @@ export const experience: Experience[] = [
         ],
       },
       {
-        projectName: 'Healthcare Financial Data Analytics',
-        projectRole: 'Data Analyst, Tableau Developer',
+        projectName: 'e-Commerce Marketing Data Discovery',
+        projectRole: 'Data Architect',
         bulletPoints: [
-          'Developed a proof of concept to incorporate predictive analytics and machine learning into current hospital and business operation based on existing data',
-          'Visualized metrics representing patient behavior at doctor appointments to inform administrative actions, such as determining preferred schedules, providing reminders to patients, and planning for expected costs and revenue',
+          'Assessed current set of data sources and utilization process to make business decisions',
+          'Strategized a phased data analytics plan to match domain expertise to the right data, maximize effectiveness of marketing spend, and enable data-driven decision making',
         ],
       },
-    ],
-  },
-];
-
-export const nonDevParivedaKeyProjects: KeyProject[] = [
-  {
-    projectName: 'Construction Vending Machine Cross-Platform Mobile App',
-    projectRole: 'Xamarin Developer',
-    bulletPoints: [
-      'Transitioned an existing native-iOS app to the Xamarin platform in C# with a focus on replicating and adjusting features for Android users',
-      'Designed, user-tested, and developed a new Cart Checkout experience for both iOS and Android',
-    ],
-  },
-  {
-    projectName: 'e-Commerce Data Platform Analytics',
-    projectRole: 'Data Analyst, Architect',
-    bulletPoints: [
-      'Assessed current set of data sources and utilization process to make business decisions',
-      'Strategized a phased data analytics plan to match domain expertise to the right data, maximize effectiveness of marketing spend, and enable data-driven decision making',
-    ],
-  },
-  {
-    projectName: 'Customer Persona Build',
-    projectRole: 'UX Analyst',
-    bulletPoints: [
-      'Designed and facilitated a workshop with executive team to harvest current understanding of the company’s customers',
-      'Synthesized outputs into personas, delivered recommendations and coaching to executive team regarding use of insights',
+      {
+        projectName: 'Construction Vending Machine Cross-Platform Mobile App',
+        projectRole: 'Xamarin Developer',
+        bulletPoints: [
+          'Transitioned an existing native-iOS app to the Xamarin platform in C# with a focus on replicating and adjusting features for Android users',
+          'Designed, user-tested, and developed a new Cart Checkout experience for both iOS and Android',
+        ],
+      },
+      {
+        projectName: 'Customer Persona Build',
+        projectRole: 'UX Analyst',
+        bulletPoints: [
+          'Designed and facilitated a workshop with executive team to harvest current understanding of the company’s customers',
+          'Synthesized outputs into personas, delivered recommendations and coaching to executive team regarding use of insights',
+        ],
+      },
     ],
   },
 ];

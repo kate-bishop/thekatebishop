@@ -47,17 +47,14 @@ const ExperienceTabPanel: React.FC<ExperienceTabPanelProps> = ({
     return <TabPanel value={activeTab} index={index} key={index}>
         <Typography variant="h1">{experience.jobTitle}</Typography>
         <Typography variant="subtitle1">{experience.location} | {experience.dateSpan}</Typography>
-        <div id="experience-company-details" className={styles.contentSection}>
-            <Typography variant="subtitle2">{experience.companyDescription}</Typography>
-        </div>
+        <Typography variant="subtitle2" className={styles.contentSection}>{experience.companyDescription}</Typography>
         <div id="experience-position-details" className={styles.contentSection}>
             <Typography variant="body1">{experience.description}</Typography>
-            {experience.keyProjects[0].projectName && <Typography variant='subtitle2' className={styles.contentSection}>Key Projects</Typography>}
             {experience.keyProjects.map((project, pIndex) => {
-                const projectHeader = project.projectName && <Typography variant='subtitle1'>{project.projectRole} | {project.projectName}</Typography>
+                const projectHeader = project.projectName && <Typography variant='subtitle1' fontStyle='bold' className={styles.projectTitle}>{project.projectRole} | {project.projectName}</Typography>
                 return <div key={`key-project-details-${index}-${pIndex}`}>
                     {projectHeader}
-                    <ul>{project.bulletPoints.map((bullet, bIndex) => {
+                    <ul className={styles.projectBullets}>{project.bulletPoints.map((bullet, bIndex) => {
                         return <li key={`key-project-details-${index}-${pIndex}-${bIndex}`}>
                             <Typography variant='body1'>{bullet}</Typography>
                         </li>
