@@ -13,13 +13,13 @@ export const aboutMe = {
   tagline1: 'Atlanta-based tech fanatic making leading-edge solutions reality.',
   tagline2: "It's nice to meet you!",
   aboutKate:
-    'Kate is a UX-obsessed Front-End Engineer with over 6 years of experience creating delightful user experiences and translating design into resilient interfaces. She has experience in several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+    'Kate is a UX-obsessed Senior Front-End Engineer who has dedicated her career to creating delightful user experiences and translating design into resilient interfaces. She has over 6 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
   aboutKateA:
-    'Kate is a UX-obsessed Front-End Engineer with over 5 years of experience',
+    'Kate is a UX-obsessed Senior Front-End Engineer who has dedicated her career to',
   aboutKateB:
     'creating delightful user experiences and translating design into resilient interfaces',
   aboutKateC:
-    '. She has experience in several industries, including ecommerce, insurance, education, finance, and healthcare.',
+    '. She has over 6 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
   aboutMe:
     'I am a Senior Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
