@@ -55,6 +55,36 @@ export const education = {
 
 export const experience: Experience[] = [
   {
+    companyName: 'Intuit Mailchimp',
+    companyDescription:
+      'Mailchimp is an email marketing and marketing automations platform used by businesses for their marketing.',
+    location: 'Atlanta, GA',
+    jobTitle: 'Senior Full Stack Engineer',
+    dateSpan: 'November 2023 - present',
+    description:
+      'I build new features and experiments on the Guide Me/Onboarding Experience team, focusing on Homepage and users’ first 90 days on the platform. Key projects include…',
+    keyProjects: [
+      {
+        projectName: 'Persistent Onboarding Experience with Left Navigation',
+        projectRole: 'Technical Lead',
+        bulletPoints: [
+          'Led technical exploration, project planning and development to create an onboarding experience outside of the Homepage. This experiment resulted in positive trends towards feature engagement, key payoffs, and upgrades, and therefore proved value in a dedicated link in the left navigation module',
+          'Developed an independent Onboarding page with views for eligible customers and routing logic to send users directly to the page after sign-up with React (JavaScript) and PHP',
+          'Coordinated with the navigation team post-experiment to release a “Home” link in left navigation so onboarding and general homepage modules are easy to find again after exploring the platform',
+        ],
+      },
+      {
+        projectName: 'Persistent Onboarding Experience with Left Navigation',
+        projectRole: 'Senior Software Engineer',
+        bulletPoints: [
+          'Collaborated in cross-team technical exploration and development to build an onboarding task to incentivize customers to connect integrations and promote Mailchimp’s new AI Pre-Built-Journey offerings. For the duration of the experiment, we saw a 42% increase in starts of AI PBJs and 21% increase in overall Customer Journey Builder starts',
+          'Incorporated connected store data into personalized insights about customers’ store performance to introduce the value of completing the task to turn on a specific pre-built journey',
+          'Developed POC for using GenAI to generate and prioritize personalized insights for future work',
+        ],
+      },
+    ],
+  },
+  {
     companyName: 'Calloquy, PBC',
     companyDescription:
       'Calloquy, PBC is a litigation tech startup making remote legal proceedings accessible, secure, and efficient. The company ceased operations in October 2023.',
@@ -66,10 +96,10 @@ export const experience: Experience[] = [
     keyProjects: [
       {
         bulletPoints: [
-          'Architected and developed new features with emphasis on security and reliability, including administrative dashboards and functions, an algorithm to visually organize users by role and party within a meeting, document management, and maintainable role-based permissions handling',
-          'Strategized frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code and documentation efforts',
-          'Demonstrated technical expertise in business-level language with stakeholders to refine product requirements',
-          'Mentored junior engineers in development best practices, team workflows, and professionalism',
+          'Architected secure and reliable web meeting platform using React (TypeScript) and Laravel PHP',
+          'Built an algorithm to automatically “seat” users at a virtual table based on role and party for the meeting, complete with interactive drag-and-drop UI so users can customize seating for all users in the meeting',
+          'Developed platform features such as administrative dashboards for scheduling meetings and contacting participants, secure document management, and maintainable role-based permissions handling',
+          'Strategized frequent priority shifts to ensure a balance of tackling revenue-driving features and critical performance improvements, while maintaining high quality code, documentation efforts, and mentorship of junior engineers. Bridged gaps between development and stakeholder teams with technical expertise and business value communication skills to design and refine product requirements',
         ],
       },
     ],
@@ -105,9 +135,9 @@ export const experience: Experience[] = [
     keyProjects: [
       {
         bulletPoints: [
-          'Revitalized development and delivered the MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, clearly documenting development requirements, and setting attainable timelines',
-          'Designed information and process flows to scope new product and partner integration requirements, and developed a road-map of short- and long-term product goals for the next 3 years',
-          'Introduced new team practices to foster collaboration across an international team and promote timely delivery of features, including visualized metrics to describe the team’s progress, check-ins with leaders, and team calendars',
+          'Revitalized development and delivered the MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, documenting technical requirements, and setting attainable timelines',
+          'Designed information and process flows to scope new product and partner integration requirements, and developed a product goal road map for the next 3 years',
+          'Introduced new team practices to foster collaboration across an international team and promote timely delivery of features, including visualized metrics to describe the team’s progress, check-ins with leaders, and shared team calendars',
         ],
       },
     ],
@@ -124,8 +154,9 @@ export const experience: Experience[] = [
     keyProjects: [
       {
         bulletPoints: [
-          'Developed dynamic UI to visualize human-in-the-loop processes and enrich sales demos',
+          'Developed custom analytics platform microservices using Python, MongoDB, and Postgres to process PDF-format insurance documents into normalized data to be consumed by an AI endpoint, providing insurance rate recommendations to agents competing for a speedy quote for customers',
           'Improved performance for data-intense software by optimizing redundant UI and state management (Redux) processes and strategically migrating the legacy monolith platform to microservices with AWS Lambda (Python)',
+          'Built dynamic UI to visualize human-in-the-loop processes and enrich sales demos',
         ],
       },
     ],
