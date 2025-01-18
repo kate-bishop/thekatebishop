@@ -9,21 +9,21 @@ export const pages = [
 
 export const aboutMe = {
   title: 'Kate Bishop',
-  position: 'Senior Front-End Software Engineer',
+  position: 'Senior Full Stack Software Engineer',
   tagline1: 'Atlanta-based tech fanatic making leading-edge solutions reality.',
   tagline2: "It's nice to meet you!",
   aboutKate:
-    'Kate is a UX-obsessed Senior Front-End Engineer who has dedicated her career to creating delightful user experiences and translating design into resilient interfaces. She has over 6 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+    'Kate is a UX-obsessed Senior Full Stack Engineer who has dedicated her career to creating delightful user experiences and translating design into resilient interfaces. She has over 7 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
   aboutKateA:
-    'Kate is a UX-obsessed Senior Front-End Engineer who has dedicated her career to',
+    'Kate is a UX-obsessed Senior Full Stack Engineer who has dedicated her career to',
   aboutKateB:
     'creating delightful user experiences and translating design into resilient interfaces',
   aboutKateC:
-    '. She has over 6 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+    '. She has over 7 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
   aboutMe:
-    'I am a Senior Front-End Software Engineer with over 6 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+    'I am a Senior Full Stack Software Engineer with over 7 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
-    'I am a Senior Front-End Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+    'I am a Senior Full Stack Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   callToAction: 'Learn more about Kate on LinkedIn.',
 };
 
