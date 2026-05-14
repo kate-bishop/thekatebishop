@@ -103,15 +103,6 @@ export const experience: Experience[] = [
           'Coordinated with the navigation team post-experiment to release a “Home” link in left navigation so onboarding and general homepage modules are easy to find again after exploring the platform',
         ],
       },
-      {
-        projectName: 'Persistent Onboarding Experience with Left Navigation',
-        projectRole: 'Senior Software Engineer',
-        bulletPoints: [
-          'Collaborated in cross-team technical exploration and development to build an onboarding task to incentivize customers to connect integrations and promote Mailchimp’s new AI Pre-Built-Journey offerings. For the duration of the experiment, we saw a 42% increase in starts of AI PBJs and 21% increase in overall Customer Journey Builder starts',
-          'Incorporated connected store data into personalized insights about customers’ store performance to introduce the value of completing the task to turn on a specific pre-built journey',
-          'Developed POC for using GenAI to generate and prioritize personalized insights for future work',
-        ],
-      },
     ],
   },
   {
