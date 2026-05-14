@@ -1,4 +1,4 @@
-import { Experience, KeyProject } from './types';
+import { Experience } from './types';
 
 export const pages = [
   {
@@ -23,7 +23,7 @@ export const aboutMe = {
   aboutMe:
     'I am a Senior Full Stack Software Engineer with over 7 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
-    'I am a Senior Full Stack Engineer with 5 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
+    'I am a Senior Full Stack Engineer with 7 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   callToAction: 'Learn more about Kate on LinkedIn.',
 };
 
@@ -57,13 +57,43 @@ export const experience: Experience[] = [
   {
     companyName: 'Intuit Mailchimp',
     companyDescription:
-      'Mailchimp is an email marketing and marketing automations platform used by businesses for their marketing.',
+      'Mailchimp is an email and automation platform used by businesses for their customer outreach.',
     location: 'Atlanta, GA',
     jobTitle: 'Senior Full Stack Engineer',
     dateSpan: 'November 2023 - present',
     description:
-      'I build new features and experiments on the Guide Me/Onboarding Experience team, focusing on Homepage and users’ first 90 days on the platform. Key projects include…',
+      'I lead development of complex components and widgets for the Mailchimp platform serving millions of users',
     keyProjects: [
+      {
+        bulletPoints: [
+          'Deliver full-stack solutions and end-to-end experiment lifecycles with React and PHP',
+          'Collaborate cross-functionally with product, design, data science, and platform engineering teams to define requirements, coordinate releases, and keep projects moving through ambiguity',
+          'Leverage AI-assisted development tools (Claude, Claude CLI, Cursor) daily to accelerate coding, code review, and project management workflows',
+          'Author and maintain team documentation that establishes repeatable processes, including release protocols, on-call standards, and onboarding guides that reduce ramp-up time for new engineers',
+        ],
+      },
+      {
+        projectName: 'Payoff-Based Onboarding Checklist',
+        projectRole: 'Technical Lead',
+        bulletPoints: [
+          'Led development for a high-visibility A/B experiment redesigning the Mailchimp Onboarding Checklist with 3 variants, targeting all new signups in their first 7 days. Early results show an 8% relative increase in payoff actions in the winning variant',
+          'Drove go/no-go meetings with PM, design, and stakeholders, built dashboards in Amplitude and Splunk to validate experiment bucketing and user behavior across variants with ECS events, and managed a phased rollout to ensure a successful release',
+        ],
+      },
+      {
+        projectName: 'Branded Templates on the Homepage',
+        projectRole: 'Technical Lead',
+        bulletPoints: [
+          'Engineered a color algorithm to surface personalized branded images and email templates. Results showed an overall increase of 19% in email sends, and an increase of 39% of email sends on the user’s first day',
+        ],
+      },
+      {
+        projectName: 'Global Date Picker on the Homepage',
+        projectRole: 'Technical Lead',
+        bulletPoints: [
+          'Designed and delivered a responsive, internationalized date picker component, replacing 4 separate per-module date sources, improving consistency across the homepage and reducing frontend data-fetching complexity',
+        ],
+      },
       {
         projectName: 'Persistent Onboarding Experience with Left Navigation',
         projectRole: 'Technical Lead',
@@ -135,6 +165,7 @@ export const experience: Experience[] = [
     keyProjects: [
       {
         bulletPoints: [
+          'Led front-end product design (Figma) and development for a team of 4, focusing on customer goals of quick-to-complete and easy access',
           'Revitalized development and delivered the MVP Sales and Customer Service Platform on schedule by refining scope with stakeholders, documenting technical requirements, and setting attainable timelines',
           'Designed information and process flows to scope new product and partner integration requirements, and developed a product goal road map for the next 3 years',
           'Introduced new team practices to foster collaboration across an international team and promote timely delivery of features, including visualized metrics to describe the team’s progress, check-ins with leaders, and shared team calendars',
