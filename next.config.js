@@ -1,21 +1,12 @@
+const withMDX = require('@next/mdx')()
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  // Tell Next.js we have a custom turbopack setup
+  turbopack: {
+    // If you use specific webpack loaders, they go here now
+  },
+  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 }
 
-module.exports = nextConfig
-
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-    // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
-  },
-})
-module.exports = withMDX({
-  // Append the default value with md extensions
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-})
+module.exports = withMDX(nextConfig)

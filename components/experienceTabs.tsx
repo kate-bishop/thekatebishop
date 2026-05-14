@@ -51,7 +51,7 @@ const ExperienceTabPanel: React.FC<ExperienceTabPanelProps> = ({
         <div id="experience-position-details" className={styles.contentSection}>
             <Typography variant="body1">{experience.description}</Typography>
             {experience.keyProjects.map((project, pIndex) => {
-                const projectHeader = project.projectName && <Typography variant='subtitle1' fontStyle='bold' className={styles.projectTitle}>{project.projectRole} | {project.projectName}</Typography>
+                const projectHeader = project.projectName && <Typography variant='subtitle1' fontStyle='bold' className={styles.projectTitle}>{project.projectName}</Typography>
                 return <div key={`key-project-details-${index}-${pIndex}`}>
                     {projectHeader}
                     <ul className={styles.projectBullets}>{project.bulletPoints.map((bullet, bIndex) => {

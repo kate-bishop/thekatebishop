@@ -2,6 +2,9 @@
   "name": "thekatebishop-next",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,28 +12,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@mdx-js/loader": "^2.1.2",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.3",
-    "@next/mdx": "^12.2.5",
-    "date-fns": "^2.11.1",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
+    "@next/mdx": "^14.2.0",
+    "date-fns": "^2.30.0",
     "gray-matter": "^4.0.2",
-    "next": "12.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^16.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "remark": "^14.0.1",
     "remark-html": "^15.0.0",
-    "sass": "^1.54.3",
-    "sharp": "^0.30.7"
+    "sass": "^1.70.0",
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
-    "@types/node": "18.6.4",
-    "@types/react": "18.0.16",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4",
-    "typescript": "4.7.4"
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "typescript": "^5.4.0"
   }
 }
