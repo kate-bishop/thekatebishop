@@ -62,7 +62,7 @@ export const experience: Experience[] = [
     jobTitle: 'Senior Full Stack Engineer',
     dateSpan: 'November 2023 - present',
     description:
-      'I lead development of complex components and widgets for the Mailchimp platform serving millions of users',
+      'I lead development of complex components and widgets for the Mailchimp platform serving millions of users.',
     keyProjects: [
       {
         bulletPoints: [
@@ -71,6 +71,10 @@ export const experience: Experience[] = [
           'Leverage AI-assisted development tools (Claude, Claude CLI, Cursor) daily to accelerate coding, code review, and project management workflows',
           'Author and maintain team documentation that establishes repeatable processes, including release protocols, on-call standards, and onboarding guides that reduce ramp-up time for new engineers',
         ],
+      },
+      {
+        projectName: 'Key projects include...',
+        bulletPoints: [],
       },
       {
         projectName: 'Payoff-Based Onboarding Checklist',
