@@ -78,50 +78,55 @@ const NavigationBar: React.FC = () => {
         </Drawer>
     </>
 
-    const isOnHomePage = router.pathname === '/'
-    const shouldHideOnScroll = useSmallScreen && !isOnHomePage;
+    const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 20 });
+    const isOnHomePage = router.pathname === '/';
+    const shouldElevateAppBar = !isOnHomePage && trigger;
 
-    return <HideOnScroll shouldHideOnScroll={shouldHideOnScroll}>
-        <AppBar color={shouldHideOnScroll ? "inherit" : "transparent"} elevation={0}>
-            <Toolbar>
-                <Grid
-                    container
-                    direction="row"
-                    justifyContent="space-between"
-                    className={styles.navbar}
-                >
-                    <Grid item>
-                        {!isOnHomePage &&
-                            <Link href={`/`}>
-                                <Typography>
-                                    <a>{aboutMe.title.toUpperCase()}</a>
-                                </Typography>
-                            </Link>
-                        }
+    return (
+        <HideOnScroll shouldHideOnScroll={!isOnHomePage}>
+            <AppBar
+                color={shouldElevateAppBar ? "inherit" : "transparent"}
+                elevation={shouldElevateAppBar ? 1 : 0}>
+                <Toolbar>
+                    <Grid
+                        container
+                        direction="row"
+                        justifyContent="space-between"
+                        className={styles.navbar}
+                    >
+                        <Grid item>
+                            {!isOnHomePage &&
+                                <Link href={`/`}>
+                                    <Typography>
+                                        <a>{aboutMe.title.toUpperCase()}</a>
+                                    </Typography>
+                                </Link>
+                            }
+                        </Grid>
+                        <Grid item>
+                            {useSmallScreen ? smallScreenView : (
+                                <Grid container direction="row">
+                                    {pages.map((page) => {
+                                        return (
+                                            <Link href={page.value} key={page.name}>
+                                                <Typography
+                                                    variant="subtitle1"
+                                                    textTransform="uppercase"
+                                                    style={{ marginRight: "2rem" }}
+                                                >
+                                                    <a>{page.name}</a>
+                                                </Typography>
+                                            </Link>
+                                        );
+                                    })}
+                                </Grid>
+                            )}
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        {useSmallScreen ? smallScreenView : (
-                            <Grid container direction="row">
-                                {pages.map((page) => {
-                                    return (
-                                        <Link href={page.value} key={page.name}>
-                                            <Typography
-                                                variant="subtitle1"
-                                                textTransform="uppercase"
-                                                style={{ marginRight: "2rem" }}
-                                            >
-                                                <a>{page.name}</a>
-                                            </Typography>
-                                        </Link>
-                                    );
-                                })}
-                            </Grid>
-                        )}
-                    </Grid>
-                </Grid>
-            </Toolbar>
-        </AppBar>
-    </HideOnScroll >
+                </Toolbar>
+            </AppBar>
+        </HideOnScroll>
+    )
 }
 
 export default NavigationBar;
