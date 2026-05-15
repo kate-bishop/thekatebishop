@@ -29,10 +29,10 @@ const ExperienceTabBar: React.FC<ExperienceTabBarProps> = ({
     >
         {experience.map((exp, index) => {
             return (
-                <Tab 
-                    label={exp.companyName} 
-                    key={index} 
-                    {...a11yProps(index)} 
+                <Tab
+                    label={exp.companyName}
+                    key={index}
+                    {...a11yProps(index)}
                     onClick={() => onTabClick(index)}
                 />
             );
@@ -46,9 +46,9 @@ const ExperienceItem: React.FC<{ exp: Experience, index: number, id: string }> =
     id
 }) => {
     return (
-        <Box 
-            id={id} 
-            className={styles.experienceSection} 
+        <Box
+            id={id}
+            className={styles.experienceSection}
             sx={{ mb: 10, pt: 2, scrollMarginTop: '100px' }}
         >
             <Typography variant="h1">{exp.jobTitle}</Typography>
@@ -85,20 +85,16 @@ const ExperienceTabs: React.FC = () => {
     const [showContent, setShowContent] = useState(false);
 
     // Create unique IDs for each section based on company name
-    const sectionIds = useMemo(() => 
-        experience.map(exp => `exp-${exp.companyName.replace(/\s+/g, '-').toLowerCase()}`), 
-    []);
+    const sectionIds = useMemo(() =>
+        experience.map(exp => `exp-${exp.companyName.replace(/\s+/g, '-').toLowerCase()}`),
+        []);
 
     // Map the active string ID back to a numeric index for Tabs
-    const activeId = useScrollspy(sectionIds, 120); 
+    const activeId = useScrollspy(sectionIds, 120);
     const activeTab = useMemo(() => {
         const index = sectionIds.indexOf(activeId);
         return index === -1 ? 0 : index;
     }, [activeId, sectionIds]);
-
-    useEffect(() => {
-        setShowContent(true);
-    }, []);
 
     const handleTabClick = (index: number) => {
         const element = document.getElementById(sectionIds[index]);
@@ -106,6 +102,10 @@ const ExperienceTabs: React.FC = () => {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+    useEffect(() => {
+        setShowContent(true);
+    }, []);
 
     return (
         <CSSTransition
@@ -116,19 +116,19 @@ const ExperienceTabs: React.FC = () => {
         >
             <div className={`${styles.tabContainer} ${useSmallScreen ? styles.column : ''}`}>
                 <div className={`${styles.tabBar} ${useSmallScreen ? styles.column : ''}`}>
-                    <ExperienceTabBar 
-                        activeTab={activeTab} 
-                        onTabClick={handleTabClick} 
-                        useSmallScreen={useSmallScreen} 
+                    <ExperienceTabBar
+                        activeTab={activeTab}
+                        onTabClick={handleTabClick}
+                        useSmallScreen={useSmallScreen}
                     />
                 </div>
                 <div className={`${styles.tabPanelScrollable} ${useSmallScreen ? styles.column : ''}`}>
                     {experience.map((exp, index) => (
-                        <ExperienceItem 
-                            key={index} 
-                            exp={exp} 
-                            index={index} 
-                            id={sectionIds[index]} 
+                        <ExperienceItem
+                            key={index}
+                            exp={exp}
+                            index={index}
+                            id={sectionIds[index]}
                         />
                     ))}
                 </div>
