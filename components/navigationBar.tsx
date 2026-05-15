@@ -80,12 +80,12 @@ const NavigationBar: React.FC = () => {
 
     const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 20 });
     const isOnHomePage = router.pathname === '/';
-    const shouldElevateAppBar = !isOnHomePage && trigger;
+    const shouldElevateAppBar = !isOnHomePage && !useSmallScreen && trigger;
 
     return (
         <HideOnScroll shouldHideOnScroll={!isOnHomePage}>
             <AppBar
-                color={shouldElevateAppBar ? "inherit" : "transparent"}
+                color="inherit"
                 elevation={shouldElevateAppBar ? 1 : 0}>
                 <Toolbar>
                     <Grid
