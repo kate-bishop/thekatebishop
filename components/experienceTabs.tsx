@@ -115,14 +115,14 @@ const ExperienceTabs: React.FC = () => {
             unmountOnExit
         >
             <div className={`${styles.tabContainer} ${useSmallScreen ? styles.column : ''}`}>
-                <div className={styles.tabBar}>
+                <div className={`${styles.tabBar} ${useSmallScreen ? styles.column : ''}`}>
                     <ExperienceTabBar 
                         activeTab={activeTab} 
                         onTabClick={handleTabClick} 
                         useSmallScreen={useSmallScreen} 
                     />
                 </div>
-                <div className={styles.tabPanelScrollable}>
+                <div className={`${styles.tabPanelScrollable} ${useSmallScreen ? styles.column : ''}`}>
                     {experience.map((exp, index) => (
                         <ExperienceItem 
                             key={index} 
