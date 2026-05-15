@@ -1,63 +1,36 @@
 @use '../styles/utils.module.scss' as utils;
 
 .tabContainer {
-    flex-direction: row;
     display: flex;
-    height: 100%;
-    overflow: hidden;
+    flex-direction: row;
     margin-top: 5vh;
     margin-right: 5vh;
-}
-
-.tabBar {
+    gap: 2rem;
+    
+    &.column {
+      flex-direction: column;
+    }
+  }
+  
+  .tabBar {
     position: fixed;
-    height: 100%;
-    width: 15rem;
     margin-top: 1.5rem;
+    height: fit-content;
+    width: 15rem;
     background-color: utils.$secondary-color;
-}
+  }
 
-.tabPanel {
+  .tabPanelScrollable {
     margin-left: 17rem;
-    height: 100%;
-    overflow: auto;
+    flex-grow: 1;
 
     & .contentSection {
         margin-top: 1rem;
     }
-}
-
-.projectTitle {
-    margin-top: 1.5rem;
-    font-weight: 700;
-}
-
-.projectBullets {
-    margin: 0;
-}
-
-@media only screen and (max-width: utils.$small-breakpoint) {
-    .tabContainer {
-        flex-direction: column;
-        margin-top: 0;
-        margin-right: 0;
-    }
-    
-    .tabBar {
-        height: auto;
-        width: 100%;
-        margin-top: 0;
-        overflow: auto;
-    }
-    
-    .tabPanel {
-        margin-left: 0;
-        height: 100%;
-        overflow: auto;
-        margin-top: 3rem;
-    
-        & .contentSection {
-            margin-top: 1rem;
-        }
+  }
+  
+  .experienceSection {
+    &:last-child {
+      min-height: 70vh;
     }
 }

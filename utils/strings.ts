@@ -66,7 +66,7 @@ export const experience: Experience[] = [
     keyProjects: [
       {
         bulletPoints: [
-          'Deliver full-stack solutions and end-to-end experiment lifecycles with React and PHP',
+          'Deliver high quality full-stack solutions and end-to-end experiment lifecycles with React and PHP',
           'Collaborate cross-functionally with product, design, data science, and platform engineering teams to define requirements, coordinate releases, and keep projects moving through ambiguity',
           'Leverage AI-assisted development tools (Claude, Claude CLI, Cursor) daily to accelerate coding, code review, and project management workflows',
           'Author and maintain team documentation that establishes repeatable processes, including release protocols, on-call standards, and onboarding guides that reduce ramp-up time for new engineers',

@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { a11yProps } from '../utils/utils';
-import { Tabs, Tab, Typography } from '@mui/material';
-import TabPanel from './tabPanel';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
+import { a11yProps, useScrollspy } from '../utils/utils';
+import { Tabs, Tab, Typography, Box } from '@mui/material';
 import { CSSTransition } from 'react-transition-group';
 import { transitionTimeout } from '../utils/constants';
 import { experience } from '../utils/strings';
@@ -11,90 +10,131 @@ import styles from './experienceTabs.module.scss';
 
 interface ExperienceTabBarProps {
     activeTab: number,
-    handleChange: (event: React.SyntheticEvent, newValue: number) => void,
+    onTabClick: (index: number) => void,
     useSmallScreen: boolean,
 }
+
 const ExperienceTabBar: React.FC<ExperienceTabBarProps> = ({
     activeTab,
-    handleChange,
+    onTabClick,
     useSmallScreen,
 }) => {
     return <Tabs
         orientation={useSmallScreen ? "horizontal" : "vertical"}
         variant="scrollable"
         value={activeTab}
-        onChange={handleChange}
         aria-label="Experience tabs"
-        sx={{ borderRight: 1, borderColor: 'divider' }}
+        sx={{ borderRight: useSmallScreen ? 0 : 1, borderBottom: useSmallScreen ? 1 : 0, borderColor: 'divider' }}
         indicatorColor="secondary"
     >
         {experience.map((exp, index) => {
-            return <Tab label={exp.companyName} key={index} {...a11yProps(index)} />;
+            return (
+                <Tab 
+                    label={exp.companyName} 
+                    key={index} 
+                    {...a11yProps(index)} 
+                    onClick={() => onTabClick(index)}
+                />
+            );
         })}
     </Tabs>
 }
 
-interface ExperienceTabPanelProps {
-    activeTab: number,
-    experience: Experience,
-    index: number,
-}
-const ExperienceTabPanel: React.FC<ExperienceTabPanelProps> = ({
-    activeTab,
-    experience,
+const ExperienceItem: React.FC<{ exp: Experience, index: number, id: string }> = ({
+    exp,
     index,
+    id
 }) => {
-    return <TabPanel value={activeTab} index={index} key={index}>
-        <Typography variant="h1">{experience.jobTitle}</Typography>
-        <Typography variant="subtitle1">{experience.location} | {experience.dateSpan}</Typography>
-        <Typography variant="subtitle2" className={styles.contentSection}>{experience.companyDescription}</Typography>
-        <div id="experience-position-details" className={styles.contentSection}>
-            <Typography variant="body1">{experience.description}</Typography>
-            {experience.keyProjects.map((project, pIndex) => {
-                const projectHeader = project.projectName && <Typography variant='subtitle1' fontStyle='bold' className={styles.projectTitle}>{project.projectName}</Typography>
-                return <div key={`key-project-details-${index}-${pIndex}`}>
-                    {projectHeader}
-                    <ul className={styles.projectBullets}>{project.bulletPoints.map((bullet, bIndex) => {
-                        return <li key={`key-project-details-${index}-${pIndex}-${bIndex}`}>
-                            <Typography variant='body1'>{bullet}</Typography>
-                        </li>
-                    })}
-                    </ul></div>;
-            })}
-        </div>
-    </TabPanel>;
+    return (
+        <Box 
+            id={id} 
+            className={styles.experienceSection} 
+            sx={{ mb: 10, pt: 2, scrollMarginTop: '100px' }}
+        >
+            <Typography variant="h1">{exp.jobTitle}</Typography>
+            <Typography variant="subtitle1">{exp.location} | {exp.dateSpan}</Typography>
+            <Typography variant="subtitle2" className={styles.contentSection}>{exp.companyDescription}</Typography>
+            <div id={`experience-details-${index}`} className={styles.contentSection}>
+                <Typography variant="body1">{exp.description}</Typography>
+                {exp.keyProjects.map((project, pIndex) => {
+                    const projectHeader = project.projectName && (
+                        <Typography variant='subtitle1' fontStyle='bold' className={styles.projectTitle}>
+                            {project.projectName}
+                        </Typography>
+                    );
+                    return (
+                        <div key={`key-project-details-${index}-${pIndex}`}>
+                            {projectHeader}
+                            <ul className={styles.projectBullets}>
+                                {project.bulletPoints.map((bullet, bIndex) => (
+                                    <li key={`key-project-details-${index}-${pIndex}-${bIndex}`}>
+                                        <Typography variant='body1'>{bullet}</Typography>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    );
+                })}
+            </div>
+        </Box>
+    );
 }
 
 const ExperienceTabs: React.FC = () => {
     const useSmallScreen = useContext(SmallScreenContext);
-    const [activeTab, setActiveTab] = useState(0);
     const [showContent, setShowContent] = useState(false);
 
-    useEffect(() => {
-        setShowContent(true)
-    }, [])
+    // Create unique IDs for each section based on company name
+    const sectionIds = useMemo(() => 
+        experience.map(exp => `exp-${exp.companyName.replace(/\s+/g, '-').toLowerCase()}`), 
+    []);
 
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-        setActiveTab(newValue);
+    // Map the active string ID back to a numeric index for Tabs
+    const activeId = useScrollspy(sectionIds, 120); 
+    const activeTab = useMemo(() => {
+        const index = sectionIds.indexOf(activeId);
+        return index === -1 ? 0 : index;
+    }, [activeId, sectionIds]);
+
+    useEffect(() => {
+        setShowContent(true);
+    }, []);
+
+    const handleTabClick = (index: number) => {
+        const element = document.getElementById(sectionIds[index]);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
-    return <CSSTransition
-        in={showContent}
-        timeout={transitionTimeout}
-        classNames="content-left"
-        unmountOnExit
-        onEnter={() => setShowContent(true)}>
-        <div className={styles.tabContainer}>
-            <div className={styles.tabBar}>
-                <ExperienceTabBar activeTab={activeTab} handleChange={handleChange} useSmallScreen={useSmallScreen} />
+    return (
+        <CSSTransition
+            in={showContent}
+            timeout={transitionTimeout}
+            classNames="content-left"
+            unmountOnExit
+        >
+            <div className={`${styles.tabContainer} ${useSmallScreen ? styles.column : ''}`}>
+                <div className={styles.tabBar}>
+                    <ExperienceTabBar 
+                        activeTab={activeTab} 
+                        onTabClick={handleTabClick} 
+                        useSmallScreen={useSmallScreen} 
+                    />
+                </div>
+                <div className={styles.tabPanelScrollable}>
+                    {experience.map((exp, index) => (
+                        <ExperienceItem 
+                            key={index} 
+                            exp={exp} 
+                            index={index} 
+                            id={sectionIds[index]} 
+                        />
+                    ))}
+                </div>
             </div>
-            <div className={styles.tabPanel}>
-                {experience.map((exp, index) => {
-                    return <ExperienceTabPanel activeTab={activeTab} experience={exp} index={index} key={index} />
-                })}
-            </div>
-        </div>
-    </CSSTransition>
+        </CSSTransition>
+    );
 }
 
 export default ExperienceTabs;
