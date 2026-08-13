@@ -98,7 +98,7 @@ const NavigationBar: React.FC = () => {
                             {!isOnHomePage &&
                                 <Link href={`/`}>
                                     <Typography>
-                                        <a>{aboutMe.title.toUpperCase()}</a>
+                                        {aboutMe.title.toUpperCase()}
                                     </Typography>
                                 </Link>
                             }
@@ -114,7 +114,7 @@ const NavigationBar: React.FC = () => {
                                                     textTransform="uppercase"
                                                     style={{ marginRight: "2rem" }}
                                                 >
-                                                    <a>{page.name}</a>
+                                                    {page.name}
                                                 </Typography>
                                             </Link>
                                         );

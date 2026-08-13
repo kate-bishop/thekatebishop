@@ -5,6 +5,10 @@ export const pages = [
     name: 'Experience',
     value: '/experience',
   },
+  {
+    name: 'Game',
+    value: '/game',
+  },
 ];
 
 export const aboutMe = {

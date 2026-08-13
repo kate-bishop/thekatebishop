@@ -1,0 +1,91 @@
+@use '../styles/utils.module.scss' as utils;
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.hud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: .5rem;
+}
+
+.canvasWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+}
+
+.canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: utils.$green-color;
+    border: 3px solid utils.$primary-color;
+    image-rendering: pixelated;
+    touch-action: none;
+}
+
+.winBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: rgba(255, 255, 255, .9);
+    text-align: center;
+    padding: 1rem;
+}
+
+.instructions {
+    margin-top: .75rem;
+    text-align: center;
+    max-width: 640px;
+}
+
+.touchControls {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    grid-template-rows: repeat(3, 3rem);
+    gap: .25rem;
+    margin-top: 1rem;
+    user-select: none;
+
+    button {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+.dpadUp {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.dpadLeft {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.dpadRight {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.dpadDown {
+    grid-column: 2;
+    grid-row: 3;
+}
