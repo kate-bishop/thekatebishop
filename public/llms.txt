@@ -5,6 +5,7 @@
 ## Pages
 
 - [Home](/): Introduction, bio, and skills.
+- [About](/about): A longer-form bio — background, interests outside of work, and what she's like to work with.
 - [Experience](/experience): Detailed work history, including Intuit Mailchimp, Calloquy PBC, OTR Solutions, Manufactured, Groundspeed Analytics, and Pariveda Solutions.
 - [Playground](/game): A small canvas-based game.
 

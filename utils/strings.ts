@@ -39,7 +39,7 @@ export const aboutMe = {
     paragraph2:
       "Outside of work, I'm probably making something with my hands. I taught myself to knit and crochet, dabble in painting and mosaics, and have a growing obsession with miniatures — there's something satisfying about building tiny, deliberate things after a day of building big, abstract ones. That same \"I'll figure it out\" instinct led me to build my own greenhouse in the backyard from scratch, power tools and all, which taught me a lot about patience (and a little about what NOT to do with a miter saw).",
     paragraph3:
-      "When I'm not at my desk or in the greenhouse, you'll find me exploring — I love to travel, I run to clear my head, and I ride my e-bike along the Beltline when the weather isn't too hot. I've got a very good dog named Hawkeye who supervises most of my projects, crafting included. If there's a throughline to how I live, it's probably this: I like learning new things, I like making things, and I like figuring out how they all fit together.",
+      "When I'm not at my desk or in the greenhouse, you'll find me exploring — I love to travel, I run to clear my head, and I ride my bike along the Beltline when the weather isn't too hot. I've got a very good dog named Hawkeye who supervises most of my projects, crafting included. If there's a throughline to how I live, it's probably this: I like learning new things, I like making things, and I like figuring out how they all fit together.",
   },
 };
 
@@ -54,12 +54,14 @@ export const contact = {
 };
 
 export const skills = {
-  languages:
-    'JavaScript, TypeScript, React, PHP, Laravel, Redux, Next.js, Node.js, GraphQL, Apollo, Python, C#, Java, SQL, HTML, CSS',
-  technologies:
-    'Visual Studio, Splunk, BigQuery, MS SQL, MongoDB, Postgres, Azure, AWS, Tableau, Lucidchart, Figma, Agile, Scrum, Design Think',
-  aiTools:
-    'Claude, Claude Code, Cursor, GitHub Copilot, ChatGPT',
+  languages: 'JavaScript, TypeScript, PHP, Python, C#, Java, SQL, HTML, CSS',
+  frameworksAndLibraries:
+    'React, Next.js, Redux, Node.js, Laravel, ASP.NET, GraphQL, Apollo',
+  testing: 'Jest, React Testing Library',
+  aiTools: 'Claude, Claude Code, Cursor, GitHub Copilot, ChatGPT',
+  cloudAndDatabases: 'AWS, Azure, MongoDB, Postgres, MS SQL',
+  designAndProductTools: 'Jira, Figma, Lucidchart, Tableau',
+  processAndPractices: 'Agile, Scrum, Design Think',
 };
 
 export const education = {
