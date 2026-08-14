@@ -1,0 +1,46 @@
+@use '../styles/utils.module.scss' as utils;
+
+.bio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 2rem 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.label {
+    font-family: utils.$hand-font-stack;
+    font-size: 1.4rem;
+}
+
+.heading {
+    font-family: utils.$pixel-font-stack;
+    font-size: 1.75rem;
+    margin: 0;
+
+    @media only screen and (max-width: utils.$small-breakpoint) {
+        font-size: 1.25rem;
+    }
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: .5rem;
+}
+
+.paragraph {
+    font-family: utils.$font-stack;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}

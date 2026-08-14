@@ -18,7 +18,7 @@ const NavigationBar: React.FC = () => {
 
     const links = (
         <>
-            {navItems.map((page) => {
+            {pages.map((page) => {
                 const isActive = router.pathname === page.value;
                 return (
                     <Link

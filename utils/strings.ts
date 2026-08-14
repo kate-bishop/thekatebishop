@@ -2,6 +2,10 @@ import { Experience } from './types';
 
 export const pages = [
   {
+    name: 'About',
+    value: '/about',
+  },
+  {
     name: 'Experience',
     value: '/experience',
   },
@@ -29,6 +33,14 @@ export const aboutMe = {
   aboutMeSeeking:
     'I am a Senior Full Stack Engineer with 9 years of experience in software development. I am seeking an opportunity where I can exercise my skills in UI/UX, leadership, and technology. I’ve held roles in a variety of industries, and with my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   callToAction: 'Learn more about Kate on LinkedIn.',
+  bio: {
+    paragraph1:
+      "I'm a Senior Full Stack Engineer based in Atlanta, currently building at Intuit Mailchimp. I get to sit at the intersection of design and code, turning ambiguous problems into interfaces that actually feel good to use. My background spans startups, agencies, and enterprise platforms, but the throughline has always been the same: I care about the experience of the thing, not just whether it works. Lately, that's meant thinking beyond just the humans using what I build. I'm curious about how interfaces and workflows shift as AI agents become part of the equation too, and I try to bring that same craftsmanship to both.",
+    paragraph2:
+      "Outside of work, I'm probably making something with my hands. I taught myself to knit and crochet, dabble in painting and mosaics, and have a growing obsession with miniatures — there's something satisfying about building tiny, deliberate things after a day of building big, abstract ones. That same \"I'll figure it out\" instinct led me to build my own greenhouse in the backyard from scratch, power tools and all, which taught me a lot about patience (and a little about what NOT to do with a miter saw).",
+    paragraph3:
+      "When I'm not at my desk or in the greenhouse, you'll find me exploring — I love to travel, I run to clear my head, and I ride my e-bike along the Beltline when the weather isn't too hot. I've got a very good dog named Hawkeye who supervises most of my projects, crafting included. If there's a throughline to how I live, it's probably this: I like learning new things, I like making things, and I like figuring out how they all fit together.",
+  },
 };
 
 export const contact = {
