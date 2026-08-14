@@ -21,9 +21,16 @@
     width: 15rem;
 
     &.column {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        position: static;
-        margin-top: 0rem;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 4.5rem 0 1rem 0;
+        background-color: utils.$cream-bg;
+        border-bottom: 2px solid utils.$primary-color;
+        z-index: 5;
     }
 
     @media only screen and (max-width: utils.$smedium-breakpoint) {
@@ -76,7 +83,12 @@
 
     &.column {
         margin-left: 1rem;
-        margin-top: 1.5rem;
+        margin-right: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    @media only screen and (max-width: utils.$smedium-breakpoint) {
+        padding-top: 2rem;
     }
 }
 
