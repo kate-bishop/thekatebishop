@@ -1,19 +1,15 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import styles from './header.module.scss';
 import utils from '../styles/utils.module.scss'
-import Image from 'next/image'
-import { homeTheme } from '../styles/mui.themes'
 import { transitionTimeout } from '../utils/constants';
-import { SmallScreenContext } from './wrapper';
 import { aboutMe, contact } from '../utils/strings';
-import Typography from '@mui/material/Typography';
 import { CSSTransition } from 'react-transition-group';
-import { ThemeProvider } from '@mui/material/styles';
-import { Tooltip } from '@mui/material';
+import PlaceholderPhoto from './placeholderPhoto';
 
 export default function Header() {
-    const useSmallScreen = useContext(SmallScreenContext);
     const [showContent, setShowContent] = useState(false);
+    const firstName = aboutMe.title.split(' ')[0].toUpperCase();
 
     useEffect(() => {
         setShowContent(true)
@@ -21,49 +17,53 @@ export default function Header() {
 
     return (
         <div className={styles.header}>
-            <ThemeProvider theme={homeTheme}>
+            <CSSTransition
+                in={showContent}
+                timeout={transitionTimeout}
+                classNames="content-grow">
                 <div className={styles.content}>
-                    <CSSTransition
-                        in={showContent}
-                        timeout={transitionTimeout}
-                        classNames="content-left"
-                        unmountOnExit
-                        onEnter={() => setShowContent(true)}>
-                        <div className={styles.content}>
-                            <div className={styles.text}>
-                                {!useSmallScreen && <Typography variant="subtitle1">{aboutMe.tagline1}</Typography>}
-                                <Typography variant="h1">{aboutMe.title}</Typography>
-                            </div>
-                            <div className={utils.greenspan} />
-                            {useSmallScreen && <Typography variant="subtitle1">{aboutMe.tagline1}</Typography>}
-                            <div className={styles.logolinks}>
-                                <Tooltip title="Kate's LinkedIn" placement="top">
-                                    <a href={contact.linkedIn} target="_blank" rel="noreferrer" className={styles.logo}>
-                                        <Image
-                                            priority
-                                            src="/images/linkedinLogo.svg"
-                                            height={25}
-                                            width={25}
-                                            alt="LinkedIn"
-                                        />
-                                    </a>
-                                </Tooltip>
-                                <Tooltip title="Kate's GitHub" placement="top">
-                                    <a href={contact.github} target="_blank" rel="noreferrer" className={styles.logo}>
-                                        <Image
-                                            priority
-                                            src="/images/githubLogo.svg"
-                                            height={25}
-                                            width={25}
-                                            alt="GitHub"
-                                        />
-                                    </a>
-                                </Tooltip>
-                            </div>
-                        </div>
-                    </CSSTransition>
+                    <div className={styles.tagRow}>
+                        <span className={styles.scriptLabel}>my name is</span>
+                    </div>
+
+                    <div className={`${styles.nameBox} ${utils.handDrawnBox}`}>
+                        <span className={styles.nameText}>{firstName}</span>
+                    </div>
+
+                    <div className={styles.metaRow}>
+                        <span className={`${utils.pill} ${utils.pillYellow} ${utils.tiltLeft}`}>{aboutMe.position}</span>
+                        <span className={styles.statusDot}>
+                            <span className={styles.dot} />
+                        </span>
+                        <span className={`${utils.pill} ${utils.pillMint} ${utils.tiltRight}`}>{contact.location}</span>
+                    </div>
+
+                    <div className={styles.headlineRow}>
+                        <Image src="/images/arrow-down-left.svg" alt="" width={64} height={92} className={styles.scrollArrow} />
+                        {/* TODO: swap in a real circular headshot, e.g. src="/images/kate-headshot.jpg" */}
+                        {/* <PlaceholderPhoto
+                            alt="Kate"
+                            label="photo"
+                            width={90}
+                            height={90}
+                            shape="circle"
+                            className={`${styles.sticker} ${styles.stickerLeft}`}
+                        /> */}
+                        <h1 className={styles.headline}>{aboutMe.tagline1} 🌱</h1>
+                        <Image src="/images/arrow-down-right.svg" alt="" width={64} height={92} className={styles.scrollArrow} />
+                        {/* TODO: swap in a second real headshot, e.g. src="/images/kate-headshot-2.jpg" */}
+                        {/* <PlaceholderPhoto
+                            alt="Kate"
+                            label="photo"
+                            width={90}
+                            height={90}
+                            shape="circle"
+                            src="/images/arrow-down-left.svg"
+                            className={`${styles.sticker} ${styles.stickerRight}`}
+                        /> */}
+                    </div>
                 </div>
-            </ThemeProvider >
-        </div >
+            </CSSTransition>
+        </div>
     )
 }

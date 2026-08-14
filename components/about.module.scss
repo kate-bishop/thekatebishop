@@ -2,87 +2,111 @@
 
 .about {
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    text-justify: inter-word;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    max-width: 60rem;
+    width: 100%;
+}
+
+.label {
+    font-family: utils.$hand-font-stack;
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.whatsUpTab {
+    background-color: utils.$secondary-color;
+    font-family: utils.$font-stack;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.photosRow {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
     margin-top: 1rem;
 
-    & .highlight {
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.photoCard {
+    display: none; // remove when photos are in
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    flex-shrink: 0;
+}
+
+.tapeLeft {
+    top: -.6rem;
+    left: -.5rem;
+    transform: rotate(-25deg);
+}
+
+.tapeRight {
+    top: -.6rem;
+    right: -.5rem;
+    transform: rotate(25deg);
+}
+
+.caption {
+    font-family: utils.$hand-font-stack;
+    font-size: 1.1rem;
+}
+
+.paragraph {
+    font-family: utils.$hand-font-stack;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    max-width: 28rem;
+    margin: 0;
+
+    & a {
+        color: utils.$accent-orange;
         font-weight: 700;
     }
-
-    & .paragraph {
-        margin-top: 1rem;
-
-        & a {
-            color: utils.$green-color;
-        }
-    }
 }
 
-.actionCardContainer {
+.highlight {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: utils.$accent-orange;
+}
+
+.skillsGrid {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: .75rem;
+    justify-content: center;
+    max-width: 32rem;
     margin-top: 1rem;
 }
 
-.actionCard {
-    width: 20rem;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.viewWorkPill {
+    background-color: utils.$secondary-color;
+    margin-top: .5rem;
 
     &:hover {
-        cursor: pointer;
-        background-color: utils.$green-color-hover;
-    }
-
-    &:active {
-        background-color: utils.$green-color-button;
-    }
-
-    & p {
-        margin-top: 1rem;
-        padding: .5rem 1rem;
-        background-color: utils.$green-color-hover;
-        width: 15rem;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: utils.$medium-breakpoint) {
-    .about {
-        width: 100%;
-    }
-
-    .content {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: utils.$small-breakpoint) {
-    .content {
-        padding-top: 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-align: left;
-    }
-
-    .actionCardContainer {
-        flex-direction: column;
+        text-decoration: none;
+        background-color: utils.$yellow;
     }
 }

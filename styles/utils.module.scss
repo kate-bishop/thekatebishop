@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Press+Start+2P&family=Mynerve&display=swap');
 
 $primary-color: #000000;
 $secondary-color: #FFFFFF;
@@ -10,6 +10,8 @@ $green-color-hover: $green-color-04;
 $green-color-active: $green-color;
 $display-font-stack: 'DM Serif Display', sans-serif;
 $font-stack: 'DM Sans', serif;
+$pixel-font-stack: 'Press Start 2P', monospace;
+$hand-font-stack: 'Mynerve', cursive;
 $min-height: 100vh;
 $min-width: 100%;
 $small-breakpoint: 480px;
@@ -17,6 +19,16 @@ $medium-breakpoint: 768px;
 $large-breakpoint: 1024px;
 $small-height-breakpoint: 450px;
 $medium-height-breakpoint: 550px;
+
+$cream-bg: #F7F3E9;
+$cream-line: rgba(17, 17, 17, .07);
+$mint: #50c76e;
+$yellow: #FFD966;
+$pink: #FF9FC0;
+$blue: #7CA8FF;
+$accent-orange: #E8542A;
+$hard-shadow: 3px 3px 0 $primary-color;
+$hard-shadow-sm: 2px 2px 0 $primary-color;
 
 .app {
     font-family: $font-stack;
@@ -34,6 +46,60 @@ $medium-height-breakpoint: 550px;
     margin-top: .5rem;
     margin-bottom: .5rem;
     z-index: 0;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .35rem 1rem;
+    border: 2px solid $primary-color;
+    border-radius: 999px;
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: .8rem;
+    background-color: $secondary-color;
+    box-shadow: $hard-shadow-sm;
+    white-space: nowrap;
+}
+
+.pillMint {
+    background-color: $mint;
+}
+
+.pillYellow {
+    background-color: $yellow;
+}
+
+.pillPink {
+    background-color: $pink;
+}
+
+.pillBlue {
+    background-color: $blue;
+}
+
+.tiltLeft {
+    transform: rotate(-4deg);
+}
+
+.tiltRight {
+    transform: rotate(3deg);
+}
+
+.tapeStrip {
+    position: absolute;
+    width: 3.5rem;
+    height: 1.4rem;
+    background-color: rgba(124, 168, 255, .55);
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+.handDrawnBox {
+    border: 3px solid $accent-orange;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    transform: rotate(-1deg);
 }
 
 $transition-timeout: 1000ms;

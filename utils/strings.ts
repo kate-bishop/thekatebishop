@@ -6,24 +6,24 @@ export const pages = [
     value: '/experience',
   },
   {
-    name: 'Game',
+    name: 'Playground',
     value: '/game',
   },
 ];
 
 export const aboutMe = {
   title: 'Kate Bishop',
-  position: 'Senior Full Stack Software Engineer',
+  position: 'Senior Software Engineer',
   tagline1: 'Atlanta-based tech fanatic making leading-edge solutions reality.',
   tagline2: "It's nice to meet you!",
   aboutKate:
-    'Kate is a UX-driven Senior Full Stack Engineer who has dedicated her career to creating delightful user experiences and translating design into resilient interfaces. She has over 7 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces—bridging classic UX craftsmanship with the emerging demands of AI-driven interaction. I have over 9 years of experience developing technical solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.',
   aboutKateA:
-    'Kate is a UX-driven Senior Full Stack Engineer who has dedicated her career to',
+    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces - bridging classic ',
   aboutKateB:
-    'creating delightful user experiences and translating design into resilient interfaces',
+    'UX craftsmanship with the emerging demands of AI-driven interaction',
   aboutKateC:
-    '. She has over 9 years of experience developing technical solutions across several industries, including litigation, e-commerce, insurance, education, finance, and healthcare.',
+    '. I have over 9 years of experience developing solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.',
   aboutMe:
     'I am a Senior Full Stack Software Engineer with over 9 years of experience in software development. With my background in development and an eye towards the future, I bring an innovative perspective framed with technical possibility to business and product analysis.',
   aboutMeSeeking:
@@ -45,7 +45,9 @@ export const skills = {
   languages:
     'JavaScript, TypeScript, React, PHP, Laravel, Redux, Next.js, Node.js, GraphQL, Apollo, Python, C#, Java, SQL, HTML, CSS',
   technologies:
-    'Visual Studio, MS SQL, MongoDB, Postgres, Azure, AWS, Tableau, Lucidchart, Figma, Agile, Scrum, Design Think',
+    'Visual Studio, Splunk, BigQuery, MS SQL, MongoDB, Postgres, Azure, AWS, Tableau, Lucidchart, Figma, Agile, Scrum, Design Think',
+  aiTools:
+    'Claude, Claude Code, Cursor, GitHub Copilot, ChatGPT',
 };
 
 export const education = {

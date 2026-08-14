@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="44" fill="#FFD966" stroke="#000000" stroke-width="7" />
+  <g fill="#000000">
+    <!-- K -->
+    <rect x="17" y="29" width="6" height="6" />
+    <rect x="41" y="29" width="6" height="6" />
+    <rect x="17" y="35" width="6" height="6" />
+    <rect x="35" y="35" width="6" height="6" />
+    <rect x="17" y="41" width="6" height="6" />
+    <rect x="29" y="41" width="6" height="6" />
+    <rect x="17" y="47" width="6" height="6" />
+    <rect x="23" y="47" width="6" height="6" />
+    <rect x="17" y="53" width="6" height="6" />
+    <rect x="29" y="53" width="6" height="6" />
+    <rect x="17" y="59" width="6" height="6" />
+    <rect x="35" y="59" width="6" height="6" />
+    <rect x="17" y="65" width="6" height="6" />
+    <rect x="41" y="65" width="6" height="6" />
+    <!-- B -->
+    <rect x="53" y="29" width="6" height="6" />
+    <rect x="59" y="29" width="6" height="6" />
+    <rect x="65" y="29" width="6" height="6" />
+    <rect x="71" y="29" width="6" height="6" />
+    <rect x="53" y="35" width="6" height="6" />
+    <rect x="77" y="35" width="6" height="6" />
+    <rect x="53" y="41" width="6" height="6" />
+    <rect x="77" y="41" width="6" height="6" />
+    <rect x="53" y="47" width="6" height="6" />
+    <rect x="59" y="47" width="6" height="6" />
+    <rect x="65" y="47" width="6" height="6" />
+    <rect x="71" y="47" width="6" height="6" />
+    <rect x="53" y="53" width="6" height="6" />
+    <rect x="77" y="53" width="6" height="6" />
+    <rect x="53" y="59" width="6" height="6" />
+    <rect x="77" y="59" width="6" height="6" />
+    <rect x="53" y="65" width="6" height="6" />
+    <rect x="59" y="65" width="6" height="6" />
+    <rect x="65" y="65" width="6" height="6" />
+    <rect x="71" y="65" width="6" height="6" />
+  </g>
+</svg>

@@ -1,35 +1,12 @@
 import React, { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import AppBar from "@mui/material/AppBar";
-import Drawer from "@mui/material/Drawer";
-import Grid from "@mui/material/Grid";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import Slide from "@mui/material/Slide";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import MenuIcon from "@mui/icons-material/Menu";
+import Image from "next/image";
 import styles from './navigationBar.module.scss';
 import { SmallScreenContext } from './wrapper';
-import { pages, aboutMe } from '../utils/strings';
+import { pages, aboutMe, contact } from '../utils/strings';
 
-interface HideOnScrollProps {
-    children: any,
-    shouldHideOnScroll: boolean
-}
-const HideOnScroll: React.FC<HideOnScrollProps> = ({ children, shouldHideOnScroll }) => {
-    const trigger = useScrollTrigger({ threshold: 20 });
-    return (shouldHideOnScroll ? <>{children}</> :
-        <Slide appear={false} direction="down" in={!trigger}>
-            {children}
-        </Slide>
-    );
-}
+const navItems = [{ name: 'Home', value: '/' }, ...pages];
 
 const NavigationBar: React.FC = () => {
     const useSmallScreen = useContext(SmallScreenContext);
@@ -37,95 +14,72 @@ const NavigationBar: React.FC = () => {
 
     const router = useRouter();
 
-    const toggleDrawer = (open: boolean) => (
-        event: React.KeyboardEvent | React.MouseEvent
-    ) => {
-        if (
-            event.type === "keydown" &&
-            ((event as React.KeyboardEvent).key === "Tab" ||
-                (event as React.KeyboardEvent).key === "Shift")
-        ) {
-            return;
-        }
-        setDrawerIsOpen(open);
-    };
+    const closeDrawer = () => setDrawerIsOpen(false);
 
-    const onDrawerNavigate = (url: string) => {
-        toggleDrawer(false);
-        router.push(url);
-    };
-
-    const smallScreenView = <>
-        <IconButton onClick={toggleDrawer(!drawerIsOpen)}>
-            <MenuIcon />
-        </IconButton>
-        <Drawer
-            anchor="right"
-            open={drawerIsOpen}
-            onClose={toggleDrawer(false)}
-        >
-            <List>
-                {pages.map((page) => (
-                    <ListItem key={page.name} disablePadding>
-                        <ListItemButton
-                            onClick={() => onDrawerNavigate(page.value)}
-                        >
-                            <ListItemText primary={page.name} />
-                        </ListItemButton>
-                    </ListItem>
-                ))}
-            </List>
-        </Drawer>
-    </>
-
-    const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 20 });
-    const isOnHomePage = router.pathname === '/';
-    const shouldElevateAppBar = !isOnHomePage && !useSmallScreen && trigger;
+    const links = (
+        <>
+            {navItems.map((page) => {
+                const isActive = router.pathname === page.value;
+                return (
+                    <Link
+                        key={page.name}
+                        href={page.value}
+                        className={`${styles.navLink} ${isActive ? styles.navLinkActive : ''}`}
+                        onClick={closeDrawer}
+                    >
+                        {page.name}
+                    </Link>
+                );
+            })}
+        </>
+    );
 
     return (
-        <HideOnScroll shouldHideOnScroll={!isOnHomePage}>
-            <AppBar
-                color="inherit"
-                elevation={shouldElevateAppBar ? 1 : 0}>
-                <Toolbar>
-                    <Grid
-                        container
-                        direction="row"
-                        justifyContent="space-between"
-                        className={styles.navbar}
+        <nav className={styles.navbar} aria-label={aboutMe.title}>
+            <Link href="/" className={styles.logo} aria-label="Home">
+                KB
+            </Link>
+
+            {useSmallScreen ? (
+                <>
+                    <button
+                        className={styles.menuButton}
+                        onClick={() => setDrawerIsOpen(!drawerIsOpen)}
+                        aria-label="Toggle navigation menu"
+                        aria-expanded={drawerIsOpen}
                     >
-                        <Grid item>
-                            {!isOnHomePage &&
-                                <Link href={`/`}>
-                                    <Typography>
-                                        {aboutMe.title.toUpperCase()}
-                                    </Typography>
-                                </Link>
-                            }
-                        </Grid>
-                        <Grid item>
-                            {useSmallScreen ? smallScreenView : (
-                                <Grid container direction="row">
-                                    {pages.map((page) => {
-                                        return (
-                                            <Link href={page.value} key={page.name}>
-                                                <Typography
-                                                    variant="subtitle1"
-                                                    textTransform="uppercase"
-                                                    style={{ marginRight: "2rem" }}
-                                                >
-                                                    {page.name}
-                                                </Typography>
-                                            </Link>
-                                        );
-                                    })}
-                                </Grid>
-                            )}
-                        </Grid>
-                    </Grid>
-                </Toolbar>
-            </AppBar>
-        </HideOnScroll>
+                        {drawerIsOpen ? '✕' : '☰'}
+                    </button>
+                    {drawerIsOpen && (
+                        <div className={styles.drawer}>
+                            {links}
+                            <a
+                                className={`${styles.pillButton} ${styles.contactPill}`}
+                                href={`mailto:${contact.email}`}
+                                onClick={closeDrawer}
+                            >
+                                💌 Contact
+                            </a>
+                        </div>
+                    )}
+                </>
+            ) : (
+                <>
+                    <div className={styles.links}>{links}</div>
+                    <div className={styles.social}>
+                        <a href={contact.linkedIn} target="_blank" rel="noreferrer" title="Kate's LinkedIn" className={styles.socialIcon}>
+                            <Image priority src="/images/linkedinLogo.svg" height={18} width={18} alt="LinkedIn" />
+                        </a>
+                        <a href={contact.github} target="_blank" rel="noreferrer" title="Kate's GitHub" className={styles.socialIcon}>
+                            <Image priority src="/images/githubLogo.svg" height={18} width={18} alt="GitHub" />
+                        </a>
+                    </div>
+                    <a className={`${styles.pillButton} ${styles.contactPill}`} href={`mailto:${contact.email}`}>
+                        💌 Contact
+                    </a>
+                </>
+            )}
+        </nav>
     )
 }
 

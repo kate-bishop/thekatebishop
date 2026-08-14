@@ -1,57 +1,69 @@
 import styles from './about.module.scss';
-import Typography from '@mui/material/Typography';
-import { homeTheme } from '../styles/mui.themes'
-import { ThemeProvider } from '@mui/material/styles';
+import utils from '../styles/utils.module.scss';
 import { aboutMe, contact } from '../utils/strings';
-import Image from 'next/image'
 import Link from 'next/link';
+import PlaceholderPhoto from './placeholderPhoto';
 
-const MeetKate: React.FC = () => {
-    const ctaLink = <a href={contact.linkedIn} target="_blank" rel="noreferrer">
-        Let&apos;s connect!
-    </a>
-
-    return (
-        <Typography variant="subtitle2" display="inline" className={styles.paragraph}>
-            {aboutMe.aboutKateA}
-            <span className={styles.highlight}>
-                &nbsp;{aboutMe.aboutKateB}
-            </span>
-            {aboutMe.aboutKateC} {aboutMe.callToAction} &#8212; {ctaLink}
-        </Typography>
-    )
-}
-
-interface ActionCardProps {
-    label: string;
-    imageName: string;
-    link: string;
-}
-const ActionCard: React.FC<ActionCardProps> = ({ label, imageName, link }) => {
-    return <Link href={link}><div className={styles.actionCard}>
-        <Image
-            priority
-            src={`/images/${imageName}.svg`}
-            height={100}
-            width={100}
-            alt={imageName}
-        />
-        <Typography variant="body1">{label}</Typography>
-    </div></Link>
-}
+const skillTags = [
+    { label: 'React', emoji: '⚛️', color: utils.pillYellow },
+    { label: 'PHP', emoji: '🐘', color: utils.pillMint },
+    { label: 'TypeScript', emoji: '🔷', color: utils.pillPink },
+    { label: 'Node.js', emoji: '🌿', color: utils.pillBlue },
+    { label: 'Claude', emoji: '👾', color: utils.pillYellow },
+    { label: 'Claude Code', emoji: '✨', color: utils.pillMint },
+    { label: 'Cursor', emoji: '🎯', color: utils.pillPink },
+    { label: 'GitHub Copilot', emoji: '🧑‍✈️', color: utils.pillBlue },
+    { label: 'ChatGPT', emoji: '💬', color: utils.pillYellow },
+];
 
 const About: React.FC = () => {
+    const ctaLink = (
+        <a href={contact.linkedIn} target="_blank" rel="noreferrer">
+            Let&apos;s connect!
+        </a>
+    );
+
     return (
         <div className={styles.about}>
-            <ThemeProvider theme={homeTheme}>
-                <div className={styles.content}>
-                    <Typography variant="h2">{aboutMe.tagline2}</Typography>
-                    <MeetKate />
-                    <div className={styles.actionCardContainer}>
-                        <ActionCard link="/experience" imageName="computer" label="Explore Work Experience" />
+            <div className={styles.content}>
+                <span className={styles.label}>about me</span>
+                <span className={`${utils.pill} ${styles.whatsUpTab}`}>{aboutMe.tagline2}</span>
+
+                <div className={styles.photosRow}>
+                    <div className={`${styles.photoCard} ${utils.tiltLeft}`}>
+                        <span className={`${utils.tapeStrip} ${styles.tapeLeft}`} />
+                        <span className={`${utils.tapeStrip} ${styles.tapeRight}`} />
+                        <PlaceholderPhoto alt="Kate" label="photo" src="/images/kate-1.jpg" width={140} height={180} />
+                        <span className={styles.caption}>me!</span>
                     </div>
+                    <p className={styles.paragraph}>
+                        {aboutMe.aboutKateA}
+                        <span className={styles.highlight}>&nbsp;{aboutMe.aboutKateB}</span>
+                        {aboutMe.aboutKateC} &#8212; {ctaLink}
+                    </p>
+
+                    {/* <div className={`${styles.photoCard} ${utils.tiltRight}`}>
+                        <span className={`${utils.tapeStrip} ${styles.tapeLeft}`} />
+                        <span className={`${utils.tapeStrip} ${styles.tapeRight}`} />
+                        // TODO: swap in a real photo, e.g. src="/images/kate-workspace.jpg"
+                        <PlaceholderPhoto alt="Kate's workspace" label="photo" width={140} height={180} />
+                        <span className={styles.caption}>my workspace</span>
+                    </div>
+                     */}
                 </div>
-            </ThemeProvider>
+
+                <div className={styles.skillsGrid}>
+                    {skillTags.map((skill) => (
+                        <span key={skill.label} className={`${utils.pill} ${skill.color}`}>
+                            {skill.label} {skill.emoji}
+                        </span>
+                    ))}
+                </div>
+
+                <Link href="/experience" className={`${utils.pill} ${styles.viewWorkPill}`}>
+                    Explore work experience →
+                </Link>
+            </div>
         </div>
     )
 }

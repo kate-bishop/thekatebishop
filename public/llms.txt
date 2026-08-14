@@ -1,0 +1,15 @@
+# Kate Bishop
+
+> Senior Software Engineer based in Atlanta, GA — full-stack development across React, TypeScript, Node.js, and PHP, with a UX-driven approach to product engineering.
+
+## Pages
+
+- [Home](/): Introduction, bio, and skills.
+- [Experience](/experience): Detailed work history, including Intuit Mailchimp, Calloquy PBC, OTR Solutions, Manufactured, Groundspeed Analytics, and Pariveda Solutions.
+- [Playground](/game): A small canvas-based game.
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/thekatebishop/
+- GitHub: https://github.com/kate-bishop
+- Email: itskatebishop@gmail.com

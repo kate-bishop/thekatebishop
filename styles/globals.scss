@@ -5,6 +5,11 @@ body {
   min-height: utils.$min-height;
   width: utils.$min-width;
   margin: 0;
+  background-color: utils.$cream-bg;
+  background-image:
+    linear-gradient(utils.$cream-line 1px, transparent 1px),
+    linear-gradient(90deg, utils.$cream-line 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
 a {

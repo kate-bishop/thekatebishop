@@ -1,11 +1,4 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
-import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import styles from './spriteGame.module.scss';
 import { SmallScreenContext } from './wrapper';
 import { palette } from '../utils/constants';
@@ -308,8 +301,8 @@ const SpriteGame: React.FC = () => {
     return (
         <div className={styles.gameContainer}>
             <div className={styles.hud}>
-                <Typography variant="subtitle1">Stars: {collectedCount}/{INITIAL_COINS.length}</Typography>
-                <Button onClick={resetGame} size="small">Restart</Button>
+                <span className={styles.starCount}>⭐ {collectedCount}/{INITIAL_COINS.length}</span>
+                <button className={styles.pillButton} onClick={resetGame}>Restart</button>
             </div>
             <div className={styles.canvasWrapper}>
                 <canvas
@@ -320,20 +313,20 @@ const SpriteGame: React.FC = () => {
                 />
                 {hasWon && (
                     <div className={styles.winBanner}>
-                        <Typography variant="h2">You found every star!</Typography>
-                        <Button onClick={resetGame}>Play again</Button>
+                        <h2 className={styles.winHeading}>You found every star!</h2>
+                        <button className={styles.pillButton} onClick={resetGame}>Play again</button>
                     </div>
                 )}
             </div>
-            <Typography variant="subtitle2" className={styles.instructions}>
+            <p className={styles.instructions}>
                 Use the arrow keys or WASD to walk around and collect every star.
-            </Typography>
+            </p>
             {useSmallScreen && (
                 <div className={styles.touchControls}>
-                    <IconButton className={styles.dpadUp} {...bindTouch('up')}><KeyboardArrowUp /></IconButton>
-                    <IconButton className={styles.dpadLeft} {...bindTouch('left')}><KeyboardArrowLeft /></IconButton>
-                    <IconButton className={styles.dpadRight} {...bindTouch('right')}><KeyboardArrowRight /></IconButton>
-                    <IconButton className={styles.dpadDown} {...bindTouch('down')}><KeyboardArrowDown /></IconButton>
+                    <button className={`${styles.dpadButton} ${styles.dpadUp}`} {...bindTouch('up')}>▲</button>
+                    <button className={`${styles.dpadButton} ${styles.dpadLeft}`} {...bindTouch('left')}>◀</button>
+                    <button className={`${styles.dpadButton} ${styles.dpadRight}`} {...bindTouch('right')}>▶</button>
+                    <button className={`${styles.dpadButton} ${styles.dpadDown}`} {...bindTouch('down')}>▼</button>
                 </div>
             )}
         </div>
