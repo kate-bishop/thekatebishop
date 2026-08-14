@@ -18,8 +18,8 @@ const skillTags = [
 
 const About: React.FC = () => {
     const ctaLink = (
-        <a href={contact.linkedIn} target="_blank" rel="noreferrer">
-            Let&apos;s connect!
+        <a href={contact.linkedIn} target="_blank" rel="noreferrer" className={styles.handwritten}>
+            &#8212; Let&apos;s connect!
         </a>
     );
 
@@ -39,7 +39,7 @@ const About: React.FC = () => {
                     <p className={styles.paragraph}>
                         {aboutMe.aboutKateA}
                         <span className={styles.highlight}>&nbsp;{aboutMe.aboutKateB}</span>
-                        {aboutMe.aboutKateC} &#8212; {ctaLink}
+                        {aboutMe.aboutKateC} {ctaLink}
                     </p>
 
                     {/* <div className={`${styles.photoCard} ${utils.tiltRight}`}>

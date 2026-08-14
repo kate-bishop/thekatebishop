@@ -19,9 +19,9 @@ export const aboutMe = {
   aboutKate:
     'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces—bridging classic UX craftsmanship with the emerging demands of AI-driven interaction. I have over 9 years of experience developing technical solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.',
   aboutKateA:
-    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces - bridging classic ',
+    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces by ',
   aboutKateB:
-    'UX craftsmanship with the emerging demands of AI-driven interaction',
+    'bridging classic UX craftsmanship with the emerging demands of AI-driven interaction',
   aboutKateC:
     '. I have over 9 years of experience developing solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.',
   aboutMe:
