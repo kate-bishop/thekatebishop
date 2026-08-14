@@ -27,7 +27,7 @@ const About: React.FC = () => {
         <div className={styles.about}>
             <div className={styles.content}>
                 <span className={styles.label}>about me</span>
-                <span className={`${utils.pill} ${styles.whatsUpTab}`}>{aboutMe.tagline2}</span>
+                <span className={`${utils.pill} ${styles.niceToMeetYouTab}`}>{aboutMe.tagline2}</span>
 
                 <div className={styles.photosRow}>
                     <div className={`${styles.photoCard} ${utils.tiltLeft}`}>

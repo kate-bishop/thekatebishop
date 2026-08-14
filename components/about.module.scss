@@ -26,7 +26,7 @@
     align-self: flex-start;
 }
 
-.whatsUpTab {
+.niceToMeetYouTab {
     background-color: utils.$secondary-color;
     font-family: utils.$font-stack;
     text-transform: uppercase;
@@ -93,8 +93,8 @@
     font-weight: 700;
     padding: 0 .15em;
     background-color: rgba(utils.$yellow, .5);
-    border: 1px solid rgba(0, 0, 0, .15);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    transform: rotate(-1.5deg);
 }
 
 .skillsGrid {

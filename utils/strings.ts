@@ -17,9 +17,9 @@ export const aboutMe = {
   tagline1: 'Atlanta-based tech fanatic making leading-edge solutions reality.',
   tagline2: "It's nice to meet you!",
   aboutKate:
-    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces—bridging classic UX craftsmanship with the emerging demands of AI-driven interaction. I have over 9 years of experience developing technical solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.',
+    "Hi, I'm Kate Bishop! I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces—bridging classic UX craftsmanship with the emerging demands of AI-driven interaction. I have over 9 years of experience developing technical solutions across several industries, including marketing, e-commerce, litigation, education, finance, and healthcare.",
   aboutKateA:
-    'I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces by ',
+    "Hi, I'm Kate Bishop! I am a Senior Full Stack Engineer designing resilient, agent-ready interfaces by ",
   aboutKateB:
     'bridging classic UX craftsmanship with the emerging demands of AI-driven interaction',
   aboutKateC:
