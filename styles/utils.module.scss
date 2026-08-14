@@ -2,12 +2,6 @@
 
 $primary-color: #000000;
 $secondary-color: #FFFFFF;
-$green-color: #4CAF50;
-$green-color-06: rgba(76, 175, 80, .6);
-$green-color-04: rgba(76, 175, 80, .4);
-$green-color-button: $green-color-06;
-$green-color-hover: $green-color-04;
-$green-color-active: $green-color;
 $display-font-stack: 'DM Serif Display', sans-serif;
 $font-stack: 'DM Sans', serif;
 $pixel-font-stack: 'Press Start 2P', monospace;
@@ -17,9 +11,6 @@ $min-width: 100%;
 $small-breakpoint: 480px;
 $smedium-breakpoint: 600px;
 $medium-breakpoint: 768px;
-$large-breakpoint: 1024px;
-$small-height-breakpoint: 450px;
-$medium-height-breakpoint: 550px;
 
 $cream-bg: #F7F3E9;
 $cream-line: rgba(17, 17, 17, .07);
@@ -30,24 +21,6 @@ $blue: #7CA8FF;
 $accent-orange: #E8542A;
 $hard-shadow: 3px 3px 0 $primary-color;
 $hard-shadow-sm: 2px 2px 0 $primary-color;
-
-.app {
-    font-family: $font-stack;
-}
-
-.list {
-    list-style: none;
-}
-
-.greenspan {
-    background-color: #4CAF50;
-    opacity: .6;
-    width: 100%;
-    height: .5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    z-index: 0;
-}
 
 .pill {
     display: inline-flex;
