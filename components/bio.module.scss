@@ -12,13 +12,66 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    max-width: 40rem;
+    max-width: 60rem;
     width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 .label {
     font-family: utils.$hand-font-stack;
     font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.highlight {
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 .3em;
+    background-color: rgba(utils.$yellow, .5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    transform: rotate(-1.5deg);
+}
+
+.frame {
+    padding: 2rem;
+    background-color: utils.$secondary-color;
+    flex: 1;
+    min-width: 0;
+}
+
+.photoCard {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        order: -1;
+        align-self: flex-start;
+        margin-top: 1rem;
+        margin-bottom: -1.5rem;
+    }
+}
+
+.tapeLeft {
+    top: -.6rem;
+    left: -.5rem;
+    transform: rotate(-25deg);
+}
+
+.tapeRight {
+    top: -.6rem;
+    right: -.5rem;
+    transform: rotate(25deg);
 }
 
 .heading {
