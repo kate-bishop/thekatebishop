@@ -9,6 +9,7 @@ export const palette = {
 }
 export const breakpoint = {
     small: 480,
+    smedium: 600,
     medium: 768,
     large: 1024,
 }

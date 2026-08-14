@@ -37,7 +37,7 @@ const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${breakpoint.small}px)`);
+    const media = window.matchMedia(`(max-width: ${breakpoint.smedium}px)`);
     media.addEventListener("change", (e) => updateScreenSizeLayout(e));
     if (media.matches) {
       setUseSmallScreen(true);
