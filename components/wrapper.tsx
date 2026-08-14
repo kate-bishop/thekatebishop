@@ -3,6 +3,7 @@ import styles from "./wrapper.module.scss";
 import { breakpoint } from "../utils/constants";
 import { aboutMe, contact, skills } from '../utils/strings';
 import NavigationBar from "./navigationBar";
+import Footer from "./footer";
 import Head from "next/head";
 
 export const SmallScreenContext = createContext(true);
@@ -60,6 +61,7 @@ const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
       </Head>
       <NavigationBar />
       <main className={styles.main}>{children}</main>
+      <Footer />
     </SmallScreenContext.Provider>
   );
 }

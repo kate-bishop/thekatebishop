@@ -323,10 +323,12 @@ const SpriteGame: React.FC = () => {
             </p>
             {useSmallScreen && (
                 <div className={styles.touchControls}>
-                    <button className={`${styles.dpadButton} ${styles.dpadUp}`} {...bindTouch('up')}>▲</button>
-                    <button className={`${styles.dpadButton} ${styles.dpadLeft}`} {...bindTouch('left')}>◀</button>
-                    <button className={`${styles.dpadButton} ${styles.dpadRight}`} {...bindTouch('right')}>▶</button>
-                    <button className={`${styles.dpadButton} ${styles.dpadDown}`} {...bindTouch('down')}>▼</button>
+                    <button className={styles.dpadButton} {...bindTouch('up')}>▲</button>
+                    <div className={styles.dpadRow}>
+                        <button className={styles.dpadButton} {...bindTouch('left')}>◀</button>
+                        <button className={styles.dpadButton} {...bindTouch('down')}>▼</button>
+                        <button className={styles.dpadButton} {...bindTouch('right')}>▶</button>
+                    </div>
                 </div>
             )}
         </div>

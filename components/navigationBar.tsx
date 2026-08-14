@@ -6,7 +6,7 @@ import styles from './navigationBar.module.scss';
 import { SmallScreenContext } from './wrapper';
 import { pages, aboutMe, contact } from '../utils/strings';
 
-const navItems = [{ name: 'Home', value: '/' }, ...pages];
+export const navItems = [{ name: 'Home', value: '/' }, ...pages];
 
 const NavigationBar: React.FC = () => {
     const useSmallScreen = useContext(SmallScreenContext);
