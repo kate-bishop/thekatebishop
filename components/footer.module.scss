@@ -1,0 +1,120 @@
+@use '../styles/utils.module.scss' as utils;
+
+.footer {
+    padding: 0 2rem 2rem;
+}
+
+.wave {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.identity {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.name {
+    font-family: utils.$pixel-font-stack;
+    font-size: 1.5rem;
+    letter-spacing: .05em;
+
+    @media only screen and (max-width: utils.$small-breakpoint) {
+        font-size: 1.1rem;
+    }
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-family: utils.$font-stack;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .05em;
+}
+
+.dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: utils.$blue;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.linksAndSocial {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        gap: 1rem;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.navLink {
+    font-family: utils.$font-stack;
+    font-weight: 700;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: utils.$primary-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid utils.$primary-color;
+    box-shadow: utils.$hard-shadow-sm;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.socialIconYellow {
+    background-color: utils.$yellow;
+}
+
+.socialIconBlue {
+    background-color: utils.$blue;
+}
