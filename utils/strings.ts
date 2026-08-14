@@ -56,8 +56,7 @@ export const contact = {
 export const skills = {
   languages: 'JavaScript, TypeScript, PHP, Python, C#, Java, SQL, HTML, CSS',
   frameworksAndLibraries:
-    'React, Next.js, Redux, Node.js, Laravel, ASP.NET, GraphQL, Apollo',
-  testing: 'Jest, React Testing Library',
+    'React, Next.js, Redux, Node.js, Laravel, ASP.NET, GraphQL, Apollo, Jest, React Testing Library',
   aiTools: 'Claude, Claude Code, Cursor, GitHub Copilot, ChatGPT',
   cloudAndDatabases: 'AWS, Azure, MongoDB, Postgres, MS SQL',
   designAndProductTools: 'Jira, Figma, Lucidchart, Tableau',
@@ -81,6 +80,7 @@ export const experience: Experience[] = [
     location: 'Atlanta, GA',
     jobTitle: 'Senior Full Stack Engineer',
     dateSpan: 'November 2023 - present',
+    skills: 'React, JavaScript, TypeScript, PHP, Claude, Claude Code, Cursor, Jest, Playwright, Splunk',
     description:
       'I lead development of complex components and widgets for the Mailchimp platform serving millions of users.',
     keyProjects: [
@@ -136,6 +136,7 @@ export const experience: Experience[] = [
     location: 'Atlanta, GA',
     jobTitle: 'Senior Front-End Engineer',
     dateSpan: 'October 2022 - October 2023',
+    skills: 'React, TypeScript, PHP, Laravel, Redux, Jest',
     description:
       'I was a leader on the product development team building and delivering a comprehensive video conference platform designed for litigation processes with React (TypeScript) and Laravel PHP.',
     keyProjects: [
@@ -156,6 +157,7 @@ export const experience: Experience[] = [
     location: 'Roswell, GA',
     jobTitle: 'Front-End Software Engineer, UX Architect',
     dateSpan: 'August - September 2022 (Short-Term Contract)',
+    skills: 'C#, ASP.NET, Figma',
     description:
       'During the 6-week timeline, I redesigned and rebuilt the UI for a complex customer portal with focus on speed to complete key workflows, ease of data entry, and preparation for an expansion of offerings. After deployment, my work increased users’ understanding of the services the company offers and reduced the time required to complete key tasks by up to 50%.',
     keyProjects: [
@@ -175,6 +177,7 @@ export const experience: Experience[] = [
     location: 'Culver City, CA (Remote)',
     jobTitle: 'Lead Front-End Developer, Product Owner',
     dateSpan: 'September 2021 - February 2022',
+    skills: 'React, JavaScript, GraphQL, Apollo, Figma',
     description:
       'I led front-end product development with React (TypeScript) and GraphQL to bring a green-field platform to launch.',
     keyProjects: [
@@ -195,6 +198,7 @@ export const experience: Experience[] = [
     location: 'Ann Arbor, MI (Remote)',
     jobTitle: 'Full-Stack Software Engineer II',
     dateSpan: 'February 2021 - September 2021',
+    skills: 'React, JavaScript, MongoDB',
     description:
       'I built new front-end features on the analytics platform with React (TypeScript) and GraphQL, and improved existing back-end software with Python, MongoDB, and Postgres in preparation for major customer scaling.',
     keyProjects: [
@@ -213,6 +217,7 @@ export const experience: Experience[] = [
     jobTitle: 'Associate Software Development Consultant',
     dateSpan: 'July 2017 - January 2021',
     companyDescription: 'Pariveda Solutions is a consulting firm dedicated to solving complex technology and business problems by aligning their focus on people-development with the mission of their clients.',
+    skills: 'Java, C#, SQL, React, JavaScript, AWS, Azure',
     description:
       'I was a team lead and served as a technical expert for projects across several industries. I led internal company-wide initiatives to promote User Experience in solutions architecture, curated resources to share knowledge within the company, and mentored junior consultants in technology and professionalism to prepare for promotion. Key Projects include...',
     keyProjects: [

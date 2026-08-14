@@ -9,6 +9,7 @@ export type Experience = {
   jobTitle: string;
   location: string;
   dateSpan: string;
+  skills?: string;
   companyDescription: string;
   description: string;
   keyProjects: KeyProject[];

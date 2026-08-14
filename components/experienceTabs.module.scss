@@ -130,6 +130,24 @@
     margin-bottom: 0;
 }
 
+.skillsPill {
+    display: block;
+    width: fit-content;
+    min-width: 10rem;
+    max-width: 100%;
+    margin-top: .75rem;
+    padding: .35rem 1rem;
+    border: 2px solid utils.$primary-color;
+    border-radius: 1.25rem;
+    font-family: utils.$font-stack;
+    font-weight: 700;
+    font-size: .8rem;
+    background-color: utils.$pink;
+    box-shadow: utils.$hard-shadow-sm;
+    white-space: normal;
+    word-break: break-word;
+}
+
 .projectBullets {
     margin-top: .5rem;
 }

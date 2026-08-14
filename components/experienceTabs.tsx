@@ -61,6 +61,11 @@ const ExperienceItem: React.FC<{ exp: Experience, index: number, id: string }> =
                 <span className={`${utils.pill} ${utils.pillYellow}`}>{exp.location}</span>
                 <span className={`${utils.pill} ${utils.pillBlue}`}>{exp.dateSpan}</span>
             </div>
+            {exp.skills && (
+                <span className={styles.skillsPill}>
+                    {exp.skills}
+                </span>
+            )}
             <p className={styles.contentSection}>{exp.companyDescription}</p>
             <div id={`experience-details-${index}`} className={styles.contentSection}>
                 <p>{exp.description}</p>

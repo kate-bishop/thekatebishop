@@ -19,11 +19,7 @@ const personSchema = {
     addressLocality: contact.location,
   },
   sameAs: [contact.linkedIn, contact.github],
-  knowsAbout: [
-    ...skills.languages.split(', '),
-    ...skills.technologies.split(', '),
-    ...skills.aiTools.split(', '),
-  ],
+  knowsAbout: Object.values(skills).flatMap((category) => category.split(', ')),
 };
 
 const Wrapper: React.FC<PropsWithChildren> = ({ children }) => {
