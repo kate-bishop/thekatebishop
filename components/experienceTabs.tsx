@@ -55,7 +55,7 @@ const ExperienceItem: React.FC<{ exp: Experience, index: number, id: string }> =
             id={id}
             className={styles.experienceSection}
         >
-            <h1 className={styles.jobTitle}>{exp.jobTitle}</h1>
+            <h2 className={styles.jobTitle}>{exp.jobTitle}</h2>
             <div className={styles.metaRow}>
                 <span className={`${utils.pill} ${utils.pillMint}`}>{exp.companyName}</span>
                 <span className={`${utils.pill} ${utils.pillYellow}`}>{exp.location}</span>
@@ -116,6 +116,7 @@ const ExperienceTabs: React.FC = () => {
             classNames="content-left"
         >
             <div className={`${styles.tabContainer} ${useSmallScreen ? styles.column : ''}`}>
+                <h1 className={utils.srOnly}>Kate Bishop&apos;s Work Experience</h1>
                 <div className={`${styles.tabBar} ${useSmallScreen ? styles.column : ''}`}>
                     <ExperienceTabBar
                         sectionIds={sectionIds}
