@@ -1,5 +1,4 @@
 export const transitionTimeout = 1000
-export const paletteArray = ['primary', 'secondary', 'tertiary']
 export const palette = {
     primary: '#000',
     secondary: '#FFF',

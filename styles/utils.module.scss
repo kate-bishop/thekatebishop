@@ -77,32 +77,3 @@ $hard-shadow-sm: 2px 2px 0 $primary-color;
 }
 
 $transition-timeout: 1000ms;
-
-.content-left-enter {
-    opacity: 0;
-    transform: translateX(-10vw)
-}
-
-.content-right-enter {
-    opacity: 0;
-    transform: translateX(10vw)
-}
-
-.content-bottom-enter {
-    opacity: 0;
-    transform: translateY(10vh)
-}
-
-.content-grow-enter {
-    opacity: 0;
-    transform: scale(.8);
-}
-
-.content-left-enter-active,
-.content-right-enter-active,
-.content-bottom-enter-active,
-.content-grow-enter-active {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-    transition: opacity $transition-timeout, transform $transition-timeout;
-}
