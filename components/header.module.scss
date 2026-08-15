@@ -81,19 +81,6 @@
     }
 }
 
-.sticker {
-    border: 4px solid utils.$accent-orange;
-    box-shadow: utils.$hard-shadow;
-}
-
-.stickerLeft {
-    transform: rotate(-6deg);
-}
-
-.stickerRight {
-    transform: rotate(6deg);
-}
-
 .headline {
     font-family: utils.$font-stack;
     font-weight: 700;
