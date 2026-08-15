@@ -44,7 +44,7 @@ const About: React.FC = () => {
 
                 <div className={styles.ctasRow}>
                     <Link href="/about" className={`${utils.pill} ${styles.viewWorkPill}`}>
-                        Get to know me →
+                        Learn more →
                     </Link>
                     <span className={utils.dot} />
                     <Link href="/experience" className={`${utils.pill} ${styles.viewWorkPill}`}>
