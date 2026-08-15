@@ -42,6 +42,11 @@
     transform: rotate(-1.5deg);
 }
 
+.handwritten {
+    color: utils.$accent-orange;
+    font-family: utils.$hand-font-stack;
+}
+
 .frame {
     padding: 2rem;
     background-color: utils.$secondary-color;

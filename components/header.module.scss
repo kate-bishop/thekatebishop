@@ -68,14 +68,6 @@
     font-weight: 700;
 }
 
-.dot {
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
-    background-color: utils.$blue;
-    display: inline-block;
-}
-
 .headlineRow {
     display: flex;
     align-items: center;
@@ -120,5 +112,12 @@
     @media only screen and (max-width: utils.$medium-breakpoint) {
         display: none;
     }
+}
+
+.niceToMeetYouTab {
+    background-color: utils.$secondary-color;
+    font-family: utils.$font-stack;
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }
 

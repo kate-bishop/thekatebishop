@@ -73,6 +73,15 @@ $hard-shadow-sm: 2px 2px 0 $primary-color;
     transform: rotate(3deg);
 }
 
+.dot {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: $blue;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
 .tapeStrip {
     position: absolute;
     width: 3.5rem;

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './footer.module.scss';
+import utils from '../styles/utils.module.scss';
 import { aboutMe, contact } from '../utils/strings';
 import { navItems } from './navigationBar';
 
@@ -25,7 +26,7 @@ const Footer: React.FC = () => {
                 <div className={styles.identity}>
                     <span className={styles.name}>{aboutMe.title.toUpperCase()}</span>
                     <span className={styles.role}>
-                        <span className={styles.dot} />
+                        <span className={utils.dot} />
                         {aboutMe.position.toUpperCase()}
                     </span>
                 </div>

@@ -26,13 +26,6 @@
     align-self: flex-start;
 }
 
-.niceToMeetYouTab {
-    background-color: utils.$secondary-color;
-    font-family: utils.$font-stack;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-}
-
 .photosRow {
     display: flex;
     align-items: center;
@@ -45,8 +38,19 @@
     }
 }
 
+.ctasRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: utils.$medium-breakpoint) {
+        flex-direction: column;
+        gap: .75rem;
+    }
+}
+
 .photoCard {
-    display: none; // remove when photos are in
     position: relative;
     display: flex;
     flex-direction: column;
@@ -108,7 +112,6 @@
 
 .viewWorkPill {
     background-color: utils.$secondary-color;
-    margin-top: .5rem;
 
     &:hover {
         text-decoration: none;

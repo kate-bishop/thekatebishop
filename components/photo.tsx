@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import styles from './placeholderPhoto.module.scss';
+import styles from './photo.module.scss';
 
-interface PlaceholderPhotoProps {
+interface PhotoProps {
     src?: string;
     alt: string;
     label: string;
@@ -11,7 +11,7 @@ interface PlaceholderPhotoProps {
     className?: string;
 }
 
-const PlaceholderPhoto: React.FC<PlaceholderPhotoProps> = ({
+const Photo: React.FC<PhotoProps> = ({
     src,
     alt,
     label,
@@ -45,4 +45,4 @@ const PlaceholderPhoto: React.FC<PlaceholderPhotoProps> = ({
     );
 }
 
-export default PlaceholderPhoto;
+export default Photo;
